@@ -1,0 +1,14 @@
+/** @format */
+
+#but1:hover + #p1 {
+  display: none;
+}
+#bigimg:hover {
+  opacity: 100%;
+}
+#img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}

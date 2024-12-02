@@ -1,0 +1,1117 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notion</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="notion.css" />
+  </head>
+  <body>
+    <nav class="flex bg-gray-100 pl-[30rem] p-2">
+      <img src="./Components/image copy 23.png" alt="" width="30px" />
+      <h2 class="ml-4 mt-1 text-sm cursor-default">
+        Notion Mail, Forms, Marketplace, and more!
+        <span
+          class="font-bold ml-4 cursor-pointer hover:underline underline-offset-1 hover:text-blue-500"
+          >Check out the Make with Notion event recap →</span
+        >
+      </h2>
+      <button>
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHJvbGU9ImdyYXBoaWNzLXN5bWJvbCIgdmlld0JveD0iMCAwIDE2IDE2IiBjbGFzcz0iY2xvc2UiIHN0eWxlPSJ3aWR0aDogMjJweDsgaGVpZ2h0OiAyMnB4OyBkaXNwbGF5OiBibG9jazsgZmlsbDogdmFyKC0tY29sb3ItZGFyay05MDApOyBmbGV4LXNocmluazogMDsiPjxwYXRoIGQ9Ik0yLjg5Nzk1IDEzLjM0MjhDMy4xODc5OSAxMy42MjYyIDMuNjYyNiAxMy42MjYyIDMuOTM5NDUgMTMuMzQ5NEw3Ljk5MzQxIDkuMjk1NDFMMTIuMDQ3NCAxMy4zNDk0QzEyLjMzMDggMTMuNjI2MiAxMi44MDU0IDEzLjYzMjggMTMuMDg4OSAxMy4zNDI4QzEzLjM3MjMgMTMuMDU5MyAxMy4zNzIzIDEyLjU4NDcgMTMuMDk1NSAxMi4zMDc5TDkuMDQxNSA4LjI0NzMxTDEzLjA5NTUgNC4xOTMzNkMxMy4zNzIzIDMuOTE2NSAxMy4zNzg5IDMuNDM1MyAxMy4wODg5IDMuMTU4NDVDMTIuNzk4OCAyLjg3NSAxMi4zMzA4IDIuODc1IDEyLjA0NzQgMy4xNTE4Nkw3Ljk5MzQxIDcuMjA1ODFMMy45Mzk0NSAzLjE1MTg2QzMuNjYyNiAyLjg3NSAzLjE4MTQgMi44Njg0MSAyLjg5Nzk1IDMuMTUxODZDMi42MTQ1IDMuNDQxODkgMi42MjEwOSAzLjkyMzEgMi44OTc5NSA0LjE5MzM2TDYuOTUxOSA4LjI0NzMxTDIuODk3OTUgMTIuMzA3OUMyLjYyMTA5IDEyLjU3ODEgMi42MTQ1IDEzLjA2NTkgMi44OTc5NSAxMy4zNDI4WiIvPjwvc3ZnPg=="
+          alt=""
+          width="30px"
+          class="ml-[22rem]" />
+      </button>
+    </nav>
+    <header class="flex justify-between p-4 pb-2 pr-[2.3rem] z-10" id="hd1">
+      <nav class="flex">
+        <img
+          src="https://logos-world.net/wp-content/uploads/2024/08/Notion-Logo.png"
+          alt=""
+          width="50px"
+          class="size-8 w-12 mt-1 hover:cursor-pointer" />
+        <h1 class="text-2xl mt-1 font-bold hover:cursor-pointer">Notion</h1>
+        <div class="relative group">
+          <button
+            id="prd"
+            class="flex ml-6 hover:bg-gray-100 p-2 rounded-2xl font-semibold">
+            Product
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              class="mt-3 ml-2 block group-hover:hidden" />
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              style="transform: rotate(180deg)"
+              class="mt-3 ml-2 hidden group-hover:block" />
+          </button>
+          <div
+            class="absolute pb-5 -mr-64 hidden group-hover:block ease-in duration-75 bg-white bg-opacity-90 ml-6 mt-3 border"
+            id="des ">
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJhc3Npc3RhbnRGYWNlIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHN0eWxlPSJ3aWR0aDoxMDAlO2hlaWdodDoxMDAlO2Rpc3BsYXk6YmxvY2s7ZmlsbDppbmhlcml0O2ZsZXgtc2hyaW5rOjAiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTEzLjkxIDguODYxYS43NS43NSAwIDEgMS0xLjQ4LS4yNC43NS43NSAwIDAgMSAxLjQ4LjI0Wk03LjMyMSA3Ljc5M2EuNzUuNzUgMCAxIDEtMS40OC0uMjQuNzUuNzUgMCAwIDEgMS40OC4yNFoiLz48cGF0aCBzdHJva2U9IiMwMDAwMDAiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xNy4yMzMgNS42NTZhMy40OTMgMy40OTMgMCAwIDAtNi4wMTItLjAzMUw0Ljk5IDE2LjAyN2w1LjQxMi44NzdNOS40NyAzLjkzNWEzLjQ5NCAzLjQ5NCAwIDAgMC00Ljk2OS0uMzE3Ii8+PC9zdmc+"
+                  alt=""
+                  width="30px"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">AI</h2>
+                <br />
+                <h3 class="mt-4 -ml-4">Integrated AI assistant</h3>
+              </div></button
+            ><br />
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJkb2MiIHZpZXdCb3g9IjAgMCA0OSA0OSIgc3R5bGU9IndpZHRoOjEwMCU7aGVpZ2h0OjEwMCU7ZGlzcGxheTpibG9jaztmaWxsOmluaGVyaXQ7ZmxleC1zaHJpbms6MCI+PHBhdGggZD0ibTQwLjIyIDE0LjUxMi0xMi4zMy05Ljk5Yy0uNzItLjYtMS42NS0uOTMtMi42MS0uOTNIMTEuMzZjLTIuMjggMC00LjExIDEuODMtNC4xMSA0LjExdjMzLjc4YzAgMi4yOCAxLjg2IDQuMTEgNC4xMSA0LjExaDI2LjI4YzIuMjggMCA0LjExLTEuODMgNC4xMS00LjExdi0yMy43NmMwLTEuMjMtLjU3LTIuNDMtMS41My0zLjIxWm0tMTMuMTEtNi44MSAxMC4zOCA5LjA2Yy40Mi4zNi4xOCAxLjA1LS4zOSAxLjA1aC04Ljg4Yy0uNiAwLTEuMTEtLjQ4LTEuMTEtMS4xMXYtOVptOC44NSAzMy43NUgxMy4wMWMtLjY5IDAtMS4yNi0uNTctMS4yNi0xLjI5di0zMS4yYzAtLjY5LjU3LTEuMjYgMS4yNi0xLjI2aDEwLjM1djEwLjE0YzAgMi4wNyAxLjY4IDMuNzUgMy43NSAzLjc1aDEwLjExdjE4LjZjMCAuNjktLjU3IDEuMjYtMS4yNiAxLjI2WiIgZmlsbD0iY3VycmVudENvbG9yIi8+PHBhdGggZD0iTTE3Ljc1IDI3LjIzMmgxMy41TTE3Ljc1IDM0LjQwMmgxMy41IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjgyNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+"
+                  alt=""
+                  width="30px"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">Docs</h2>
+                <br />
+                <h3 class="mt-4 -ml-8">Simple & Powerful</h3>
+              </div></button
+            ><br />
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJib29rT3BlbiIgdmlld0JveD0iMCAwIDQ4IDQ4IiBzdHlsZT0id2lkdGg6MTAwJTtoZWlnaHQ6MTAwJTtkaXNwbGF5OmJsb2NrO2ZpbGw6aW5oZXJpdDtmbGV4LXNocmluazowIj48cGF0aCBkPSJNMjEgNDAuODZINi4wOWMtMS4wOCAwLTEuOTgtLjktMS45OC0xLjk4VjIwLjIyYzAtMS4xNy42LTEuODMgMS43NC0xLjgzaC45di0zLjM2SDQuODljLTIuNDkgMC00LjUgMi4wMS00LjUgNC41djIwLjI1YzAgMi40OSAyLjAxIDQuNSA0LjUgNC41SDIxdi0zLjQyWk00My4xNCAxNWgtMS44NnYzLjM2aC45OWMxLjA4IDAgMS42Mi42MyAxLjYyIDEuNjJ2MTguOTNjMCAxLjA4LS44NyAxLjk4LTEuOTggMS45OEgyN3YzLjM2aDE2LjE0YzIuNDkgMCA0LjUtMi4wMSA0LjUtNC41VjE5LjVjMC0yLjQ5LTIuMDEtNC41LTQuNS00LjVaIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cGF0aCBkPSJNMzkuMzkgNC41Yy01LjE5LjY5LTExLjQgMi43My0xNS4zNiA1LjE2LTMuOTktMi40My0xMC4yLTQuNDctMTUuMzYtNS4xNnYzMC43NWM0LjI2LjUxIDguNjcgMS41IDEzLjE0IDMuMjRsMi4yNS45OSAyLjI1LS45OWM0LjQ3LTEuNzQgOC44OC0yLjc2IDEzLjE0LTMuMjRWNC41aC0uMDZaTTEzLjE0IDMxLjg5VjkuNjljMy4yMS41NyA2LjkzIDIuMDEgOC42NCAzLjM5djIxLjI0Yy0yLjQ5LTEuMDItNS45Ny0xLjk1LTguNjQtMi40M1ptMjEuNzUgMGMtMi42NC40OC02LjE1IDEuNDEtOC42NCAyLjQzVjEzLjA4YzEuNjgtMS40MSA1LjQzLTIuODIgOC42NC0zLjM5djIyLjJaIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4="
+                  alt=""
+                  width="30px"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">Wikies</h2>
+                <br />
+                <h3 class="mt-4 -ml-12 whitespace-nowrap">
+                  Centralize your knowledge
+                </h3>
+              </div></button
+            ><br />
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJ0YXJnZXQiIHZpZXdCb3g9IjAgMCA0OSA0OSIgc3R5bGU9IndpZHRoOjEwMCU7aGVpZ2h0OjEwMCU7ZGlzcGxheTpibG9jaztmaWxsOmluaGVyaXQ7ZmxleC1zaHJpbms6MCI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJtNDguMjAzNyA5LjE1NjktNi4xNTU2IDYuMjQ3NS0uMDMwNi0uMDYxM2MtMy4wMzE5IDMuMDkzMi01LjI5ODIgMy43OTc1LTkuNzA4MiAzLjMzODJsLTMuMTU0MyAzLjE4NWMxLjEwMjUgMi4wMjEyLjgyNjggNC42MjQ0LS44NTc1IDYuMzM5NC0yLjA1MTkgMi4xMTMxLTUuNDUxMyAyLjExMzEtNy41NjQ0LjA2MTJzLTIuMTQzOC01LjQ1MTItLjA2MTMtNy41NjQ0YzEuNjg0NC0xLjcxNSA0LjI1NjktMi4wMjEyIDYuMzA4OC0uOTQ5NGwzLjE1NDQtMy4xODVjLS41MjA3LTQuNDEuMTIyNS02LjY3NjIgMy4xNTQzLTkuNzY5MzNsNi4xNTU3LTYuMjQ3NSAxLjcxNSA3LjA0Mzc1em0tMTQuNTQ2NyAxMi43NzA2aC44MjY5di4wNjEyYzEuMTMzMSAwIDIuMTQzOC0uMTIyNSAzLjA5MzEtLjMzNjkuMjE0NC45NDk0LjMzNjkgMS44OTg4LjMzNjkgMi45MDk0IDAgNy40MTEzLTYuMDAyNSAxMy40MTM4LTEzLjQxMzcgMTMuNDEzOC03LjQxMTMgMC0xMy40MTM4LTYuMDAyNS0xMy40MTM4LTEzLjQxMzggMC03LjQxMTIgNi4wMDI1LTEzLjQxMzcgMTMuNDEzOC0xMy40MTM3LjkxODcgMCAxLjgzNzUuMDkxOCAyLjY5NS4yNzU2LS4yNDUgMS4xOTQ0LS4zMzY5IDIuNDgwNi0uMjQ1IDMuOTItLjc5NjMtLjIxNDQtMS41OTI1LS4zNjc1LTIuNDUtLjM2NzUtNS4yNjc1IDAtOS41NTUgNC4yODc1LTkuNTU1IDkuNTU1czQuMjg3NSA5LjU1NSA5LjU1NSA5LjU1NSA5LjU1NS00LjI4NzUgOS41NTUtOS41NTVjMC0uOTE4OC0uMTUzMi0xLjc3NjMtLjM5ODItMi42MDMxem04LjQ4My0yLjU0MTljLjcwNDQtLjUyMDYgMS4zNzgxLTEuMTMzMSAyLjA4MjUtMS44Mzc1bDEuNTkyNS0xLjYyMzFjMS4wNDEzIDIuNjY0NCAxLjY1MzggNS41NDMxIDEuNjUzOCA4LjU3NSAwIDEyLjY3ODctMTAuMjkwMSAyMi45Njg4LTIyLjk2ODggMjIuOTY4OC0xMi42Nzg4IDAtMjIuOTY4NzUtMTAuMjkwMS0yMi45Njg3NS0yMi45Njg4IDAtMTIuNjc4OCAxMC4yODk5NS0yMi45Njg3NSAyMi45Njg3NS0yMi45Njg3NSAyLjg3ODcgMCA1LjYzNS41NTEyNSA4LjE3NjkgMS41MzEyNWwtMS41NjE5IDEuNTkyNWMtLjcwNDQuNzA0MzgtMS4yODYzIDEuNDA4NzUtMS44MDY5IDIuMTEzMTMtMS41MzEyLS4zOTgxMy0zLjE1NDQtLjY0MzEzLTQuODA4MS0uNjQzMTMtMTAuMTM2OSAwLTE4LjM3NSA4LjIzODEtMTguMzc1IDE4LjM3NXM4LjIzODEgMTguMzc1IDE4LjM3NSAxOC4zNzUgMTguMzc1LTguMjM4MSAxOC4zNzUtMTguMzc1YzAtMS43NzYzLS4yNzU2LTMuNDkxMy0uNzM1LTUuMTE0NHoiIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+"
+                  alt=""
+                  width="30px"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">Projects</h2>
+                <br />
+                <h3 class="mt-4 -ml-14">For every team & size</h3>
+              </div></button
+            ><br />
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="./Components/image copy 15.png"
+                  alt=""
+                  width="30px"
+                  style="filter: invert(1)"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">Calendar</h2>
+                <br />
+                <h3 class="mt-4 -ml-16">Time & work ,together</h3>
+              </div></button
+            ><br />
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJmb3JtcyIgdmlld0JveD0iMCAwIDIyIDIyIiBzdHlsZT0id2lkdGg6MTAwJTtoZWlnaHQ6MTAwJTtkaXNwbGF5OmJsb2NrO2ZpbGw6aW5oZXJpdDtmbGV4LXNocmluazowIj48cGF0aCBkPSJNMS41NTYxNyA4LjE5MTI3QzAuNTc5MzQ2IDguNDQzMjcgMC4zMjI2ODMgOS4xOTc4MyAwLjc5NzIyMiA5LjY3ODlMNC41MTYzOSAxMy4xMzc1QzQuNTYgMTMuMTc1OCA0LjU4NzMyIDEzLjIyNjIgNC41OTc1NSAxMy4yODQzTDUuNzQ2NjEgMTkuODAwOUM1Ljg3ODA0IDIwLjU0NjMgNi44MzE4NiAyMC43ODMxIDcuMjk3NjkgMjAuMTg1NUw5LjE5NDExIDE3Ljc0NzlDOS4yNTgyNSAxNy42Njc2IDkuMzc1OTggMTcuNjU2IDkuNDUyNjkgMTcuNzI1M0wxMi40MzAzIDIwLjM5MjZDMTMuMTU1MSAyMC45NjY0IDE0LjEwMTUgMjAuNjMxOCAxNC4zMjc0IDIwLjA1ODFMMjAuODA0NSA0LjE4MzJDMjEuMzMzOSAyLjc2NDY4IDIwLjI5NzkgMS4zMTAzNyAxOC4zMzY3IDIuMTIzODkiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik02LjUwMjUgMTEuNzMxOUMxMC4xNDI4IDkuNTgyODYgMTIuNzY4OSA3LjUzMjMyIDE1Ljk1MzUgNS42MjU5NkMxNi4yNjExIDUuNDQxODQgMTYuNTI5MSA1LjgyMjU1IDE2LjI1OTkgNi4wNTkyOEMxNS41MDI2IDYuNzI1MjMgMTQuNzcwOSA3LjM3MjM3IDE0LjU5NTEgNy41NDAyNUMxNC4yMDA4IDcuOTE2OTcgOS43OTcxOSAxMS42ODg2IDkuNzk3MTkgMTEuNjg4Nkw3LjYxNTA4IDEzLjY4NjFDOC41NDYzNiAxNS4wMTI5IDEyLjEzODkgMTcuNzQyMSAxMy4xMTI2IDE4LjExNDZDMTUuNjAzOCAxMy4xODEyIDE3LjI5OCA4Ljk1MDEyIDE5LjA0MjIgNC4yMzQ3MUMxOS4xNzYyIDMuODcyNTMgMTguODI0NiAzLjUyMDE0IDE4LjQ2MTggMy42NTI1M0w3Ljk3OTU5IDcuNDc3OThMMy4yNDc2NCA5LjM4NzUyTDYuNTAyNSAxMS43MzE5WiIgZmlsbD0iI0Y3RjdGNSIvPjwvc3ZnPg=="
+                  alt=""
+                  width="30px"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">Mail</h2>
+                <br />
+                <h3 class="mt-4 -ml-8">E-mail that works for you</h3>
+              </div></button
+            ><br />
+          </div>
+        </div>
+        <div class="relative group">
+          <button
+            id="team"
+            class="relative group flex ml-3 hover:bg-gray-100 p-2 rounded-2xl font-semibold">
+            Teams
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              class="mt-3 ml-2 block group-hover:hidden" />
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              style="transform: rotate(180deg)"
+              class="mt-3 ml-2 hidden group-hover:block" />
+          </button>
+          <div
+            class="absolute pb-5 hidden group-hover:block bg-white bg-opacity-90 ml-3 border mt-3"
+            id="des ">
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Product</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Engineering</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Design</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Marketing
+            </button>
+            <br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              IT</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Startups</button
+            ><br />
+          </div>
+        </div>
+        <div class="relative group">
+          <button
+            class="flex ml-3 hover:bg-gray-100 p-2 rounded-2xl font-semibold">
+            Indiviuals
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              class="mt-3 ml-2 block group-hover:hidden" />
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              style="transform: rotate(180deg)"
+              class="mt-3 ml-2 hidden group-hover:block" />
+          </button>
+          <div
+            class="absolute pb-5 hidden group-hover:block bg-white bg-opacity-90 ml-3 border mt-3"
+            id="des ">
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Personal</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Students</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Teachers</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Creators
+            </button>
+          </div>
+        </div>
+        <div class="relative group">
+          <button
+            class="flex ml-3 hover:bg-gray-100 p-2 rounded-2xl font-semibold">
+            Download
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              class="mt-3 ml-2 block group-hover:hidden" />
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              class="mt-3 ml-2 hidden group-hover:block" />
+          </button>
+          <div
+            class="absolute pb-5 hidden group-hover:block bg-white bg-opacity-90 ml-3 border mt-3"
+            id="des ">
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Notion</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Calendar</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 whitespace-nowrap ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Web Clippers</button
+            ><br />
+            <h2 class="whitespace-nowrap ml-4 p-2 mt-2 pr-8">
+              Notion is always at home <br />right in
+              <span
+                class="underline underline-offset-2 hover:cursor-pointer hover:text-blue-600"
+                >your browser</span
+              >
+            </h2>
+          </div>
+        </div>
+        <button class="ml-3 hover:bg-gray-100 p-2 rounded-2xl font-semibold">
+          Pricing
+        </button>
+      </nav>
+      <nav class="flex ml-[25rem]">
+        <button
+          class="hover:bg-gray-100 rounded-xl mr-2 p-2 pl-4 pr-4 font-semibold">
+          Request a demo
+        </button>
+        <p class="border mr-3 ml-1 h-6 mt-2"></p>
+
+        <button
+          class="hover:bg-gray-100 rounded-xl mr-2 p-2 pl-4 pr-4 font-semibold">
+          Log in
+        </button>
+        <button
+          class="bg-black text-white p-2 pl-4  rounded-xl pr-6  hover:bg-gray-600 font-semibold">
+          Get Notion free
+        </button>
+      </nav>
+    </header>
+    <header class="flex justify-between mt-4">
+      <nav class="flex">
+        <img
+          src="https://logos-world.net/wp-content/uploads/2024/08/Notion-Logo.png"
+          alt=""
+          width="50px"
+          class="size-8 w-12 mt-1 hover:cursor-pointer" />
+        <h1 class="text-2xl mt-1 font-bold hover:cursor-pointer">Notion</h1>
+        <div class="relative group">
+          <button
+            id="prd"
+            class="flex ml-6 hover:bg-gray-100 p-2 rounded-2xl font-semibold">
+            Product
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              class="mt-3 ml-2 block group-hover:hidden" />
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              style="transform: rotate(180deg)"
+              class="mt-3 ml-2 hidden group-hover:block" />
+          </button>
+          <div
+            class="absolute pb-5 -mr-64 hidden group-hover:block ease-in duration-75 bg-white bg-opacity-90 ml-6 mt-3 border"
+            id="des ">
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJhc3Npc3RhbnRGYWNlIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHN0eWxlPSJ3aWR0aDoxMDAlO2hlaWdodDoxMDAlO2Rpc3BsYXk6YmxvY2s7ZmlsbDppbmhlcml0O2ZsZXgtc2hyaW5rOjAiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTEzLjkxIDguODYxYS43NS43NSAwIDEgMS0xLjQ4LS4yNC43NS43NSAwIDAgMSAxLjQ4LjI0Wk03LjMyMSA3Ljc5M2EuNzUuNzUgMCAxIDEtMS40OC0uMjQuNzUuNzUgMCAwIDEgMS40OC4yNFoiLz48cGF0aCBzdHJva2U9IiMwMDAwMDAiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xNy4yMzMgNS42NTZhMy40OTMgMy40OTMgMCAwIDAtNi4wMTItLjAzMUw0Ljk5IDE2LjAyN2w1LjQxMi44NzdNOS40NyAzLjkzNWEzLjQ5NCAzLjQ5NCAwIDAgMC00Ljk2OS0uMzE3Ii8+PC9zdmc+"
+                  alt=""
+                  width="30px"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">AI</h2>
+                <br />
+                <h3 class="mt-4 -ml-4">Integrated AI assistant</h3>
+              </div></button
+            ><br />
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJkb2MiIHZpZXdCb3g9IjAgMCA0OSA0OSIgc3R5bGU9IndpZHRoOjEwMCU7aGVpZ2h0OjEwMCU7ZGlzcGxheTpibG9jaztmaWxsOmluaGVyaXQ7ZmxleC1zaHJpbms6MCI+PHBhdGggZD0ibTQwLjIyIDE0LjUxMi0xMi4zMy05Ljk5Yy0uNzItLjYtMS42NS0uOTMtMi42MS0uOTNIMTEuMzZjLTIuMjggMC00LjExIDEuODMtNC4xMSA0LjExdjMzLjc4YzAgMi4yOCAxLjg2IDQuMTEgNC4xMSA0LjExaDI2LjI4YzIuMjggMCA0LjExLTEuODMgNC4xMS00LjExdi0yMy43NmMwLTEuMjMtLjU3LTIuNDMtMS41My0zLjIxWm0tMTMuMTEtNi44MSAxMC4zOCA5LjA2Yy40Mi4zNi4xOCAxLjA1LS4zOSAxLjA1aC04Ljg4Yy0uNiAwLTEuMTEtLjQ4LTEuMTEtMS4xMXYtOVptOC44NSAzMy43NUgxMy4wMWMtLjY5IDAtMS4yNi0uNTctMS4yNi0xLjI5di0zMS4yYzAtLjY5LjU3LTEuMjYgMS4yNi0xLjI2aDEwLjM1djEwLjE0YzAgMi4wNyAxLjY4IDMuNzUgMy43NSAzLjc1aDEwLjExdjE4LjZjMCAuNjktLjU3IDEuMjYtMS4yNiAxLjI2WiIgZmlsbD0iY3VycmVudENvbG9yIi8+PHBhdGggZD0iTTE3Ljc1IDI3LjIzMmgxMy41TTE3Ljc1IDM0LjQwMmgxMy41IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjgyNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+"
+                  alt=""
+                  width="30px"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">Docs</h2>
+                <br />
+                <h3 class="mt-4 -ml-8">Simple & Powerful</h3>
+              </div></button
+            ><br />
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJib29rT3BlbiIgdmlld0JveD0iMCAwIDQ4IDQ4IiBzdHlsZT0id2lkdGg6MTAwJTtoZWlnaHQ6MTAwJTtkaXNwbGF5OmJsb2NrO2ZpbGw6aW5oZXJpdDtmbGV4LXNocmluazowIj48cGF0aCBkPSJNMjEgNDAuODZINi4wOWMtMS4wOCAwLTEuOTgtLjktMS45OC0xLjk4VjIwLjIyYzAtMS4xNy42LTEuODMgMS43NC0xLjgzaC45di0zLjM2SDQuODljLTIuNDkgMC00LjUgMi4wMS00LjUgNC41djIwLjI1YzAgMi40OSAyLjAxIDQuNSA0LjUgNC41SDIxdi0zLjQyWk00My4xNCAxNWgtMS44NnYzLjM2aC45OWMxLjA4IDAgMS42Mi42MyAxLjYyIDEuNjJ2MTguOTNjMCAxLjA4LS44NyAxLjk4LTEuOTggMS45OEgyN3YzLjM2aDE2LjE0YzIuNDkgMCA0LjUtMi4wMSA0LjUtNC41VjE5LjVjMC0yLjQ5LTIuMDEtNC41LTQuNS00LjVaIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48cGF0aCBkPSJNMzkuMzkgNC41Yy01LjE5LjY5LTExLjQgMi43My0xNS4zNiA1LjE2LTMuOTktMi40My0xMC4yLTQuNDctMTUuMzYtNS4xNnYzMC43NWM0LjI2LjUxIDguNjcgMS41IDEzLjE0IDMuMjRsMi4yNS45OSAyLjI1LS45OWM0LjQ3LTEuNzQgOC44OC0yLjc2IDEzLjE0LTMuMjRWNC41aC0uMDZaTTEzLjE0IDMxLjg5VjkuNjljMy4yMS41NyA2LjkzIDIuMDEgOC42NCAzLjM5djIxLjI0Yy0yLjQ5LTEuMDItNS45Ny0xLjk1LTguNjQtMi40M1ptMjEuNzUgMGMtMi42NC40OC02LjE1IDEuNDEtOC42NCAyLjQzVjEzLjA4YzEuNjgtMS40MSA1LjQzLTIuODIgOC42NC0zLjM5djIyLjJaIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4="
+                  alt=""
+                  width="30px"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">Wikies</h2>
+                <br />
+                <h3 class="mt-4 -ml-12 whitespace-nowrap">
+                  Centralize your knowledge
+                </h3>
+              </div></button
+            ><br />
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJ0YXJnZXQiIHZpZXdCb3g9IjAgMCA0OSA0OSIgc3R5bGU9IndpZHRoOjEwMCU7aGVpZ2h0OjEwMCU7ZGlzcGxheTpibG9jaztmaWxsOmluaGVyaXQ7ZmxleC1zaHJpbms6MCI+PHBhdGggY2xpcC1ydWxlPSJldmVub2RkIiBkPSJtNDguMjAzNyA5LjE1NjktNi4xNTU2IDYuMjQ3NS0uMDMwNi0uMDYxM2MtMy4wMzE5IDMuMDkzMi01LjI5ODIgMy43OTc1LTkuNzA4MiAzLjMzODJsLTMuMTU0MyAzLjE4NWMxLjEwMjUgMi4wMjEyLjgyNjggNC42MjQ0LS44NTc1IDYuMzM5NC0yLjA1MTkgMi4xMTMxLTUuNDUxMyAyLjExMzEtNy41NjQ0LjA2MTJzLTIuMTQzOC01LjQ1MTItLjA2MTMtNy41NjQ0YzEuNjg0NC0xLjcxNSA0LjI1NjktMi4wMjEyIDYuMzA4OC0uOTQ5NGwzLjE1NDQtMy4xODVjLS41MjA3LTQuNDEuMTIyNS02LjY3NjIgMy4xNTQzLTkuNzY5MzNsNi4xNTU3LTYuMjQ3NSAxLjcxNSA3LjA0Mzc1em0tMTQuNTQ2NyAxMi43NzA2aC44MjY5di4wNjEyYzEuMTMzMSAwIDIuMTQzOC0uMTIyNSAzLjA5MzEtLjMzNjkuMjE0NC45NDk0LjMzNjkgMS44OTg4LjMzNjkgMi45MDk0IDAgNy40MTEzLTYuMDAyNSAxMy40MTM4LTEzLjQxMzcgMTMuNDEzOC03LjQxMTMgMC0xMy40MTM4LTYuMDAyNS0xMy40MTM4LTEzLjQxMzggMC03LjQxMTIgNi4wMDI1LTEzLjQxMzcgMTMuNDEzOC0xMy40MTM3LjkxODcgMCAxLjgzNzUuMDkxOCAyLjY5NS4yNzU2LS4yNDUgMS4xOTQ0LS4zMzY5IDIuNDgwNi0uMjQ1IDMuOTItLjc5NjMtLjIxNDQtMS41OTI1LS4zNjc1LTIuNDUtLjM2NzUtNS4yNjc1IDAtOS41NTUgNC4yODc1LTkuNTU1IDkuNTU1czQuMjg3NSA5LjU1NSA5LjU1NSA5LjU1NSA5LjU1NS00LjI4NzUgOS41NTUtOS41NTVjMC0uOTE4OC0uMTUzMi0xLjc3NjMtLjM5ODItMi42MDMxem04LjQ4My0yLjU0MTljLjcwNDQtLjUyMDYgMS4zNzgxLTEuMTMzMSAyLjA4MjUtMS44Mzc1bDEuNTkyNS0xLjYyMzFjMS4wNDEzIDIuNjY0NCAxLjY1MzggNS41NDMxIDEuNjUzOCA4LjU3NSAwIDEyLjY3ODctMTAuMjkwMSAyMi45Njg4LTIyLjk2ODggMjIuOTY4OC0xMi42Nzg4IDAtMjIuOTY4NzUtMTAuMjkwMS0yMi45Njg3NS0yMi45Njg4IDAtMTIuNjc4OCAxMC4yODk5NS0yMi45Njg3NSAyMi45Njg3NS0yMi45Njg3NSAyLjg3ODcgMCA1LjYzNS41NTEyNSA4LjE3NjkgMS41MzEyNWwtMS41NjE5IDEuNTkyNWMtLjcwNDQuNzA0MzgtMS4yODYzIDEuNDA4NzUtMS44MDY5IDIuMTEzMTMtMS41MzEyLS4zOTgxMy0zLjE1NDQtLjY0MzEzLTQuODA4MS0uNjQzMTMtMTAuMTM2OSAwLTE4LjM3NSA4LjIzODEtMTguMzc1IDE4LjM3NXM4LjIzODEgMTguMzc1IDE4LjM3NSAxOC4zNzUgMTguMzc1LTguMjM4MSAxOC4zNzUtMTguMzc1YzAtMS43NzYzLS4yNzU2LTMuNDkxMy0uNzM1LTUuMTE0NHoiIGZpbGw9ImN1cnJlbnRDb2xvciIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+"
+                  alt=""
+                  width="30px"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">Projects</h2>
+                <br />
+                <h3 class="mt-4 -ml-14">For every team & size</h3>
+              </div></button
+            ><br />
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="./Components/image copy 15.png"
+                  alt=""
+                  width="30px"
+                  style="filter: invert(1)"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">Calendar</h2>
+                <br />
+                <h3 class="mt-4 -ml-16">Time & work ,together</h3>
+              </div></button
+            ><br />
+            <button class="hover:bg-gray-100 p-2 rounded-xl font-semibold">
+              <div class="flex">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJmb3JtcyIgdmlld0JveD0iMCAwIDIyIDIyIiBzdHlsZT0id2lkdGg6MTAwJTtoZWlnaHQ6MTAwJTtkaXNwbGF5OmJsb2NrO2ZpbGw6aW5oZXJpdDtmbGV4LXNocmluazowIj48cGF0aCBkPSJNMS41NTYxNyA4LjE5MTI3QzAuNTc5MzQ2IDguNDQzMjcgMC4zMjI2ODMgOS4xOTc4MyAwLjc5NzIyMiA5LjY3ODlMNC41MTYzOSAxMy4xMzc1QzQuNTYgMTMuMTc1OCA0LjU4NzMyIDEzLjIyNjIgNC41OTc1NSAxMy4yODQzTDUuNzQ2NjEgMTkuODAwOUM1Ljg3ODA0IDIwLjU0NjMgNi44MzE4NiAyMC43ODMxIDcuMjk3NjkgMjAuMTg1NUw5LjE5NDExIDE3Ljc0NzlDOS4yNTgyNSAxNy42Njc2IDkuMzc1OTggMTcuNjU2IDkuNDUyNjkgMTcuNzI1M0wxMi40MzAzIDIwLjM5MjZDMTMuMTU1MSAyMC45NjY0IDE0LjEwMTUgMjAuNjMxOCAxNC4zMjc0IDIwLjA1ODFMMjAuODA0NSA0LjE4MzJDMjEuMzMzOSAyLjc2NDY4IDIwLjI5NzkgMS4zMTAzNyAxOC4zMzY3IDIuMTIzODkiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik02LjUwMjUgMTEuNzMxOUMxMC4xNDI4IDkuNTgyODYgMTIuNzY4OSA3LjUzMjMyIDE1Ljk1MzUgNS42MjU5NkMxNi4yNjExIDUuNDQxODQgMTYuNTI5MSA1LjgyMjU1IDE2LjI1OTkgNi4wNTkyOEMxNS41MDI2IDYuNzI1MjMgMTQuNzcwOSA3LjM3MjM3IDE0LjU5NTEgNy41NDAyNUMxNC4yMDA4IDcuOTE2OTcgOS43OTcxOSAxMS42ODg2IDkuNzk3MTkgMTEuNjg4Nkw3LjYxNTA4IDEzLjY4NjFDOC41NDYzNiAxNS4wMTI5IDEyLjEzODkgMTcuNzQyMSAxMy4xMTI2IDE4LjExNDZDMTUuNjAzOCAxMy4xODEyIDE3LjI5OCA4Ljk1MDEyIDE5LjA0MjIgNC4yMzQ3MUMxOS4xNzYyIDMuODcyNTMgMTguODI0NiAzLjUyMDE0IDE4LjQ2MTggMy42NTI1M0w3Ljk3OTU5IDcuNDc3OThMMy4yNDc2NCA5LjM4NzUyTDYuNTAyNSAxMS43MzE5WiIgZmlsbD0iI0Y3RjdGNSIvPjwvc3ZnPg=="
+                  alt=""
+                  width="30px"
+                  class="border p-1 rounded-lg" />
+                <h2 class="ml-4">Mail</h2>
+                <br />
+                <h3 class="mt-4 -ml-8">E-mail that works for you</h3>
+              </div></button
+            ><br />
+          </div>
+        </div>
+        <div class="relative group">
+          <button
+            id="team"
+            class="relative group flex ml-3 hover:bg-gray-100 p-2 rounded-2xl font-semibold">
+            Teams
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              class="mt-3 ml-2 block group-hover:hidden" />
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              style="transform: rotate(180deg)"
+              class="mt-3 ml-2 hidden group-hover:block" />
+          </button>
+          <div
+            class="absolute pb-5 hidden group-hover:block bg-white bg-opacity-90 ml-3 border mt-3"
+            id="des ">
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Product</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Engineering</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Design</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Marketing
+            </button>
+            <br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              IT</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Startups</button
+            ><br />
+          </div>
+        </div>
+        <div class="relative group">
+          <button
+            class="flex ml-3 hover:bg-gray-100 p-2 rounded-2xl font-semibold">
+            Indiviuals
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              class="mt-3 ml-2 block group-hover:hidden" />
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              style="transform: rotate(180deg)"
+              class="mt-3 ml-2 hidden group-hover:block" />
+          </button>
+          <div
+            class="absolute pb-5 hidden group-hover:block bg-white bg-opacity-90 ml-3 border mt-3"
+            id="des ">
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Personal</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Students</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Teachers</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Creators
+            </button>
+          </div>
+        </div>
+        <div class="relative group">
+          <button
+            class="flex ml-3 hover:bg-gray-100 p-2 rounded-2xl font-semibold">
+            Download
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              class="mt-3 ml-2 block group-hover:hidden" />
+            <img
+              src="./Components/image copy 3.png"
+              alt=""
+              width="10px"
+              class="mt-3 ml-2 hidden group-hover:block" />
+          </button>
+          <div
+            class="absolute pb-5 hidden group-hover:block bg-white bg-opacity-90 ml-3 border mt-3"
+            id="des ">
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Notion</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Calendar</button
+            ><br />
+            <button
+              class="hover:bg-gray-100 whitespace-nowrap ml-4 p-2 mt-2 pr-8 rounded-xl font-semibold">
+              Web Clippers</button
+            ><br />
+            <h2 class="whitespace-nowrap ml-4 p-2 mt-2 pr-8">
+              Notion is always at home <br />right in
+              <span
+                class="underline underline-offset-2 hover:cursor-pointer hover:text-blue-600"
+                >your browser</span
+              >
+            </h2>
+          </div>
+        </div>
+        <button class="ml-3 hover:bg-gray-100 p-2 rounded-2xl font-semibold">
+          Pricing
+        </button>
+      </nav>
+      <nav class="flex">
+        <button
+          class="hover:bg-gray-100 rounded-xl mr-2 p-2 pl-4 pr-4 font-semibold">
+          Request a demo
+        </button>
+        <p class="border mr-3 ml-1 h-6 mt-2"></p>
+
+        <button
+          class="hover:bg-gray-100 rounded-xl mr-2 p-2 pl-4 pr-4 font-semibold">
+          Log in
+        </button>
+        <button
+          class="bg-black text-white p-2 pl-4 pr-4 rounded-xl mr-6 hover:bg-gray-600 font-semibold">
+          Get Notion free
+        </button>
+      </nav>
+    </header>
+    <main class="flex justify-evenly">
+      <div class="lf mt-12 ml-32">
+        <h2 class="text-7xl font-bold">
+          Write. Plan. <br />
+          Collaborate.
+        </h2>
+        <h3 class="text-2xl font-semibold mt-4">
+          One workspace to organize work and life.
+        </h3>
+        <button
+          class="p-4 pl-8 pr-8 rounded-lg bg-blue-500 mt-8 mr-4 text-white hover:bg-blue-800">
+          Get Notion free
+        </button>
+        <button
+          class="p-4 pl-8 pr-8 rounded-lg bg-gray-100 text-blue-500 hover:bg-gray-200">
+          Request a demo</button
+        ><br />
+        <h3 class="mt-6 font-semibold text-lg text-gray-300">
+          Trusted by teams at
+        </h3>
+        <section class="images flex mt-4">
+          <img
+            src="https://www.notion.so/front-static/logos/generic/en/affirm-gr.svg"
+            alt=""
+            width="100px"
+            class="" />
+          <img
+            src="https://www.notion.so/front-static/logos/generic/en/netflix-gr.svg"
+            alt=""
+            width="100px"
+            class="ml-8" />
+          <img
+            src="https://www.notion.so/front-static/logos/generic/en/discord-gr.svg"
+            alt=""
+            width="100px"
+            class="ml-8" />
+          <img
+            src="https://www.notion.so/front-static/logos/generic/en/figma-gr.svg"
+            alt=""
+            width="100px"
+            class="ml-8" />
+        </section>
+      </div>
+      <div class="rt">
+        <img
+          src="undraw_Children_re_c37f.png"
+          alt=""
+          width="800px"
+          loading="lazy"
+          class="mt-20 pl-20" />
+      </div>
+    </main>
+    <main id="carousel" class="ml-32">
+      <div style="border: 1px solid black; border-radius: 1rem; padding: 1rem">
+        <img
+          class="carousel-image"
+          src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/front-static/pages/product/super-duper/carousel/assistant/Wiki-V2.png"
+          alt="" />
+        <img
+          class="carousel-image"
+          src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/front-static/pages/product/super-duper/carousel/assistant/Docs-V2.png"
+          alt="" />
+        <img
+          class="carousel-image"
+          src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/front-static/pages/product/super-duper/carousel/assistant/Projects-V2.png"
+          alt="" />
+        <img
+          class="carousel-image"
+          src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/front-static/pages/product/super-duper/carousel/assistant/AI-V2.png"
+          alt="" />
+        <img
+          class="carousel-image"
+          src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/front-static/pages/product/super-duper/carousel/calendar.png"
+          alt="" />
+        <img
+          class="carousel-image"
+          src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/front-static/pages/product/super-duper/carousel/sites.png"
+          alt="" />
+      </div>
+    </main>
+    <br />
+    <main class="buts mt-[50rem] justify-center flex">
+      <button
+        class="p-2 pl-4 pr-4 rounded-lg bg-gray-100 hover:bg-gray-200 flex ml-2">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJib29rT3BlbiIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iMjJweCIgaGVpZ2h0PSIyMnB4IiBzdHlsZT0id2lkdGg6IDEwMCU7IGhlaWdodDogMTAwJTsgZGlzcGxheTogYmxvY2s7IGZpbGw6IGluaGVyaXQ7IGZsZXgtc2hyaW5rOiAwOyI+PHBhdGggZD0iTTIxIDQwLjg2SDYuMDljLTEuMDggMC0xLjk4LS45LTEuOTgtMS45OFYyMC4yMmMwLTEuMTcuNi0xLjgzIDEuNzQtMS44M2guOXYtMy4zNkg0Ljg5Yy0yLjQ5IDAtNC41IDIuMDEtNC41IDQuNXYyMC4yNWMwIDIuNDkgMi4wMSA0LjUgNC41IDQuNUgyMXYtMy40MlpNNDMuMTQgMTVoLTEuODZ2My4zNmguOTljMS4wOCAwIDEuNjIuNjMgMS42MiAxLjYydjE4LjkzYzAgMS4wOC0uODcgMS45OC0xLjk4IDEuOThIMjd2My4zNmgxNi4xNGMyLjQ5IDAgNC41LTIuMDEgNC41LTQuNVYxOS41YzAtMi40OS0yLjAxLTQuNS00LjUtNC41WiIgZmlsbD0iY3VycmVudENvbG9yIi8+PHBhdGggZD0iTTM5LjM5IDQuNWMtNS4xOS42OS0xMS40IDIuNzMtMTUuMzYgNS4xNi0zLjk5LTIuNDMtMTAuMi00LjQ3LTE1LjM2LTUuMTZ2MzAuNzVjNC4yNi41MSA4LjY3IDEuNSAxMy4xNCAzLjI0bDIuMjUuOTkgMi4yNS0uOTljNC40Ny0xLjc0IDguODgtMi43NiAxMy4xNC0zLjI0VjQuNWgtLjA2Wk0xMy4xNCAzMS44OVY5LjY5YzMuMjEuNTcgNi45MyAyLjAxIDguNjQgMy4zOXYyMS4yNGMtMi40OS0xLjAyLTUuOTctMS45NS04LjY0LTIuNDNabTIxLjc1IDBjLTIuNjQuNDgtNi4xNSAxLjQxLTguNjQgMi40M1YxMy4wOGMxLjY4LTEuNDEgNS40My0yLjgyIDguNjQtMy4zOXYyMi4yWiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+"
+          alt=""
+          class="mr-3" />
+        Wikis
+      </button>
+      <button
+        class="p-2 pl-4 pr-4 rounded-lg bg-gray-100 hover:bg-gray-200 flex ml-2">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJkb2MiIHZpZXdCb3g9IjAgMCA0OSA0OSIgd2lkdGg9IjIycHgiIGhlaWdodD0iMjJweCIgc3R5bGU9IndpZHRoOiAxMDAlOyBoZWlnaHQ6IDEwMCU7IGRpc3BsYXk6IGJsb2NrOyBmaWxsOiBpbmhlcml0OyBmbGV4LXNocmluazogMDsiPjxwYXRoIGQ9Im00MC4yMiAxNC41MTItMTIuMzMtOS45OWMtLjcyLS42LTEuNjUtLjkzLTIuNjEtLjkzSDExLjM2Yy0yLjI4IDAtNC4xMSAxLjgzLTQuMTEgNC4xMXYzMy43OGMwIDIuMjggMS44NiA0LjExIDQuMTEgNC4xMWgyNi4yOGMyLjI4IDAgNC4xMS0xLjgzIDQuMTEtNC4xMXYtMjMuNzZjMC0xLjIzLS41Ny0yLjQzLTEuNTMtMy4yMVptLTEzLjExLTYuODEgMTAuMzggOS4wNmMuNDIuMzYuMTggMS4wNS0uMzkgMS4wNWgtOC44OGMtLjYgMC0xLjExLS40OC0xLjExLTEuMTF2LTlabTguODUgMzMuNzVIMTMuMDFjLS42OSAwLTEuMjYtLjU3LTEuMjYtMS4yOXYtMzEuMmMwLS42OS41Ny0xLjI2IDEuMjYtMS4yNmgxMC4zNXYxMC4xNGMwIDIuMDcgMS42OCAzLjc1IDMuNzUgMy43NWgxMC4xMXYxOC42YzAgLjY5LS41NyAxLjI2LTEuMjYgMS4yNloiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxwYXRoIGQ9Ik0xNy43NSAyNy4yMzJoMTMuNU0xNy43NSAzNC40MDJoMTMuNSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMS44MjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg=="
+          alt=""
+          class="mr-3" />
+        Docs
+      </button>
+      <button
+        class="p-2 pl-4 pr-4 rounded-lg bg-gray-100 hover:bg-gray-200 flex ml-2">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIycHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDY0IDY0IiB3aWR0aD0iMjJweCIgY2xhc3M9Ik5vdGlvbkljb25TdmdXcmFwcGVyX2ljb25fX0luMXVDIj48ZGVmcyBmaWxsPSJjdXJyZW50Q29sb3IiLz48cGF0aCBkPSJtMzYsMzJjMCwyLjIxLTEuNzksNC00LDRzLTQtMS43OS00LTQsMS43OS00LDQtNCw0LDEuNzksNCw0Wm0yMCwwYzAsMTMuMjUtMTAuNzUsMjQtMjQsMjRzLTI0LTEwLjc1LTI0LTI0LDEwLjc1LTI0LDI0LTI0LDI0LDEwLjc1LDI0LDI0Wm0tNiwwYzAtOS45NC04LjA2LTE4LTE4LTE4cy0xOCw4LjA2LTE4LDE4LDguMDYsMTgsMTgsMTgsMTgtOC4wNiwxOC0xOFptLTQsMGMwLDcuNzMtNi4yNywxNC0xNCwxNHMtMTQtNi4yNy0xNC0xNCw2LjI3LTE0LDE0LTE0LDE0LDYuMjcsMTQsMTRabS02LDBjMC00LjQyLTMuNTgtOC04LThzLTgsMy41OC04LDgsMy41OCw4LDgsOCw4LTMuNTgsOC04WiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+"
+          alt=""
+          class="mr-3" />
+        Projects
+      </button>
+      <button
+        class="p-2 pl-4 pr-4 rounded-lg bg-gray-100 hover:bg-gray-200 flex ml-2">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJhc3Npc3RhbnRGYWNlIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHdpZHRoPSIyMnB4IiBoZWlnaHQ9IjIycHgiIHN0eWxlPSJ3aWR0aDogMTAwJTsgaGVpZ2h0OiAxMDAlOyBkaXNwbGF5OiBibG9jazsgZmlsbDogaW5oZXJpdDsgZmxleC1zaHJpbms6IDA7Ij48cGF0aCBmaWxsPSIjMDAwMDAwIiBzdHJva2U9IiMwMDAwMDAiIGQ9Ik0xMy45MSA4Ljg2MWEuNzUuNzUgMCAxIDEtMS40OC0uMjQuNzUuNzUgMCAwIDEgMS40OC4yNFpNNy4zMjEgNy43OTNhLjc1Ljc1IDAgMSAxLTEuNDgtLjI0Ljc1Ljc1IDAgMCAxIDEuNDguMjRaIi8+PHBhdGggc3Ryb2tlPSIjMDAwMDAwIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTcuMjMzIDUuNjU2YTMuNDkzIDMuNDkzIDAgMCAwLTYuMDEyLS4wMzFMNC45OSAxNi4wMjdsNS40MTIuODc3TTkuNDcgMy45MzVhMy40OTQgMy40OTQgMCAwIDAtNC45NjktLjMxNyIvPjwvc3ZnPg=="
+          alt=""
+          class="mr-3" />
+        AI
+      </button>
+      <button
+        class="p-2 pl-4 pr-4 rounded-lg bg-gray-100 hover:bg-gray-200 flex ml-2">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIycHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDY0IDY0IiB3aWR0aD0iMjJweCIgY2xhc3M9Ik5vdGlvbkljb25TdmdXcmFwcGVyX2ljb25fX0luMXVDIj48ZGVmcyBmaWxsPSJjdXJyZW50Q29sb3IiLz48cGF0aCBkPSJtNDgsMTJ2LTZoLTZ2NmgtMjB2LTZoLTZ2NmgtOHY0MGg0OFYxMmgtOFptMiwzNUgxNHYtMTloMzZ2MTlaIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4="
+          alt=""
+          class="mr-3" />
+        Calendar
+      </button>
+      <button
+        class="p-2 pl-4 pr-4 rounded-lg bg-gray-100 hover:bg-gray-200 flex ml-2">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIycHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDY0IDY0IiB3aWR0aD0iMjJweCIgY2xhc3M9Ik5vdGlvbkljb25TdmdXcmFwcGVyX2ljb25fX0luMXVDIj48ZGVmcyBmaWxsPSJjdXJyZW50Q29sb3IiLz48cGF0aCBkPSJtNDgsMTJ2LTZoLTZ2NmgtMjB2LTZoLTZ2NmgtOHY0MGg0OFYxMmgtOFptMiwzNUgxNHYtMTloMzZ2MTlaIiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4="
+          alt=""
+          class="mr-3" />
+        Sites
+      </button>
+    </main>
+    <br />
+    <main class="flex ml-32 mt-32">
+      <div class="lf">
+        <h2 class="text-7xl font-bold">
+          Build perfect <br />
+          docs, together.
+        </h2>
+        <h3 class="text-xl font-semibold text-gray-500 mt-4">
+          Capture your ideas, get feedback from teammates, and ask AI to <br />
+          add the finishing touches.
+        </h3>
+        <button
+          class="text-blue-500 mt-4 font-bold hover:underline underline-offset-2">
+          Explore docs & notes→
+        </button>
+      </div>
+      <div class="rt flex ml-32 mt-24">
+        <section class="1">
+          <img
+            src="./Components/image copy 18.png"
+            alt=""
+            width="80px"
+            style="filter: invert(1)" />
+          <h2 class="font-bold">Building blocks</h2>
+          <h3 class="text-gray-500">
+            100+ content types to <br />
+            communicate any idea.
+          </h3>
+        </section>
+        <section class="ml-4">
+          <img src="./Components/image copy 24.png" alt="" width="80px" />
+          <h2 class="font-bold">Collaborative tools</h2>
+          <h3 class="text-gray-500">
+            Built for teams to share, <br />
+            suggest, and comment.
+          </h3>
+        </section>
+        <section class="ml-4">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJhc3Npc3RhbnRGYWNlIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHN0eWxlPSJ3aWR0aDoxMDAlO2hlaWdodDoxMDAlO2Rpc3BsYXk6YmxvY2s7ZmlsbDppbmhlcml0O2ZsZXgtc2hyaW5rOjAiPjxwYXRoIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTEzLjkxIDguODYxYS43NS43NSAwIDEgMS0xLjQ4LS4yNC43NS43NSAwIDAgMSAxLjQ4LjI0Wk03LjMyMSA3Ljc5M2EuNzUuNzUgMCAxIDEtMS40OC0uMjQuNzUuNzUgMCAwIDEgMS40OC4yNFoiLz48cGF0aCBzdHJva2U9IiMwMDAwMDAiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0xNy4yMzMgNS42NTZhMy40OTMgMy40OTMgMCAwIDAtNi4wMTItLjAzMUw0Ljk5IDE2LjAyN2w1LjQxMi44NzdNOS40NyAzLjkzNWEzLjQ5NCAzLjQ5NCAwIDAgMC00Ljk2OS0uMzE3Ii8+PC9zdmc+"
+            alt=""
+            width="80px"
+            class="border rounded-full border-black p-2" />
+          <h2 class="font-bold">AI-assisted</h2>
+          <h3 class="text-gray-500">
+            Edit, draft, translate. <br />
+            Ask and AI will help.
+          </h3>
+        </section>
+      </div>
+    </main>
+    <br />
+    <img
+      class="mt-20 ml-32"
+      src="WhatsApp Image 2024-10-31 at 18.39.04_47a90a48.jpg"
+      alt=""
+      width="1300px" />
+    <br />
+    <main class="flex ml-32 mt-32">
+      <div class="lf">
+        <h2 class="text-7xl font-bold">
+          Your workflow. <br />
+          Your way.
+        </h2>
+        <h3 class="text-xl font-semibold text-gray-500 mt-4">
+          All your projects, goals, calendars, roadmaps, and more—in one <br />
+          tool—personalized to how you and your team work.
+        </h3>
+        <button
+          class="text-blue-500 mt-4 font-bold hover:underline underline-offset-2">
+          Explore projects→
+        </button>
+      </div>
+      <div class="rt flex ml-32 mt-24">
+        <section class="1">
+          <img src="./Components/image copy 25.png" alt="" width="80px" />
+          <h2 class="font-bold">Task and to-dos</h2>
+          <h3 class="text-gray-500">
+            Tackle any project, big <br />
+            or small.
+          </h3>
+        </section>
+        <section class="ml-4">
+          <img
+            src="./Components/image copy 15.png"
+            alt=""
+            width="80px"
+            style="filter: invert(1)" />
+          <h2 class="font-bold">Custom views</h2>
+          <h3 class="text-gray-500">
+            Visualize work in any <br />
+            format, from calendars <br />
+            to boards.
+          </h3>
+        </section>
+        <section class="ml-4">
+          <img
+            src="./Components/image copy 26.png"
+            alt=""
+            width="80px"
+            class="border rounded-full border-black p-2" />
+          <h2 class="font-bold">Automations</h2>
+          <h3 class="text-gray-500">
+            Put tedious tasks on <br />
+            autopilot.
+          </h3>
+        </section>
+      </div>
+    </main>
+    <br />
+    <img class="ml-32 mt-20" src="./Components/image copy 27.png" alt="" width="1300px" />
+    <main class="flex ml-32 mt-32">
+      <div class="lf">
+        <h2 class="text-7xl font-bold">
+          Find everything. <br />
+          Instantly.
+        </h2>
+        <h3 class="text-xl font-semibold text-gray-500 mt-4">
+          No more endless searching. Our built-in AI finds what you're <br />
+          looking for, whether its stored in Notion or one of your other apps.
+        </h3>
+        <button
+          class="text-blue-500 mt-4 font-bold hover:underline underline-offset-2">
+          Explore knowledge management→
+        </button>
+      </div>
+      <div class="rt flex ml-32 mt-24">
+        <section class="1">
+          <img src="./Components/image copy 28.png" alt="" width="80px" />
+          <h2 class="font-bold">Teamspaces</h2>
+          <h3 class="text-gray-500">
+            Dedicated spaces for <br />
+            every team & project.
+          </h3>
+        </section>
+        <section class="ml-4">
+          <img
+            src="./Components/image copy 29.png"
+            alt=""
+            width="80px"
+            style="filter: invert(1)" />
+          <h2 class="font-bold">Integrations</h2>
+          <h3 class="text-gray-500">
+            Connected to all your <br />
+            other tools.
+          </h3>
+        </section>
+        <section class="ml-4">
+          <img
+            src="./Components/image copy 30.png"
+            alt=""
+            width="80px"
+            class="border rounded-full border-black p-2" />
+          <h2 class="font-bold">Just ask AI</h2>
+          <h3 class="text-gray-500">
+            Trusted answers across <br />
+            your apps.
+          </h3>
+        </section>
+      </div>
+    </main>
+    <br />
+    <img src="./Components/image copy 31.png" alt="" width="1300px" class="mt-20 ml-32" />
+    <img
+      src="./Components/image copy 32.png"
+      alt=""
+      width="1300px"
+      class="mt-8 ml-32" /><br />
+    <main class="flex ml-32 mt-20">
+      <div class="lf">
+        <h2 class="text-7xl font-bold">Get a brain boost.</h2>
+        <h3 class="text-xl font-semibold text-gray-500 mt-4">
+          Built right into your workspace, Notion AI is ready to brainstorm,
+          <br />
+          summarize, help you write, and find what you’re looking for.
+        </h3>
+        <button
+          class="text-blue-500 mt-4 font-bold hover:underline underline-offset-2">
+          Try Notion AI→
+        </button>
+      </div>
+      <div class="rt flex ml-32 mt-24">
+        <section class="1">
+          <img
+            src="./Components/image copy 33.png"
+            alt=""
+            width="80px"
+            style="transform: rotate(180deg); filter: invert(1)" />
+          <h2 class="font-bold">Instant answers</h2>
+          <h3 class="text-gray-500">
+            Ask any question about <br />
+            a team’s docs and <br />
+            projects.
+          </h3>
+        </section>
+        <section class="ml-4">
+          <img
+            src="./Components/image copy 34.png"
+            alt=""
+            width="80px"
+            style="filter: invert(1); transform: rotate(80deg)" />
+          <h2 class="font-bold">Personalized editor</h2>
+          <h3 class="text-gray-500">
+            Generate content that’s <br />
+            always relevant.
+          </h3>
+        </section>
+        <section class="ml-4">
+          <img
+            src="./Components/image copy 35.png"
+            alt=""
+            width="80px"
+            class="border rounded-full border-black p-2" />
+          <h2 class="font-bold">AI connectors beta</h2>
+          <h3 class="text-gray-500">
+            Access info from Slack, <br />
+            Google Drive and more, <br />
+            right inside Notion.
+          </h3>
+        </section>
+      </div>
+    </main>
+    <br />
+    <img src="./Components/image copy 36.png" alt="" width="1300px" class="ml-32 mt-20" />
+    <div class="ml-32 mt-20">
+      <h2 class="text-7xl font-bold">
+        Start with a template. <br />
+        Build anything.
+      </h2>
+      <br />
+      <button
+        class="text-blue-500 mt-4 font-bold hover:underline underline-offset-2">
+        Browse all templates→
+      </button>
+    </div>
+    <main class=" mt-4 flex justify-evenly">
+      <div>
+        <button class="border pl-8 pr-[] rounded-xl pt-10 hover:bg-[#f6f5f4]">
+          <img src="./Components/image copy 37.png" alt="" width="50px" /><br />
+          <h2 class="text-left pb-4 text-xl font-bold">Company Wiki →</h2>
+          <img
+            src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/front-static/pages/product/super-duper/wiki-template.png"
+            alt=""
+            width="600px" />
+        </button>
+      </div>
+      <div>
+        <section class="flex -ml-5" >
+          <button class="p-8 border rounded-xl pl-8 pr-8 hover:bg-[#f6f5f4]">
+            <img
+              src="./Components/image copy 38.png"
+              alt=""
+              width="50px"
+              class="ml-10 mt-2" />
+            <br />
+            <h2 class="font-bold">Project Roadmap →</h2>
+          </button>
+          <button
+            class="p-8 border rounded-xl pl-8 pr-16 hover:bg-[#f6f5f4] ml-5">
+            <img
+              src="./Components/image copy 39.png"
+              alt=""
+              width="50px"
+              class="ml-10 mt-2" />
+            <br />
+            <h2 class="font-bold ml-10">OKRs →</h2>
+          </button>
+        </section>
+      </div>
+    </main>
+      <div class="ml-[58rem] -mt-[23rem]">
+        <section class="flex">
+          <button class="p-8 border rounded-xl pl-[3rem] pr-[2.5rem] hover:bg-[#f6f5f4]">
+            <img
+              src="./Components/image copy 40.png"
+              alt=""
+              width="50px"
+              class="ml-10 mt-2" />
+            <br />
+            <h2 class="font-bold">Meeting Notes→</h2>
+          </button>
+          <button
+            class="p-8 border rounded-xl pl-8 pr-8 hover:bg-[#f6f5f4] ml-5">
+            <img
+              src="./Components/image copy 41.png"
+              alt=""
+              width="50px"
+              class="ml-10 mt-2" />
+            <br />
+            <h2 class="font-bold ml-2">Vaction Planner→</h2>
+          </button>
+        </section>
+      </div>
+
+      <div class="ml-[58rem] mt-3">
+        <section class="flex">
+          <button class="p-8 border rounded-xl pl-8 pr-8 hover:bg-[#f6f5f4]">
+            <img
+              src="./Components/image copy 42.png"
+              alt=""
+              width="50px"
+              class="ml-10 mt-2" />
+            <br />
+            <h2 class="font-bold">Editorial Calendar→</h2>
+          </button>
+          <button
+            class="p-8 border rounded-xl pl-8 pr-[3rem] hover:bg-[#f6f5f4] ml-5">
+            <img
+              src="./Components/image copy 43.png"
+              alt=""
+              width="50px"
+              class="ml-10 mt-2" />
+            <br />
+            <h2 class="font-bold ml-2">Habit Trackers→</h2>
+          </button>
+        </section>
+      </div>
+    </main>
+    <br>
+    <div class="ml-32 mt-20">
+            <h2 class="text-7xl font-bold">Everything you need <br> to do your best work..</h2>
+    </div>
+    <section class="ml-32 mt-20 flex justify-between">
+      <button class="text-left">
+        <img src="./Components/image copy 40.png" alt="" width="50px">
+        <h2 class="font-bold hover:text-gray-500">Docs→</h2>
+        <h3 class="text-gray-500">Build any pages, communicate <br> any idea.</h3>
+      </button>
+      <button class="text-left">
+        <img src="./Components/image copy 37.png" alt="" width="50px">
+        <h2 class="font-bold hover:text-gray-500">Wiki→</h2>
+        <h3 class="text-gray-500">One home base for all your <br>knowledge.
+        </h3>
+      </button>
+      <button class="text-left">
+        <img src="./Components/image copy 39.png" alt="" width="50px">
+        <h2 class="font-bold hover:text-gray-500">Projects→</h2>
+        <h3 class="text-gray-500">Manage any project from <br> begining to end.</h3>
+      </button>
+      <button class="text-left mr-32">
+        <img src="./Components/image copy 40.png" alt="" width="50px">
+        <h2 class="font-bold hover:text-gray-500">Notion AI→</h2>
+        <h3 class="text-gray-500">Finds what you need. Does <br> what you need.</h3>
+      </button>
+    </section>
+    <section class="ml-32 mt-20 flex justify-between">
+      <button class="text-left">
+        <img src="./Components/image copy 15.png" alt="" width="50px">
+        <h2 class="font-bold hover:text-gray-500">Calendar→</h2>
+        <h3 class="text-gray-500">See all your commitments in <br> one place.</h3>
+      </button>
+      <button class="text-left">
+        <img src="./Components/image copy 44.png" alt="" width="50px">
+        <h2 class="font-bold hover:text-gray-500">Goals→</h2>
+        <h3 class="text-gray-500">Track progress towards what's <br> most important.
+        </h3>
+      </button>
+      <button class="text-left">
+        <img src="./Components/image copy 45.png" alt="" width="50px">
+        <h2 class="font-bold hover:text-gray-500">Sites→</h2>
+        <h3 class="text-gray-500">Make any page a website in <br> minutes.</h3>
+      </button>
+      <button class="text-left mr-32">
+        <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=256/front-static/illustrated-icons/shapes1.png" alt="" width="50px">
+        <h2 class="font-bold hover:text-gray-500">Templates→</h2>
+        <h3 class="text-gray-500">Get started with one of <br> 20,000+ templates.</h3>
+      </button>
+    </section>
+    <div class="ml-32 mt-20">
+            <h2 class="text-7xl font-bold">Get started.</h2>
+    </div>
+    <main class=" mt-20 ml-20 flex justify-evenly">
+      <div class="border pl-8  rounded-xl pt-10 bg-[#f6f5f4]">
+          <h2 class="text-left pb-4 text-4xl font-bold">Notion</h2>
+          <section class="flex pb-5">
+          <button class="rounded-xl p-2 text-white pl-4 pr-4 bg-blue-500 hover:bg-blue-800">Try it free</button>
+          <button class="rounded-xl p-2 text-black pl-4 pr-4 bg-white hover:bg-gray-200 ml-4">Download now</button></section>
+          <img
+          src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/front-static/pages/product/super-duper/download/notion-app.png"
+            alt=""
+            width="600px" />
+      </div>
+      <div class="border pl-8  rounded-xl -ml-16  pt-10 bg-[#f6f5f4]">
+          <h2 class="text-left pb-4 text-4xl font-bold">Notion Calendar</h2>
+          <section class="flex pb-5">
+          <button class="rounded-xl p-2 text-white pl-4 pr-4 bg-blue-500 hover:bg-blue-800">Try it free</button>
+          <button class="rounded-xl p-2 text-black pl-4 pr-4 bg-white hover:bg-gray-200 ml-4">Download now</button></section>
+          <img
+          src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/front-static/pages/product/super-duper/download/notion-calendar.png"
+            alt=""
+            width="600px" />
+      </div>
+    </main>
+    <p class="border mt-8 ml-10 mr-10 "></p>
+    <footer class="mt-20 ml-32 flex justify-evenly mb-12 mr-32">
+      <div>
+        <section class="flex">
+      <img
+          src="https://logos-world.net/wp-content/uploads/2024/08/Notion-Logo.png"
+          alt=""
+          width="50px"
+          class="size-8 w-12 mt-1 hover:cursor-pointer" />
+        <h1 class="ml-2 text-4xl font-bold hover:cursor-pointer">Notion</h1></section>
+        <section class="flex mt-4 ml-5"> 
+      <img  src="Social-Media-Svg/instagram.png" alt="" width="20px">  
+      <img class="ml-2" src="Social-Media-Svg/fi-brands-telegram.svg" alt="" width="20px">  
+      <img class="ml-2" src="Social-Media-Svg/fi-brands-linkedin.svg" alt="" width="20px">  
+      <img class="ml-2" src="Social-Media-Svg/facebook.png" alt="" width="20px">  
+      <img class="ml-2" src="Social-Media-Svg/youtube.png" alt="" width="20px">  </section>
+      
+      <button class="border mt-20 font-bold  flex rounded-xl p-2 pl-4 pr-4 hover:bg-[#f6f5f4]"><img class="mr-3" src="image copy 46.png" alt="" width="20px">English <img src="image copy 3.png" alt="" width="10px" class="ml-2 mt-2 border"> </button>
+      <h2 class="text-sm hover:underline decoration-blue-800 font-light text-[#f6dec6] mt-4 underline-offset-2">Do Not Sell or Share My Info</h2>
+      <h2 class="text-sm hover:cursor-pointer text-[#f6dec6] font-light">Cookie Settings</h2>
+      <h2 class="text-sm mt-4 font-semibold">© 2024 Notion Labs, Inc.</h2>
+      </div>
+      <div>
+        <ul>
+          <li class="text-lg font-bold">Company</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">About us</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569]  font-semibold">Careers</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569]  font-semibold">Security</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569]  font-semibold">Status</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569]  font-semibold">Terms & privacy</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li class="text-lg font-bold">Download</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">iOS & Android</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">Mac & Windows</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">Calendar</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">Web Clipper</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li class="text-lg font-bold">Resources</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">Help center</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">Pricing</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">Blog</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">Community</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">Integrations</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">Templates</li>
+          <li class="text-sm mt-2 decoration-blue-500 hover:underline underline-offset-2 hover:cursor-pointer text-[#475569] font-semibold">Affiliates</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li class="text-lg font-bold">Notion for</li>
+          <li class="text-sm mt-2 hover:cursor-pointer decoration-blue-500 hover:underline underline-offset-2 text-[#475569] font-semibold">Enterprice</li>
+          <li class="text-sm mt-2 hover:cursor-pointer decoration-blue-500 hover:underline underline-offset-2 text-[#475569] font-semibold">Small business</li>
+          <li class="text-sm mt-2 hover:cursor-pointer decoration-blue-500 hover:underline underline-offset-2 text-[#475569] font-semibold">Personal</li>
+          <li class="mt-20 cursor-pointer font-bold hover:underline underline-offset-2 hover:text-blue-500">Explore more→ </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script src="notion.js"></script>
+</html>

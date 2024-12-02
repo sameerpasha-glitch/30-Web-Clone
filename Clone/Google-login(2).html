@@ -1,0 +1,59 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>google.com</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-gray-300">
+    <main class="ml-[22rem] mr-[22rem]">
+    <main class="flex justify-between bg-white  p-10 rounded-xl mt-32">
+      <section>
+        <img src="Social-Media-Svg/fi-brands-google.svg" alt="" width="50px" />
+        <h2 class="mt-8 text-3xl">Sign in</h2>
+        <h3 class="mt-4">to continue to Gmail</h3>
+      </section>
+      <section class="mt-20">
+        <input id="pass" type="password" placeholder="Password" class="w-[20rem] border border-black placeholder:text-black p-1" /><br>    
+        <button
+          class="text-blue-400 mt-4  hover:underline underline-offset-2 decoration-black">
+          Forgot password?
+        </button>
+        
+        <div class="flex mt-8 ml-44">
+        
+        <button id="sigin"
+          class="p-2 pl-4 pr-4 bg-blue-400 text-white hover:text-blue-400 hover:bg-black rounded-full ml-4">
+          Sign in
+        </button>
+      </section>
+      </div>
+    </main>
+    <div class="flex justify-between mt-2">
+        <button class="flex ml-2 hover:underline underline-offset-2 decoration-black">English (United States) <img src="image copy 3.png" alt="" width="20px" class="ml-4 border rounded-full "></button>
+        <ul class="flex mr-2">
+            <li class="ml-4 hover:underline underline-offset-2 decoration-black cursor-pointer">Help</li>
+            <li class="ml-4 hover:underline underline-offset-2 decoration-black cursor-pointer">Privacy</li>
+            <li class="ml-4 hover:underline underline-offset-2 decoration-black cursor-pointer"> Terms</li>
+        </ul>
+    </div>
+    </main>
+    <script>
+        const Pass = document.getElementById('pass');
+        const Sign = document.getElementById('sigin');
+        Sign.addEventListener("click",()=>{
+            if(Pass.value =="6363076826"){
+                window.location.href = "http://127.0.0.1:5500/Gmail.html";        
+            }
+            else{
+                alert("Wrong Password")
+                 window.location.reload();
+            }
+        })
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,97 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Website Cloning Challenge</title>
+    <link rel="stylesheet" href="daily.css" />
+    <style>
+      /* Ensure #website element is visible */
+      #website {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Today's Website Cloning Challenge</h1>
+      <p id="website">Loading challenge...</p>
+      <!-- Default text to ensure visibility -->
+      <button id="nextButton">Show Next Challenge</button>
+      <footer>
+        <p>Challenge yourself to clone the website above!</p>
+      </footer>
+    </div>
+
+    <script>
+      /** @format */
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const websites = [
+          "https://www.twitter.com",
+          "https://www.facebook.com",
+          "https://mail.google.com",
+          "https://www.notion.so",
+          "https://docs.google.com",
+          "https://www.spotify.com",
+          "https://www.netflix.com",
+          "https://www.pinterest.com",
+          "https://www.airbnb.com",
+          "https://www.uber.com",
+          "https://www.trello.com",
+          "https://maps.google.com",
+          "https://www.instagram.com",
+          "https://www.slack.com",
+          "https://www.figma.com",
+          "https://www.zoom.us",
+          "https://web.whatsapp.com",
+          "https://www.twitch.tv",
+          "https://www.reddit.com",
+          "https://www.linkedin.com",
+          "https://www.medium.com",
+          "https://www.producthunt.com",
+          "https://www.kickstarter.com",
+          "https://www.shopify.com",
+          "https://www.eventbrite.com",
+          "https://www.asana.com",
+          "https://news.ycombinator.com",
+          "https://www.coursera.org",
+          "https://www.tinder.com",
+          "https://www.discord.com",
+        ];
+
+        // A simple seed-based random number generator
+        function seededRandom(seed) {
+          const x = Math.sin(seed) * 10000;
+          return x - Math.floor(x);
+        }
+
+        function getTodaysChallenge() {
+          const today = new Date();
+          const seed =
+            today.getFullYear() * 1000 +
+            today.getMonth() * 100 +
+            today.getDate(); // Create a seed based on today's date
+          const randomIndex = Math.floor(seededRandom(seed) * websites.length); // Use the seed to generate a random index
+          return websites[randomIndex];
+        }
+
+        function displayChallenge() {
+          const challengeWebsite = getTodaysChallenge();
+          document.getElementById("website").innerText = challengeWebsite;
+        }
+
+        document
+          .getElementById("nextButton")
+          .addEventListener("click", displayChallenge);
+
+        // Display the challenge on page load
+        displayChallenge();
+      });
+    </script>
+  </body>
+</html>

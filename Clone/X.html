@@ -1,0 +1,756 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home / X</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-black text-white">
+    <main class="flex pt-2">
+      <section class="ml-32 text-xl fixed z-100">
+        <img
+          src="https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png"
+          alt=""
+          width="50px"
+          class="hover:bg-gray-600 rounded-full cursor-pointer p-1" />
+        <button
+          class="hover:border border-gray-600 rounded-full p-1 pl-4 font-bold pr-4 hover: hover:bg-gray-800 mt-2 flex">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMjEuNTkxIDcuMTQ2TDEyLjUyIDEuMTU3Yy0uMzE2LS4yMS0uNzI0LS4yMS0xLjA0IDBsLTkuMDcxIDUuOTljLS4yNi4xNzMtLjQwOS40NTYtLjQwOS43NTd2MTMuMTgzYzAgLjUwMi40MTguOTEzLjkzLjkxM0g5LjE0Yy41MSAwIC45MjktLjQxLjkyOS0uOTEzdi03LjA3NWgzLjkwOXY3LjA3NWMwIC41MDIuNDE3LjkxMy45MjguOTEzaDYuMTY1Yy41MTEgMCAuOTI5LS40MS45MjktLjkxM1Y3LjkwNGMwLS4zMDEtLjE1OC0uNTg0LS40MDgtLjc1OHoiLz48L2c+PC9zdmc+"
+            alt=""
+            width="30px"
+            class="mr-3" />
+          Home
+        </button>
+        <button
+          class="hover:border border-gray-600 rounded-full p-1 pl-4 flex pr-4 hover: hover:bg-gray-800 mt-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMTAuMjUgMy43NWMtMy41OSAwLTYuNSAyLjkxLTYuNSA2LjVzMi45MSA2LjUgNi41IDYuNWMxLjc5NSAwIDMuNDE5LS43MjYgNC41OTYtMS45MDQgMS4xNzgtMS4xNzcgMS45MDQtMi44MDEgMS45MDQtNC41OTYgMC0zLjU5LTIuOTEtNi41LTYuNS02LjV6bS04LjUgNi41YzAtNC42OTQgMy44MDYtOC41IDguNS04LjVzOC41IDMuODA2IDguNSA4LjVjMCAxLjk4Ni0uNjgyIDMuODE1LTEuODI0IDUuMjYybDQuNzgxIDQuNzgxLTEuNDE0IDEuNDE0LTQuNzgxLTQuNzgxYy0xLjQ0NyAxLjE0Mi0zLjI3NiAxLjgyNC01LjI2MiAxLjgyNC00LjY5NCAwLTguNS0zLjgwNi04LjUtOC41eiIvPjwvZz48L3N2Zz4="
+            alt=""
+            width="30px"
+            class="mr-3" />
+          Explore
+        </button>
+        <button
+          class="hover:border border-gray-600 rounded-full flex p-1 pl-4 pr-4 hover: hover:bg-gray-800 mt-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMTkuOTkzIDkuMDQyQzE5LjQ4IDUuMDE3IDE2LjA1NCAyIDExLjk5NiAycy03LjQ5IDMuMDIxLTcuOTk5IDcuMDUxTDIuODY2IDE4SDcuMWMuNDYzIDIuMjgyIDIuNDgxIDQgNC45IDRzNC40MzctMS43MTggNC45LTRoNC4yMzZsLTEuMTQzLTguOTU4ek0xMiAyMGMtMS4zMDYgMC0yLjQxNy0uODM1LTIuODI5LTJoNS42NThjLS40MTIgMS4xNjUtMS41MjMgMi0yLjgyOSAyem0tNi44NjYtNGwuODQ3LTYuNjk4QzYuMzY0IDYuMjcyIDguOTQxIDQgMTEuOTk2IDRzNS42MjcgMi4yNjggNi4wMTMgNS4yOTVMMTguODY0IDE2SDUuMTM0eiIvPjwvZz48L3N2Zz4=
+"
+            alt=""
+            width="30px"
+            class="mr-3" />
+          Notifications
+        </button>
+        <button
+          class="hover:border border-gray-600 flex rounded-full p-1 pl-4 pr-4 hover: hover:bg-gray-800 mt-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMS45OTggNS41YzAtMS4zODEgMS4xMTktMi41IDIuNS0yLjVoMTVjMS4zODEgMCAyLjUgMS4xMTkgMi41IDIuNXYxM2MwIDEuMzgxLTEuMTE5IDIuNS0yLjUgMi41aC0xNWMtMS4zODEgMC0yLjUtMS4xMTktMi41LTIuNXYtMTN6bTIuNS0uNWMtLjI3NiAwLS41LjIyNC0uNS41djIuNzY0bDggMy42MzggOC0zLjYzNlY1LjVjMC0uMjc2LS4yMjQtLjUtLjUtLjVoLTE1em0xNS41IDUuNDYzbC04IDMuNjM2LTgtMy42MzhWMTguNWMwIC4yNzYuMjI0LjUuNS41aDE1Yy4yNzYgMCAuNS0uMjI0LjUtLjV2LTguMDM3eiIvPjwvZz48L3N2Zz4=
+    "
+            alt=""
+            width="30px"
+            class="mr-3" />
+          Messages
+        </button>
+        <button
+          class="hover:border flex border-gray-600 rounded-full p-1 pl-4 pr-4 hover: hover:bg-gray-800 mt-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxnIGNsaXAtcGF0aD0idXJsKCMwLWNsaXAwXzI1OTJfMjY5KSIgY2xpcC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTE4IDQuMUg2Yy0xLjA1IDAtMS45Ljg1LTEuOSAxLjl2MTJjMCAxLjA1Ljg1IDEuOSAxLjkgMS45aDEyYzEuMDUgMCAxLjktLjg1IDEuOS0xLjlWNmMwLTEuMDUtLjg1LTEuOS0xLjktMS45ek02IDJoMTJjMi4yMSAwIDQgMS43OSA0IDR2MTJjMCAyLjIxLTEuNzkgNC00IDRINmMtMi4yMSAwLTQtMS43OS00LTRWNmMwLTIuMjEgMS43OS00IDQtNHoiLz48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTYuNjggMTcuOGw4LjEwOC0xMS41aDIuNTMyTDkuMjEgMTcuOEg2LjY4eiIvPjwvZz48ZGVmcz48Y2xpcFBhdGggaWQ9IjAtY2xpcDBfMjU5Ml8yNjkiPjxyZWN0IGhlaWdodD0iMjAiIHJ4PSIxIiB3aWR0aD0iMjAiIHg9IjIiIHk9IjIiLz48L2NsaXBQYXRoPjwvZGVmcz48L2c+PC9zdmc+
+"
+            alt=""
+            width="30px"
+            class="mr-3" />
+
+          Grok
+        </button>
+        <button
+          class="hover:border border-gray-600 flex rounded-full p-1 pl-4 pr-4 hover: hover:bg-gray-800 mt-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNNCA0LjVDNCAzLjEyIDUuMTE5IDIgNi41IDJoMTFDMTguODgxIDIgMjAgMy4xMiAyMCA0LjV2MTguNDRsLTgtNS43MS04IDUuNzFWNC41ek02LjUgNGMtLjI3NiAwLS41LjIyLS41LjV2MTQuNTZsNi00LjI5IDYgNC4yOVY0LjVjMC0uMjgtLjIyNC0uNS0uNS0uNWh6Ii8+PC9nPjwvc3ZnPg==
+"
+            alt=""
+            width="30px"
+            class="mr-3" />
+
+          Bookmarks
+        </button>
+        <button
+          class="hover:border border-gray-600 flex rounded-full p-1 pl-4 pr-4 hover: hover:bg-gray-800 mt-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxwYXRoIGQ9Ik03LjUwMSAxOS45MTdMNy40NzEgMjFILjQ3MmwuMDI5LTEuMDI3Yy4xODQtNi42MTggMy43MzYtOC45NzcgNy04Ljk3Ny45NjMgMCAxLjk1LjIxMiAyLjg3LjY3Mi0uNDQ0LjQ3OC0uODUxIDEuMDMtMS4yMTIgMS42NTYtLjUwNy0uMjA0LTEuMDU0LS4zMjktMS42NTgtLjMyOS0yLjc2NyAwLTQuNTcgMi4yMjMtNC45MzggNi4wMDRINy41NmMtLjAyMy4zMDItLjA1LjU5OS0uMDU5LjkxN3ptMTUuOTk4LjA1NkwyMy41MjggMjFIOS40NzJsLjAyOS0xLjAyN2MuMTg0LTYuNjE4IDMuNzM2LTguOTc3IDctOC45NzdzNi44MTYgMi4zNTggNyA4Ljk3N3pNMjEuNDM3IDE5Yy0uMzY3LTMuNzgxLTIuMTctNi4wMDQtNC45MzgtNi4wMDRzLTQuNTcgMi4yMjMtNC45MzggNi4wMDRoOS44NzV6bS00LjkzOC05Yy0uNzk5IDAtMS41MjctLjI3OS0yLjExNi0uNzMtLjgzNi0uNjQtMS4zODQtMS42MzgtMS4zODQtMi43NyAwLTEuOTMgMS41NjctMy41IDMuNS0zLjVzMy41IDEuNTcgMy41IDMuNWMwIDEuMTMyLS41NDggMi4xMy0xLjM4NCAyLjc3LS41ODkuNDUxLTEuMzE3LjczLTIuMTE2Ljczem0tMS41LTMuNWMwIC44MjcuNjczIDEuNSAxLjUgMS41czEuNS0uNjczIDEuNS0xLjUtLjY3My0xLjUtMS41LTEuNS0xLjUuNjczLTEuNSAxLjV6TTcuNSAzQzkuNDMzIDMgMTEgNC41NyAxMSA2LjVTOS40MzMgMTAgNy41IDEwIDQgOC40MyA0IDYuNSA1LjU2NyAzIDcuNSAzem0wIDJDNi42NzMgNSA2IDUuNjczIDYgNi41UzYuNjczIDggNy41IDggOSA3LjMyNyA5IDYuNSA4LjMyNyA1IDcuNSA1eiIvPjwvZz48L3N2Zz4="
+            style="filter: invert(1)"
+            width="30px"
+            class="mr-3" />
+          Communities
+        </button>
+        <button
+          class="hover:border border-gray-600 flex rounded-full p-1 pl-4 pr-4 hover: hover:bg-gray-800 mt-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMTguMjQ0IDIuMjVoMy4zMDhsLTcuMjI3IDguMjYgOC41MDIgMTEuMjRIMTYuMTdsLTUuMjE0LTYuODE3TDQuOTkgMjEuNzVIMSU2OGw3LjczLTguODM1TDEuMjU0IDIuMjVIOHYuMDhsNC43MTMgNi4yMzF6TTcuMTYxIDE5LjUyaDF5MDI4TDcuMDg0IDQuMTI2SDUuMTF6Ii8+PC9nPjwvc3ZnPg==
+"
+            alt=""
+            width="30px"
+            class="mr-3" />
+
+          Premium
+        </button>
+        <button
+          class="hover:border border-gray-600 flex rounded-full p-1 pl-4 pr-4 hover: hover:bg-gray-800 mt-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxwYXRoIGQ9Ik03LjMyMyAyaDExLjQ0M2wtMyA1aDYuNjQ4TDYuNTg2IDIyLjgzIDcuODQ3IDE0SDIuNTIzbDQuOC0xMnptMS4zNTQgMmwtMy4yIDhoNC42NzZsLS43MzkgNS4xN0wxNy41ODYgOWgtNS4zNTJsMy01SDguNjc3eiIvPjwvZz48L3N2Zz4="
+            style="filter: invert(1)"
+            width="30px"
+            class="mr-3" />
+
+          Verified Orgs
+        </button>
+        <button
+          class="hover:border border-gray-600 flex rounded-full p-1 pl-4 pr-4 hover: hover:bg-gray-800 mt-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxwYXRoIGQ9Ik01LjY1MSAxOWgxMi42OThjLS4zMzctMS44LTEuMDIzLTMuMjEtMS45NDUtNC4xOUMxNS4zMTggMTMuNjUgMTMuODM4IDEzIDEyIDEzcy0zLjMxNy42NS00LjQwNCAxLjgxYy0uOTIyLjk4LTEuNjA4IDIuMzktMS45NDUgNC4xOXptLjQ4Ni01LjU2QzcuNjI3IDExLjg1IDkuNjQ4IDExIDEyIDExczQuMzczLjg1IDUuODYzIDIuNDRjMS40NzcgMS41OCAyLjM2NiAzLjggMi42MzIgNi40NmwuMTEgMS4xSDMuMzk1bC4xMS0xLjFjLjI2Ni0yLjY2IDEuMTU1LTQuODggMi42MzItNi40NnpNMTIgNGMtMS4xMDUgMC0yIC45LTIgMnMuODk1IDIgMiAyIDItLjkgMi0yLS44OTUtMi0yLTJ6TTggNmMwLTIuMjEgMS43OTEtNCA0LTRzNCAxLjc5IDQgNC0xLjc5MSA0LTQgNC00LTEuNzktNC00eiIvPjwvZz48L3N2Zz4="
+            alt=""
+            style="filter: invert(1)"
+            width="30px"
+            class="mr-3" />
+
+          Profile
+        </button>
+        <button
+          class="hover:border border-gray-600 flex rounded-full p-1 pl-4 pr-4 hover: hover:bg-gray-800 mt-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxwYXRoIGQ9Ik0zLjc1IDEyYzAtNC41NiAzLjY5LTguMjUgOC4yNS04LjI1czguMjUgMy42OSA4LjI1IDguMjUtMy42OSA4LjI1LTguMjUgOC4yNVMzLjc1IDE2LjU2IDMuNzUgMTJ6TTEyIDEuNzVDNi4zNCAxLjc1IDEuNzUgNi4zNCAxLjc1IDEyUzYuMzQgMjIuMjUgMTIgMjIuMjUgMjIuMjUgMTcuNjYgMjIuMjUgMTIgMTcuNjYgMS43NSAxMiAxLjc1em0tNC43NSAxMS41Yy42OSAwIDEuMjUtLjU2IDEuMjUtMS4yNXMtLjU2LTEuMjUtMS4yNS0xLjI1UzYgMTEuMzEgNiAxMnMuNTYgMS4yNSAxLjI1IDEuMjV6bTkuNSAwYy42OSAwIDEuMjUtLjU2IDEuMjUtMS4yNXMtLjU2LTEuMjUtMS4yNS0xLjI1LTEuMjUuNTYtMS4yNSAxLjI1LjU2IDEuMjUgMS4yNSAxLjI1ek0xMy4yNSAxMmMwIC42OS0uNTYgMS4yNS0xLjI1IDEuMjVzLTEuMjUtLjU2LTEuMjUtMS4yNS41Ni0xLjI1IDEuMjUtMS4yNSAxLjI1LjU2IDEuMjUgMS4yNXoiLz48L2c+PC9zdmc+"
+            alt=""
+            style="filter: invert(1)"
+            width="30px"
+            class="mr-3" />
+
+          More
+        </button>
+        <button
+          class="bg-indigo-500 rounded-full p-3 flex pl-20 pr-20 mt-2 hover:text-indigo-500 hover:bg-black hover:border border-indigo-500">
+          Post
+        </button>
+        <button class="mt-8 p-1 flex">
+          <img
+            src="./Components/image copy 5.png"
+            alt=""
+            style="filter: invert(1)"
+            width="40px"
+            class="mr-3 mt-2" />
+          Sameer Pasha <br /><span
+            ><img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLTF4dmxpNXQgci1kbm1yenMgci1ibndxaW0gci1scnZpYnIgci1tNnJncGQgci0xbmFvMzNpIj48Zz48cGF0aCBkPSJNMyAxMmMwLTEuMS45LTIgMi0yczIgLjkgMiAyLS45IDItMiAyLTItLjktMi0yem05IDJjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyem03IDBjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyeiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              style="filter: invert(1)"
+              class="ml-8 mt-5" /></span
+          ><br />
+          <span class="mt-8 -ml-[10rem] text-sm text-gray-600">
+            @SameerPasha27412</span
+          >
+        </button>
+      </section>
+      <p class="border ml-[30rem] border-gray-800 sticky"></p>
+      <section class="mid">
+        <div class="flex text-center border ml-[30rem]  border-gray-800 " id="mid" >
+        <p class="border border-gray-600"></p>
+          <button
+            class="p-2 pl-28 pr-28 hover:bg-gray-600">
+            For you
+          </button>
+          <button class="p-2 pl-28 pr-28 hover:bg-gray-600">Following</button>
+        <p class="border border-gray-600"></p>
+        </div>
+        <div class="flex text-center " >
+          <button
+            class="p-2 pl-24 pr-28 decoration-indigo-500 underline underline-offset-8 hover:bg-gray-600">
+            For you
+          </button>
+          <button class="p-2 pl-28 pr-28 hover:bg-gray-600">Following</button>
+        </div>
+        <p class="border border-gray-600" id="line"></p>
+        <br />
+        <div class="cmt1">
+          <div class="flex">
+            <img
+              src="./Components/image copy 5.png"
+              alt=""
+              style="filter: invert(1)"
+              width="40px"
+              class="ml-12 mr-2" />
+            What is happening?!
+          </div>
+          <br />
+          <section class="flex ml-24">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLXo4MGZ5diByLTE5d21uMDMiIHN0eWxlPSJjb2xvcjogcmdiKDI5LCAxNTUsIDI0MCk7Ij48Zz48cGF0aCBkPSJNMyA1LjVDMyA0LjExOSA0LjExOSAzIDUuNSAzaDEzQzE5Ljg4MSAzIDIxIDQuMTE5IDIxIDUuNXYxM2MwIDEuMzgxLTEuMTE5IDIuNS0yLjUgMi41aC0xM0M0LjExOSAyMSAzIDE5Ljg4MSAzIDE4LjV2LTEzek01LjUgNWMtLjI3NiAwLS41LjIyNC0uNS41djkuMDg2bDMtMyAzIDMgNS01IDMgM1Y1LjVjMC0uMjc2LS4yMjQtLjUtLjUtLjVoLTEzek0xOSAxNS40MTRsLTMtMy01IDUtMy0zLTMgM1YxOC41YzAgLjI3Ni4yMjQuNS41LjVoMTNjLjI3NiAwIC41LS4yMjQuNS0uNXYtMy4wODZ6TTkuNzUgN0M4Ljc4NCA3IDggNy43ODQgOCA4Ljc1cy43ODQgMS43NSAxLjc1IDEuNzUgMS43NS0uNzg0IDEuNzUtMS43NVMxMC43MTYgNyA5Ljc1IDd6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              style="filter: invert(1)"
+              class="mr-4 cursor-pointer" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLXo4MGZ5diByLTE5d21uMDMiIHN0eWxlPSJjb2xvcjogcmdiKDI5LCAxNTUsIDI0MCk7Ij48Zz48cGF0aCBkPSJNMyA1LjVDMyA0LjExOSA0LjEyIDMgNS41IDNoMTNDMTkuODggMyAyMSA0LjExOSAyMSA1LjV2MTNjMCAxLjM4MS0xLjEyIDIuNS0yLjUgMi41aC0xM0M0LjEyIDIxIDMgMTkuODgxIDMgMTguNXYtMTN6TTUuNSA1Yy0uMjggMC0uNS4yMjQtLjUuNXYxM2MwIC4yNzYuMjIuNS41LjVoMTNjLjI4IDAgLjUtLjIyNC41LS41di0xM2MwLS4yNzYtLjIyLS41LS41LS41aC0xM3pNMTggMTAuNzExVjkuMjVoLTMuNzR2NS41aDEuNDR2LTEuNzE5aDEuN1YxMS41N2gtMS43di0uODU5SDE4ek0xMS43OSA5LjI1aDEuNDR2NS41aC0xLjQ0di01LjV6bS0zLjA3IDEuMzc1Yy4zNCAwIC43Ny4xNzIgMS4wMi40M2wxLjAzLS44NmMtLjUxLS42MDEtMS4yOC0uOTQ1LTIuMDUtLjk0NUM3LjE5IDkuMjUgNiAxMC40NTMgNiAxMnMxLjE5IDIuNzUgMi43MiAyLjc1Yy44NSAwIDEuNTQtLjM0NCAyLjA1LS45NDV2LTIuMTQ5SDguMzh2MS4wMzJIOS40di41MTVjLS4xNy4wODYtLjQyLjE3Mi0uNjguMTcyLS43NiAwLTEuMzYtLjYwMi0xLjM2LTEuMzc1IDAtLjY4OC42LTEuMzc1IDEuMzYtMS4zNzV6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              style="filter: invert(1)"
+              class="mr-4 cursor-pointer" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLXo4MGZ5diByLTE5d21uMDMiIHN0eWxlPSJjb2xvcjogcmdiKDI5LCAxNTUsIDI0MCk7Ij48Zz48cGF0aCBkPSJNNiA1Yy0xLjEgMC0yIC44OTUtMiAycy45IDIgMiAyIDItLjg5NSAyLTItLjktMi0yLTJ6TTIgN2MwLTIuMjA5IDEuNzktNCA0LTRzNCAxLjc5MSA0IDQtMS43OSA0LTQgNC00LTEuNzkxLTQtNHptMjAgMUgxMlY2aDEwdjJ6TTYgMTVjLTEuMSAwLTIgLjg5NS0yIDJzLjkgMiAyIDIgMi0uODk1IDItMi0uOS0yLTItMnptLTQgMmMwLTIuMjA5IDEuNzktNCA0LTRzNCAxLjc5MSA0IDQtMS43OSA0LTQgNC00LTEuNzkxLTQtNHptMjAgMUgxMnYtMmgxMHYyek03IDdjMCAuNTUyLS40NSAxLTEgMXMtMS0uNDQ4LTEtMSAuNDUtMSAxLTEgMSAuNDQ4IDEgMXoiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              style="filter: invert(1)"
+              class="mr-4 cursor-pointer" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLXo4MGZ5diByLTE5d21uMDMiIHN0eWxlPSJjb2xvcjogcmdiKDI5LCAxNTUsIDI0MCk7Ij48Zz48cGF0aCBkPSJNOCA5LjVDOCA4LjExOSA4LjY3MiA3IDkuNSA3UzExIDguMTE5IDExIDkuNSAxMC4zMjggMTIgOS41IDEyIDggMTAuODgxIDggOS41em02LjUgMi41Yy44MjggMCAxLjUtMS4xMTkgMS41LTIuNVMxNS4zMjggNyAxNC41IDcgMTMgOC4xMTkgMTMgOS41cy42NzIgMi41IDEuNSAyLjV6TTEyIDE2Yy0yLjIyNCAwLTMuMDIxLTIuMjI3LTMuMDUxLTIuMzE2bC0xLjg5Ny42MzNjLjA1LjE1IDEuMjcxIDMuNjg0IDQuOTQ5IDMuNjg0czQuODk4LTMuNTMzIDQuOTQ5LTMuNjg0bC0xLjg5Ni0uNjM4Yy0uMDMzLjA5NS0uODMgMi4zMjItMy4wNTMgMi4zMjJ6bTEwLjI1LTQuMDAxYzAgNS42NTItNC41OTggMTAuMjUtMTAuMjUgMTAuMjVTMS43NSAxNy42NTIgMS43NSAxMiA2LjM0OCAxLjc1IDEyIDEuNzUgMjIuMjUgNi4zNDggMjIuMjUgMTJ6bS0yIDBjMC00LjU0OS0zLjcwMS04LjI1LTguMjUtOC4yNVMzLjc1IDcuNDUxIDMuNzUgMTJzMy43MDEgOC4yNSA4LjI1IDguMjUgOC4yNS0zLjcwMSA4LjI1LTguMjV6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              style="filter: invert(1)"
+              class="mr-4 cursor-pointer" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLXo4MGZ5diByLTE5d21uMDMiIHN0eWxlPSJjb2xvcjogcmdiKDI5LCAxNTUsIDI0MCk7Ij48Zz48cGF0aCBkPSJNNiAzVjJoMnYxaDZWMmgydjFoMS41QzE4Ljg4IDMgMjAgNC4xMTkgMjAgNS41djJoLTJ2LTJjMC0uMjc2LS4yMi0uNS0uNS0uNUgxNnYxaC0yVjVIOHYxSDZWNUg0LjVjLS4yOCAwLS41LjIyNC0uNS41djEyYzAgLjI3Ni4yMi41LjUuNWgzdjJoLTNDMy4xMiAyMCAyIDE4Ljg4MSAyIDE3LjV2LTEyQzIgNC4xMTkgMy4xMiAzIDQuNSAzSDZ6bTkuNSA4Yy0yLjQ5IDAtNC41IDIuMDE1LTQuNSA0LjVzMi4wMSA0LjUgNC41IDQuNSA0LjUtMi4wMTUgNC41LTQuNS0yLjAxLTQuNS00LjUtNC41ek05IDE1LjVDOSAxMS45MSAxMS45MSA5IDE1LjUgOXM2LjUgMi45MSA2LjUgNi41LTIuOTEgNi41LTYuNSA2LjVTOSAxOS4wOSA5IDE1LjV6bTUuNS0yLjVoMnYyLjA4NmwxLjcxIDEuNzA3LTEuNDIgMS40MTQtMi4yOS0yLjI5M1YxM3oiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              style="filter: invert(1)"
+              class="mr-4 cursor-pointer" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLXo4MGZ5diByLTE5d21uMDMiIHN0eWxlPSJjb2xvcjogcmdiKDI5LCAxNTUsIDI0MCk7Ij48Zz48cGF0aCBkPSJNMTIgN2MtMS45MyAwLTMuNSAxLjU3LTMuNSAzLjVTMTAuMDcgMTQgMTIgMTRzMy41LTEuNTcgMy41LTMuNVMxMy45MyA3IDEyIDd6bTAgNWMtLjgyNyAwLTEuNS0uNjczLTEuNS0xLjVTMTEuMTczIDkgMTIgOXMxLjUuNjczIDEuNSAxLjVTMTIuODI3IDEyIDEyIDEyem0wLTEwYy00LjY4NyAwLTguNSAzLjgxMy04LjUgOC41IDAgNS45NjcgNy42MjEgMTEuMTE2IDcuOTQ1IDExLjMzMmwuNTU1LjM3LjU1NS0uMzdjLjMyNC0uMjE2IDcuOTQ1LTUuMzY1IDcuOTQ1LTExLjMzMkMyMC41IDUuODEzIDE2LjY4NyAyIDEyIDJ6bTAgMTcuNzdjLTEuNjY1LTEuMjQxLTYuNS01LjE5Ni02LjUtOS4yN0M1LjUgNi45MTYgOC40MTYgNCAxMiA0czYuNSAyLjkxNiA2LjUgNi41YzAgNC4wNzMtNC44MzUgOC4wMjgtNi41IDkuMjd6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              style="filter: invert(1)"
+              class="cursor-pointer" />
+            <button
+              class="ml-44 p-1 pl-5 pr-5 bg-indigo-500 border border-black rounded-full hover:border hover:border-indigo-500 hover:text-indigo-500 hover:bg-black">
+              Post
+            </button>
+          </section>
+          <p class="border border-gray-600 mt-2"></p>
+          <h2 class="text-center text-indigo-500 cursor-pointer">
+            Show 245 posts
+          </h2>
+          <p class="border border-gray-600 mt-2"></p>
+        </div>
+        <br />
+        <div class="cmt2">
+          <section class="ml-12 flex">
+            <img
+              src="https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg"
+              alt=""
+              class="rounded-full"
+              width="50px" />
+            <h2 class="ml-3">Martinxbo!</h2>
+            <span class="mt-8 ml-2">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMiAyMiIgYXJpYS1sYWJlbD0iVmVyaWZpZWQgYWNjb3VudCIgcm9sZT0iaW1nIiBjbGFzcz0ici00cXRxcDkgci15eXl5b28gci0xeHZsaTV0IHItYm53cWltIHItbHJ2aWJyIHItbTZyZ3BkIHItMWN2bDJociByLWY5amE4cCByLW9nOXRlMSByLTN0NHU2aSIgZGF0YS10ZXN0aWQ9Imljb24tdmVyaWZpZWQiPjxnPjxwYXRoIGQ9Ik0yMC4zOTYgMTFjLS4wMTgtLjY0Ni0uMjE1LTEuMjc1LS41Ny0xLjgxNi0uMzU0LS41NC0uODUyLS45NzItMS40MzgtMS4yNDYuMjIzLS42MDcuMjctMS4yNjQuMTQtMS44OTctLjEzMS0uNjM0LS40MzctMS4yMTgtLjg4Mi0xLjY4Ny0uNDctLjQ0NS0xLjA1My0uNzUtMS42ODctLjg4Mi0uNjMzLS4xMy0xLjI5LS4wODMtMS44OTcuMTQtLjI3My0uNTg3LS43MDQtMS4wODYtMS4yNDUtMS40NFMxMS42NDcgMS42MiAxMSAxLjYwNGMtLjY0Ni4wMTctMS4yNzMuMjEzLTEuODEzLjU2OHMtLjk2OS44NTQtMS4yNCAxLjQ0Yy0uNjA4LS4yMjMtMS4yNjctLjI3Mi0xLjkwMi0uMTQtLjYzNS4xMy0xLjIyLjQzNi0xLjY5Ljg4Mi0uNDQ1LjQ3LS43NDkgMS4wNTUtLjg3OCAxLjY4OC0uMTMuNjMzLS4wOCAxLjI5LjE0NCAxLjg5Ni0uNTg3LjI3NC0xLjA4Ny43MDUtMS40NDMgMS4yNDUtLjM1Ni41NC0uNTU1IDEuMTctLjU3NCAxLjgxNy4wMi42NDcuMjE4IDEuMjc2LjU3NCAxLjgxNy4zNTYuNTQuODU2Ljk3MiAxLjQ0MyAxLjI0NS0uMjI0LjYwNi0uMjc0IDEuMjYzLS4xNDQgMS44OTYuMTMuNjM0LjQzMyAxLjIxOC44NzcgMS42ODguNDcuNDQzIDEuMDU0Ljc0NyAxLjY4Ny44NzguNjMzLjEzMiAxLjI5LjA4NCAxLjg5Ny0uMTM2LjI3NC41ODYuNzA1IDEuMDg0IDEuMjQ2IDEuNDM5LjU0LjM1NCAxLjE3LjU1MSAxLjgxNi41NjkuNjQ3LS4wMTYgMS4yNzYtLjIxMyAxLjgxNy0uNTY3cy45NzItLjg1NCAxLjI0NS0xLjQ0Yy42MDQuMjM5IDEuMjY2LjI5NiAxLjkwMy4xNjQuNjM2LS4xMzIgMS4yMi0uNDQ3IDEuNjgtLjkwNy40Ni0uNDYuNzc2LTEuMDQ0LjkwOC0xLjY4MXMuMDc1LTEuMjk5LS4xNjUtMS45MDNjLjU4Ni0uMjc0IDEuMDg0LS43MDUgMS40MzktMS4yNDYuMzU0LS41NC41NTEtMS4xNy41NjktMS44MTZ6TTkuNjYyIDE0Ljg1bC0zLjQyOS0zLjQyOCAxLjI5My0xLjMwMiAyLjA3MiAyLjA3MiA0LjQtNC43OTQgMS4zNDcgMS4yNDZ6Ii8+PC9nPjwvc3ZnPg=="
+                width="20px"
+                style="filter: invert(1)"
+                alt=""
+                class="-mt-8" /></span
+            ><br />
+          </section>
+          <h2 class="ml-28 mt-[-1rem]">
+            The Nvida is coming with new NLP methods...!
+          </h2>
+          <br />
+          <section class="flex mt-8 ml-24 text-xs">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMS43NTEgMTBjMC00LjQyIDMuNTg0LTggOC4wMDUtOGg0LjM2NmM0LjQ5IDAgOC4xMjkgMy42NCA4LjEyOSA4LjEzIDAgMi45Ni0xLjYwNyA1LjY4LTQuMTk2IDcuMTFsLTguMDU0IDQuNDZ2LTMuNjloLS4wNjdjLTQuNDkuMS04LjE4My0zLjUxLTguMTgzLTguMDF6bTguMDA1LTZjLTMuMzE3IDAtNi4wMDUgMi42OS02LjAwNSA2IDAgMy4zNyAyLjc3IDYuMDggNi4xMzggNi4wMWwuMzUxLS4wMWgxLjc2MXYyLjNsNS4wODctMi44MWMxLjk1MS0xLjA4IDMuMTYzLTMuMTMgMy4xNjMtNS4zNiAwLTMuMzktMi43NDQtNi4xMy02LjEyOS02LjEzSDkuNzU2eiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              class="cursor-pointer"
+              style="filter: invert(1)" />132k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNNC41IDMuODhsNC40MzIgNC4xNC0xLjM2NCAxLjQ2TDUuNSA3LjU1VjE2YzAgMS4xLjg5NiAyIDIgMkgxM3YySDcuNWMtMi4yMDkgMC00LTEuNzktNC00VjcuNTVMMS40MzIgOS40OC4wNjggOC4wMiA0LjUgMy44OHpNMTYuNSA2SDExVjRoNS41YzIuMjA5IDAgNCAxLjc5IDQgNHY4LjQ1bDIuMDY4LTEuOTMgMS4zNjQgMS40Ni00LjQzMiA0LjE0LTQuNDMyLTQuMTQgMS4zNjQtMS40NiAyLjA2OCAxLjkzVjhjMC0xLjEtLjg5Ni0yLTItMnoiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />170
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMTYuNjk3IDUuNWMtMS4yMjItLjA2LTIuNjc5LjUxLTMuODkgMi4xNmwtLjgwNSAxLjA5LS44MDYtMS4wOUM5Ljk4NCA2LjAxIDguNTI2IDUuNDQgNy4zMDQgNS41Yy0xLjI0My4wNy0yLjM0OS43OC0yLjkxIDEuOTEtLjU1MiAxLjEyLS42MzMgMi43OC40NzkgNC44MiAxLjA3NCAxLjk3IDMuMjU3IDQuMjcgNy4xMjkgNi42MSAzLjg3LTIuMzQgNi4wNTItNC42NCA3LjEyNi02LjYxIDEuMTExLTIuMDQgMS4wMy0zLjcuNDc3LTQuODItLjU2MS0xLjEzLTEuNjY2LTEuODQtMi45MDgtMS45MXptNC4xODcgNy42OWMtMS4zNTEgMi40OC00LjAwMSA1LjEyLTguMzc5IDcuNjdsLS41MDMuMy0uNTA0LS4zYy00LjM3OS0yLjU1LTcuMDI5LTUuMTktOC4zODItNy42Ny0xLjM2LTIuNS0xLjQxLTQuODYtLjUxNC02LjY3Ljg4Ny0xLjc5IDIuNjQ3LTIuOTEgNC42MDEtMy4wMSAxLjY1MS0uMDkgMy4zNjguNTYgNC43OTggMi4wMSAxLjQyOS0xLjQ1IDMuMTQ2LTIuMSA0Ljc5Ni0yLjAxIDEuOTU0LjEgMy43MTQgMS4yMiA0LjYwMSAzLjAxLjg5NiAxLjgxLjg0NiA0LjE3LS41MTQgNi42N3oiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />234k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNOC43NSAyMVYzaDJ2MThoLTJ6TTE4IDIxVjguNWgyVjIxaC0yek00IDIxbC4wMDQtMTBoMkw2IDIxSDR6bTkuMjQ4IDB2LTdoMnY3aC0yeiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />164k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNNCA0LjVDNCAzLjEyIDUuMTE5IDIgNi41IDJoMTFDMTguODgxIDIgMjAgMy4xMiAyMCA0LjV2MTguNDRsLTgtNS43MS04IDUuNzFWNC41ek02LjUgNGMtLjI3NiAwLS41LjIyLS41LjV2MTQuNTZsNi00LjI5IDYgNC4yOVY0LjVjMC0uMjgtLjIyNC0uNS0uNS0uNWgtMTF6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              class="ml-24 cursor-pointer"
+              style="filter: invert(1)" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMTIgMi41OWw1LjcgNS43LTEuNDEgMS40MkwxMyA2LjQxVjE2aC0yVjYuNDFsLTMuMyAzLjMtMS40MS0xLjQyTDEyIDIuNTl6TTIxIDE1bC0uMDIgMy41MWMwIDEuMzgtMS4xMiAyLjQ5LTIuNSAyLjQ5SDUuNUM0LjExIDIxIDMgMTkuODggMyAxOC41VjE1aDJ2My41YzAgLjI4LjIyLjUuNS41aDEyLjk4Yy4yOCAwIC41LS4yMi41LS41TDE5IDE1aDJ6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              class="ml-4 cursor-pointer"
+              style="filter: invert(1)" />
+          </section>
+          <p class="border border-gray-800 mt-4"></p>
+        </div>
+        <br />
+        <div class="cmt2">
+          <section class="ml-12 flex">
+            <img
+              src="https://d22e6o9mp4t2lx.cloudfront.net/cms/pfp3_d7855f9562.webp"
+              alt=""
+              class="rounded-full"
+              width="50px" />
+            <h2 class="ml-3">Sam-belfort</h2>
+            <span class="mt-8 ml-2">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMiAyMiIgYXJpYS1sYWJlbD0iVmVyaWZpZWQgYWNjb3VudCIgcm9sZT0iaW1nIiBjbGFzcz0ici00cXRxcDkgci15eXl5b28gci0xeHZsaTV0IHItYm53cWltIHItbHJ2aWJyIHItbTZyZ3BkIHItMWN2bDJociByLWY5amE4cCByLW9nOXRlMSByLTN0NHU2aSIgZGF0YS10ZXN0aWQ9Imljb24tdmVyaWZpZWQiPjxnPjxwYXRoIGQ9Ik0yMC4zOTYgMTFjLS4wMTgtLjY0Ni0uMjE1LTEuMjc1LS41Ny0xLjgxNi0uMzU0LS41NC0uODUyLS45NzItMS40MzgtMS4yNDYuMjIzLS42MDcuMjctMS4yNjQuMTQtMS44OTctLjEzMS0uNjM0LS40MzctMS4yMTgtLjg4Mi0xLjY4Ny0uNDctLjQ0NS0xLjA1My0uNzUtMS42ODctLjg4Mi0uNjMzLS4xMy0xLjI5LS4wODMtMS44OTcuMTQtLjI3My0uNTg3LS43MDQtMS4wODYtMS4yNDUtMS40NFMxMS42NDcgMS42MiAxMSAxLjYwNGMtLjY0Ni4wMTctMS4yNzMuMjEzLTEuODEzLjU2OHMtLjk2OS44NTQtMS4yNCAxLjQ0Yy0uNjA4LS4yMjMtMS4yNjctLjI3Mi0xLjkwMi0uMTQtLjYzNS4xMy0xLjIyLjQzNi0xLjY5Ljg4Mi0uNDQ1LjQ3LS43NDkgMS4wNTUtLjg3OCAxLjY4OC0uMTMuNjMzLS4wOCAxLjI5LjE0NCAxLjg5Ni0uNTg3LjI3NC0xLjA4Ny43MDUtMS40NDMgMS4yNDUtLjM1Ni41NC0uNTU1IDEuMTctLjU3NCAxLjgxNy4wMi42NDcuMjE4IDEuMjc2LjU3NCAxLjgxNy4zNTYuNTQuODU2Ljk3MiAxLjQ0MyAxLjI0NS0uMjI0LjYwNi0uMjc0IDEuMjYzLS4xNDQgMS44OTYuMTMuNjM0LjQzMyAxLjIxOC44NzcgMS42ODguNDcuNDQzIDEuMDU0Ljc0NyAxLjY4Ny44NzguNjMzLjEzMiAxLjI5LjA4NCAxLjg5Ny0uMTM2LjI3NC41ODYuNzA1IDEuMDg0IDEuMjQ2IDEuNDM5LjU0LjM1NCAxLjE3LjU1MSAxLjgxNi41NjkuNjQ3LS4wMTYgMS4yNzYtLjIxMyAxLjgxNy0uNTY3cy45NzItLjg1NCAxLjI0NS0xLjQ0Yy42MDQuMjM5IDEuMjY2LjI5NiAxLjkwMy4xNjQuNjM2LS4xMzIgMS4yMi0uNDQ3IDEuNjgtLjkwNy40Ni0uNDYuNzc2LTEuMDQ0LjkwOC0xLjY4MXMuMDc1LTEuMjk5LS4xNjUtMS45MDNjLjU4Ni0uMjc0IDEuMDg0LS43MDUgMS40MzktMS4yNDYuMzU0LS41NC41NTEtMS4xNy41NjktMS44MTZ6TTkuNjYyIDE0Ljg1bC0zLjQyOS0zLjQyOCAxLjI5My0xLjMwMiAyLjA3MiAyLjA3MiA0LjQtNC43OTQgMS4zNDcgMS4yNDZ6Ii8+PC9nPjwvc3ZnPg=="
+                width="20px"
+                style="filter: invert(1)"
+                alt=""
+                class="-mt-8" /></span
+            ><br />
+          </section>
+          <h2 class="ml-28 mt-[-1rem]">
+            IG NEWS 🚨 Imran of Raebareli arrested by Uttar Pradesh <br />
+            Police for threatening Lawrence Bishnoi.
+          </h2>
+          <br />
+          <h2 class="ml-28">
+            He had said "If anything happens to Salman Khan bhai, you <br />
+            will be in trouble. Lawrence, I am a bigger don than you. <br />
+            I have 20000 sh*oters"
+          </h2>
+          <br />
+          <h2 class="ml-28">Uttar Pradesh Police quickly took notice</h2>
+          <br />
+          <li
+            class="ml-28 list-none text-indigo-500 underline underline-offset-2 cursor-pointer">
+            show more
+          </li>
+          <br />
+          <section class="pictures ml-28 flex">
+            <img
+              src="https://m.economictimes.com/thumb/msid-114715295,width-1200,height-900,resizemode-4,imgsize-44062/who-is-lawrence-bishnoi-at-centre-of-row-between-india-and-canada.jpg"
+              alt=""
+              width="200px"
+              class="rounded-2xl" />
+            <img
+              src="https://th-i.thgim.com/public/incoming/b3r75o/article68799118.ece/alternates/LANDSCAPE_1200/2024-10-16T095056Z_917438502_RC2VG0A2RSU0_RTRMADP_3_CANADA-INDIA-BISHNOI.JPG"
+              alt=""
+              width="200px"
+              class="rounded-2xl ml-4" />
+          </section>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRACEgfO5qzy_g0e0HxboDCxCcX0SGRjg9C7g&s"
+            alt=""
+            class="ml-44 rounded-xl mt-4" />
+          <section class="flex mt-8 ml-24 text-xs">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMS43NTEgMTBjMC00LjQyIDMuNTg0LTggOC4wMDUtOGg0LjM2NmM0LjQ5IDAgOC4xMjkgMy42NCA4LjEyOSA4LjEzIDAgMi45Ni0xLjYwNyA1LjY4LTQuMTk2IDcuMTFsLTguMDU0IDQuNDZ2LTMuNjloLS4wNjdjLTQuNDkuMS04LjE4My0zLjUxLTguMTgzLTguMDF6bTguMDA1LTZjLTMuMzE3IDAtNi4wMDUgMi42OS02LjAwNSA2IDAgMy4zNyAyLjc3IDYuMDggNi4xMzggNi4wMWwuMzUxLS4wMWgxLjc2MXYyLjNsNS4wODctMi44MWMxLjk1MS0xLjA4IDMuMTYzLTMuMTMgMy4xNjMtNS4zNiAwLTMuMzktMi43NDQtNi4xMy02LjEyOS02LjEzSDkuNzU2eiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              class="cursor-pointer"
+              style="filter: invert(1)" />432k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNNC41IDMuODhsNC40MzIgNC4xNC0xLjM2NCAxLjQ2TDUuNSA3LjU1VjE2YzAgMS4xLjg5NiAyIDIgMkgxM3YySDcuNWMtMi4yMDkgMC00LTEuNzktNC00VjcuNTVMMS40MzIgOS40OC4wNjggOC4wMiA0LjUgMy44OHpNMTYuNSA2SDExVjRoNS41YzIuMjA5IDAgNCAxLjc5IDQgNHY4LjQ1bDIuMDY4LTEuOTMgMS4zNjQgMS40Ni00LjQzMiA0LjE0LTQuNDMyLTQuMTQgMS4zNjQtMS40NiAyLjA2OCAxLjkzVjhjMC0xLjEtLjg5Ni0yLTItMnoiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />270
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMTYuNjk3IDUuNWMtMS4yMjItLjA2LTIuNjc5LjUxLTMuODkgMi4xNmwtLjgwNSAxLjA5LS44MDYtMS4wOUM5Ljk4NCA2LjAxIDguNTI2IDUuNDQgNy4zMDQgNS41Yy0xLjI0My4wNy0yLjM0OS43OC0yLjkxIDEuOTEtLjU1MiAxLjEyLS42MzMgMi43OC40NzkgNC44MiAxLjA3NCAxLjk3IDMuMjU3IDQuMjcgNy4xMjkgNi42MSAzLjg3LTIuMzQgNi4wNTItNC42NCA3LjEyNi02LjYxIDEuMTExLTIuMDQgMS4wMy0zLjcuNDc3LTQuODItLjU2MS0xLjEzLTEuNjY2LTEuODQtMi45MDgtMS45MXptNC4xODcgNy42OWMtMS4zNTEgMi40OC00LjAwMSA1LjEyLTguMzc5IDcuNjdsLS41MDMuMy0uNTA0LS4zYy00LjM3OS0yLjU1LTcuMDI5LTUuMTktOC4zODItNy42Ny0xLjM2LTIuNS0xLjQxLTQuODYtLjUxNC02LjY3Ljg4Ny0xLjc5IDIuNjQ3LTIuOTEgNC42MDEtMy4wMSAxLjY1MS0uMDkgMy4zNjguNTYgNC43OTggMi4wMSAxLjQyOS0xLjQ1IDMuMTQ2LTIuMSA0Ljc5Ni0yLjAxIDEuOTU0LjEgMy43MTQgMS4yMiA0LjYwMSAzLjAxLjg5NiAxLjgxLjg0NiA0LjE3LS41MTQgNi42N3oiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />434k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNOC43NSAyMVYzaDJ2MThoLTJ6TTE4IDIxVjguNWgyVjIxaC0yek00IDIxbC4wMDQtMTBoMkw2IDIxSDR6bTkuMjQ4IDB2LTdoMnY3aC0yeiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />564k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNNCA0LjVDNCAzLjEyIDUuMTE5IDIgNi41IDJoMTFDMTguODgxIDIgMjAgMy4xMiAyMCA0LjV2MTguNDRsLTgtNS43MS04IDUuNzFWNC41ek02LjUgNGMtLjI3NiAwLS41LjIyLS41LjV2MTQuNTZsNi00LjI5IDYgNC4yOVY0LjVjMC0uMjgtLjIyNC0uNS0uNS0uNWgtMTF6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              class="ml-24 cursor-pointer"
+              style="filter: invert(1)" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMTIgMi41OWw1LjcgNS43LTEuNDEgMS40MkwxMyA2LjQxVjE2aC0yVjYuNDFsLTMuMyAzLjMtMS40MS0xLjQyTDEyIDIuNTl6TTIxIDE1bC0uMDIgMy41MWMwIDEuMzgtMS4xMiAyLjQ5LTIuNSAyLjQ5SDUuNUM0LjExIDIxIDMgMTkuODggMyAxOC41VjE1aDJ2My41YzAgLjI4LjIyLjUuNS41aDEyLjk4Yy4yOCAwIC41LS4yMi41LS41TDE5IDE1aDJ6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              class="ml-4 cursor-pointer"
+              style="filter: invert(1)" />
+          </section>
+          <p class="border border-gray-800 mt-4"></p>
+        </div>
+        <div class="cmt3">
+          <section class="ml-12 mt-4 flex">
+            <img
+              src="https://d22e6o9mp4t2lx.cloudfront.net/cms/pfp3_d7855f9562.webp"
+              alt=""
+              class="rounded-full"
+              width="50px" />
+            <h2 class="ml-3">Nature is Amazing🕊</h2>
+            <span class="mt-8 ml-2">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMiAyMiIgYXJpYS1sYWJlbD0iVmVyaWZpZWQgYWNjb3VudCIgcm9sZT0iaW1nIiBjbGFzcz0ici00cXRxcDkgci15eXl5b28gci0xeHZsaTV0IHItYm53cWltIHItbHJ2aWJyIHItbTZyZ3BkIHItMWN2bDJociByLWY5amE4cCByLW9nOXRlMSByLTN0NHU2aSIgZGF0YS10ZXN0aWQ9Imljb24tdmVyaWZpZWQiPjxnPjxwYXRoIGQ9Ik0yMC4zOTYgMTFjLS4wMTgtLjY0Ni0uMjE1LTEuMjc1LS41Ny0xLjgxNi0uMzU0LS41NC0uODUyLS45NzItMS40MzgtMS4yNDYuMjIzLS42MDcuMjctMS4yNjQuMTQtMS44OTctLjEzMS0uNjM0LS40MzctMS4yMTgtLjg4Mi0xLjY4Ny0uNDctLjQ0NS0xLjA1My0uNzUtMS42ODctLjg4Mi0uNjMzLS4xMy0xLjI5LS4wODMtMS44OTcuMTQtLjI3My0uNTg3LS43MDQtMS4wODYtMS4yNDUtMS40NFMxMS42NDcgMS42MiAxMSAxLjYwNGMtLjY0Ni4wMTctMS4yNzMuMjEzLTEuODEzLjU2OHMtLjk2OS44NTQtMS4yNCAxLjQ0Yy0uNjA4LS4yMjMtMS4yNjctLjI3Mi0xLjkwMi0uMTQtLjYzNS4xMy0xLjIyLjQzNi0xLjY5Ljg4Mi0uNDQ1LjQ3LS43NDkgMS4wNTUtLjg3OCAxLjY4OC0uMTMuNjMzLS4wOCAxLjI5LjE0NCAxLjg5Ni0uNTg3LjI3NC0xLjA4Ny43MDUtMS40NDMgMS4yNDUtLjM1Ni41NC0uNTU1IDEuMTctLjU3NCAxLjgxNy4wMi42NDcuMjE4IDEuMjc2LjU3NCAxLjgxNy4zNTYuNTQuODU2Ljk3MiAxLjQ0MyAxLjI0NS0uMjI0LjYwNi0uMjc0IDEuMjYzLS4xNDQgMS44OTYuMTMuNjM0LjQzMyAxLjIxOC44NzcgMS42ODguNDcuNDQzIDEuMDU0Ljc0NyAxLjY4Ny44NzguNjMzLjEzMiAxLjI5LjA4NCAxLjg5Ny0uMTM2LjI3NC41ODYuNzA1IDEuMDg0IDEuMjQ2IDEuNDM5LjU0LjM1NCAxLjE3LjU1MSAxLjgxNi41NjkuNjQ3LS4wMTYgMS4yNzYtLjIxMyAxLjgxNy0uNTY3cy45NzItLjg1NCAxLjI0NS0xLjQ0Yy42MDQuMjM5IDEuMjY2LjI5NiAxLjkwMy4xNjQuNjM2LS4xMzIgMS4yMi0uNDQ3IDEuNjgtLjkwNy40Ni0uNDYuNzc2LTEuMDQ0LjkwOC0xLjY4MXMuMDc1LTEuMjk5LS4xNjUtMS45MDNjLjU4Ni0uMjc0IDEuMDg0LS43MDUgMS40MzktMS4yNDYuMzU0LS41NC41NTEtMS4xNy41NjktMS44MTZ6TTkuNjYyIDE0Ljg1bC0zLjQyOS0zLjQyOCAxLjI5My0xLjMwMiAyLjA3MiAyLjA3MiA0LjQtNC43OTQgMS4zNDcgMS4yNDZ6Ii8+PC9nPjwvc3ZnPg=="
+                width="20px"
+                style="filter: invert(1)"
+                alt=""
+                class="-mt-8" /></span
+            ><br />
+          </section>
+          <h2 class="ml-28 mt-[-1rem]">Her soul almost left her body😂😂</h2>
+
+          <br />
+          <section class="pictures mt-4 ml-28">
+            <iframe
+              width="360"
+              height="265"
+              src="https://www.youtube.com/embed/XnitQYkYYcw?si=0EV_pC8Ia48B8qzI&amp;start=60"
+              title="YouTube video player"
+              frameborder="0"
+              class="border rounded-2xl"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </section>
+          <section class="flex mt-8 ml-24 text-xs">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMS43NTEgMTBjMC00LjQyIDMuNTg0LTggOC4wMDUtOGg0LjM2NmM0LjQ5IDAgOC4xMjkgMy42NCA4LjEyOSA4LjEzIDAgMi45Ni0xLjYwNyA1LjY4LTQuMTk2IDcuMTFsLTguMDU0IDQuNDZ2LTMuNjloLS4wNjdjLTQuNDkuMS04LjE4My0zLjUxLTguMTgzLTguMDF6bTguMDA1LTZjLTMuMzE3IDAtNi4wMDUgMi42OS02LjAwNSA2IDAgMy4zNyAyLjc3IDYuMDggNi4xMzggNi4wMWwuMzUxLS4wMWgxLjc2MXYyLjNsNS4wODctMi44MWMxLjk1MS0xLjA4IDMuMTYzLTMuMTMgMy4xNjMtNS4zNiAwLTMuMzktMi43NDQtNi4xMy02LjEyOS02LjEzSDkuNzU2eiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              class="cursor-pointer"
+              style="filter: invert(1)" />132k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNNC41IDMuODhsNC40MzIgNC4xNC0xLjM2NCAxLjQ2TDUuNSA3LjU1VjE2YzAgMS4xLjg5NiAyIDIgMkgxM3YySDcuNWMtMi4yMDkgMC00LTEuNzktNC00VjcuNTVMMS40MzIgOS40OC4wNjggOC4wMiA0LjUgMy44OHpNMTYuNSA2SDExVjRoNS41YzIuMjA5IDAgNCAxLjc5IDQgNHY4LjQ1bDIuMDY4LTEuOTMgMS4zNjQgMS40Ni00LjQzMiA0LjE0LTQuNDMyLTQuMTQgMS4zNjQtMS40NiAyLjA2OCAxLjkzVjhjMC0xLjEtLjg5Ni0yLTItMnoiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />70
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMTYuNjk3IDUuNWMtMS4yMjItLjA2LTIuNjc5LjUxLTMuODkgMi4xNmwtLjgwNSAxLjA5LS44MDYtMS4wOUM5Ljk4NCA2LjAxIDguNTI2IDUuNDQgNy4zMDQgNS41Yy0xLjI0My4wNy0yLjM0OS43OC0yLjkxIDEuOTEtLjU1MiAxLjEyLS42MzMgMi43OC40NzkgNC44MiAxLjA3NCAxLjk3IDMuMjU3IDQuMjcgNy4xMjkgNi42MSAzLjg3LTIuMzQgNi4wNTItNC42NCA3LjEyNi02LjYxIDEuMTExLTIuMDQgMS4wMy0zLjcuNDc3LTQuODItLjU2MS0xLjEzLTEuNjY2LTEuODQtMi45MDgtMS45MXptNC4xODcgNy42OWMtMS4zNTEgMi40OC00LjAwMSA1LjEyLTguMzc5IDcuNjdsLS41MDMuMy0uNTA0LS4zYy00LjM3OS0yLjU1LTcuMDI5LTUuMTktOC4zODItNy42Ny0xLjM2LTIuNS0xLjQxLTQuODYtLjUxNC02LjY3Ljg4Ny0xLjc5IDIuNjQ3LTIuOTEgNC42MDEtMy4wMSAxLjY1MS0uMDkgMy4zNjguNTYgNC43OTggMi4wMSAxLjQyOS0xLjQ1IDMuMTQ2LTIuMSA0Ljc5Ni0yLjAxIDEuOTU0LjEgMy43MTQgMS4yMiA0LjYwMSAzLjAxLjg5NiAxLjgxLjg0NiA0LjE3LS41MTQgNi42N3oiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />144k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNOC43NSAyMVYzaDJ2MThoLTJ6TTE4IDIxVjguNWgyVjIxaC0yek00IDIxbC4wMDQtMTBoMkw2IDIxSDR6bTkuMjQ4IDB2LTdoMnY3aC0yeiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />64k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNNCA0LjVDNCAzLjEyIDUuMTE5IDIgNi41IDJoMTFDMTguODgxIDIgMjAgMy4xMiAyMCA0LjV2MTguNDRsLTgtNS43MS04IDUuNzFWNC41ek02LjUgNGMtLjI3NiAwLS41LjIyLS41LjV2MTQuNTZsNi00LjI5IDYgNC4yOVY0LjVjMC0uMjgtLjIyNC0uNS0uNS0uNWgtMTF6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              class="ml-24 cursor-pointer"
+              style="filter: invert(1)" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMTIgMi41OWw1LjcgNS43LTEuNDEgMS40MkwxMyA2LjQxVjE2aC0yVjYuNDFsLTMuMyAzLjMtMS40MS0xLjQyTDEyIDIuNTl6TTIxIDE1bC0uMDIgMy41MWMwIDEuMzgtMS4xMiAyLjQ5LTIuNSAyLjQ5SDUuNUM0LjExIDIxIDMgMTkuODggMyAxOC41VjE1aDJ2My41YzAgLjI4LjIyLjUuNS41aDEyLjk4Yy4yOCAwIC41LS4yMi41LS41TDE5IDE1aDJ6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              class="ml-4 cursor-pointer"
+              style="filter: invert(1)" />
+          </section>
+          <p class="border border-gray-800 mt-4"></p>
+        </div>
+        <div class="cmt4">
+          <section class="ml-12 mt-4 flex">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRooEnD32-UtBw55GBfDTxxUZApMhWWnRaoLw&s"
+              alt=""
+              class="rounded-full"
+              width="50px" />
+            <h2 class="ml-3">Smith</h2>
+            <span class="mt-8 ml-2">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMiAyMiIgYXJpYS1sYWJlbD0iVmVyaWZpZWQgYWNjb3VudCIgcm9sZT0iaW1nIiBjbGFzcz0ici00cXRxcDkgci15eXl5b28gci0xeHZsaTV0IHItYm53cWltIHItbHJ2aWJyIHItbTZyZ3BkIHItMWN2bDJociByLWY5amE4cCByLW9nOXRlMSByLTN0NHU2aSIgZGF0YS10ZXN0aWQ9Imljb24tdmVyaWZpZWQiPjxnPjxwYXRoIGQ9Ik0yMC4zOTYgMTFjLS4wMTgtLjY0Ni0uMjE1LTEuMjc1LS41Ny0xLjgxNi0uMzU0LS41NC0uODUyLS45NzItMS40MzgtMS4yNDYuMjIzLS42MDcuMjctMS4yNjQuMTQtMS44OTctLjEzMS0uNjM0LS40MzctMS4yMTgtLjg4Mi0xLjY4Ny0uNDctLjQ0NS0xLjA1My0uNzUtMS42ODctLjg4Mi0uNjMzLS4xMy0xLjI5LS4wODMtMS44OTcuMTQtLjI3My0uNTg3LS43MDQtMS4wODYtMS4yNDUtMS40NFMxMS42NDcgMS42MiAxMSAxLjYwNGMtLjY0Ni4wMTctMS4yNzMuMjEzLTEuODEzLjU2OHMtLjk2OS44NTQtMS4yNCAxLjQ0Yy0uNjA4LS4yMjMtMS4yNjctLjI3Mi0xLjkwMi0uMTQtLjYzNS4xMy0xLjIyLjQzNi0xLjY5Ljg4Mi0uNDQ1LjQ3LS43NDkgMS4wNTUtLjg3OCAxLjY4OC0uMTMuNjMzLS4wOCAxLjI5LjE0NCAxLjg5Ni0uNTg3LjI3NC0xLjA4Ny43MDUtMS40NDMgMS4yNDUtLjM1Ni41NC0uNTU1IDEuMTctLjU3NCAxLjgxNy4wMi42NDcuMjE4IDEuMjc2LjU3NCAxLjgxNy4zNTYuNTQuODU2Ljk3MiAxLjQ0MyAxLjI0NS0uMjI0LjYwNi0uMjc0IDEuMjYzLS4xNDQgMS44OTYuMTMuNjM0LjQzMyAxLjIxOC44NzcgMS42ODguNDcuNDQzIDEuMDU0Ljc0NyAxLjY4Ny44NzguNjMzLjEzMiAxLjI5LjA4NCAxLjg5Ny0uMTM2LjI3NC41ODYuNzA1IDEuMDg0IDEuMjQ2IDEuNDM5LjU0LjM1NCAxLjE3LjU1MSAxLjgxNi41NjkuNjQ3LS4wMTYgMS4yNzYtLjIxMyAxLjgxNy0uNTY3cy45NzItLjg1NCAxLjI0NS0xLjQ0Yy42MDQuMjM5IDEuMjY2LjI5NiAxLjkwMy4xNjQuNjM2LS4xMzIgMS4yMi0uNDQ3IDEuNjgtLjkwNy40Ni0uNDYuNzc2LTEuMDQ0LjkwOC0xLjY4MXMuMDc1LTEuMjk5LS4xNjUtMS45MDNjLjU4Ni0uMjc0IDEuMDg0LS43MDUgMS40MzktMS4yNDYuMzU0LS41NC41NTEtMS4xNy41NjktMS44MTZ6TTkuNjYyIDE0Ljg1bC0zLjQyOS0zLjQyOCAxLjI5My0xLjMwMiAyLjA3MiAyLjA3MiA0LjQtNC43OTQgMS4zNDcgMS4yNDZ6Ii8+PC9nPjwvc3ZnPg=="
+                width="20px"
+                style="filter: invert(1)"
+                alt=""
+                class="-mt-8" /></span
+            ><br />
+          </section>
+          <h2 class="ml-28 mt-[-1rem]">
+            You can now record calls in ios18.1😮
+          </h2>
+
+          <br />
+          <section class="pictures mt-4 ml-28">
+            <img
+              src="https://www.cnet.com/a/img/resize/a1b5e0a623b3c61f78b2efe9b2c93da4bfbc4a1b/hub/2024/09/25/ff75602a-cd2c-420d-bdd2-bc88ee2ac001/ios18-features-00000.png?auto=webp&fit=crop&height=675&width=1200"
+              alt=""
+              height="400px"
+              width="350px"
+              class="rounded-xl" />
+          </section>
+          <section class="flex mt-8 ml-24 text-xs">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMS43NTEgMTBjMC00LjQyIDMuNTg0LTggOC4wMDUtOGg0LjM2NmM0LjQ5IDAgOC4xMjkgMy42NCA4LjEyOSA4LjEzIDAgMi45Ni0xLjYwNyA1LjY4LTQuMTk2IDcuMTFsLTguMDU0IDQuNDZ2LTMuNjloLS4wNjdjLTQuNDkuMS04LjE4My0zLjUxLTguMTgzLTguMDF6bTguMDA1LTZjLTMuMzE3IDAtNi4wMDUgMi42OS02LjAwNSA2IDAgMy4zNyAyLjc3IDYuMDggNi4xMzggNi4wMWwuMzUxLS4wMWgxLjc2MXYyLjNsNS4wODctMi44MWMxLjk1MS0xLjA4IDMuMTYzLTMuMTMgMy4xNjMtNS4zNiAwLTMuMzktMi43NDQtNi4xMy02LjEyOS02LjEzSDkuNzU2eiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              class="cursor-pointer"
+              style="filter: invert(1)" />632k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNNC41IDMuODhsNC40MzIgNC4xNC0xLjM2NCAxLjQ2TDUuNSA3LjU1VjE2YzAgMS4xLjg5NiAyIDIgMkgxM3YySDcuNWMtMi4yMDkgMC00LTEuNzktNC00VjcuNTVMMS40MzIgOS40OC4wNjggOC4wMiA0LjUgMy44OHpNMTYuNSA2SDExVjRoNS41YzIuMjA5IDAgNCAxLjc5IDQgNHY4LjQ1bDIuMDY4LTEuOTMgMS4zNjQgMS40Ni00LjQzMiA0LjE0LTQuNDMyLTQuMTQgMS4zNjQtMS40NiAyLjA2OCAxLjkzVjhjMC0xLjEtLjg5Ni0yLTItMnoiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />170
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMTYuNjk3IDUuNWMtMS4yMjItLjA2LTIuNjc5LjUxLTMuODkgMi4xNmwtLjgwNSAxLjA5LS44MDYtMS4wOUM5Ljk4NCA2LjAxIDguNTI2IDUuNDQgNy4zMDQgNS41Yy0xLjI0My4wNy0yLjM0OS43OC0yLjkxIDEuOTEtLjU1MiAxLjEyLS42MzMgMi43OC40NzkgNC44MiAxLjA3NCAxLjk3IDMuMjU3IDQuMjcgNy4xMjkgNi42MSAzLjg3LTIuMzQgNi4wNTItNC42NCA3LjEyNi02LjYxIDEuMTExLTIuMDQgMS4wMy0zLjcuNDc3LTQuODItLjU2MS0xLjEzLTEuNjY2LTEuODQtMi45MDgtMS45MXptNC4xODcgNy42OWMtMS4zNTEgMi40OC00LjAwMSA1LjEyLTguMzc5IDcuNjdsLS41MDMuMy0uNTA0LS4zYy00LjM3OS0yLjU1LTcuMDI5LTUuMTktOC4zODItNy42Ny0xLjM2LTIuNS0xLjQxLTQuODYtLjUxNC02LjY3Ljg4Ny0xLjc5IDIuNjQ3LTIuOTEgNC42MDEtMy4wMSAxLjY1MS0uMDkgMy4zNjguNTYgNC43OTggMi4wMSAxLjQyOS0xLjQ1IDMuMTQ2LTIuMSA0Ljc5Ni0yLjAxIDEuOTU0LjEgMy43MTQgMS4yMiA0LjYwMSAzLjAxLjg5NiAxLjgxLjg0NiA0LjE3LS41MTQgNi42N3oiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />174k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNOC43NSAyMVYzaDJ2MThoLTJ6TTE4IDIxVjguNWgyVjIxaC0yek00IDIxbC4wMDQtMTBoMkw2IDIxSDR6bTkuMjQ4IDB2LTdoMnY3aC0yeiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />94k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNNCA0LjVDNCAzLjEyIDUuMTE5IDIgNi41IDJoMTFDMTguODgxIDIgMjAgMy4xMiAyMCA0LjV2MTguNDRsLTgtNS43MS04IDUuNzFWNC41ek02LjUgNGMtLjI3NiAwLS41LjIyLS41LjV2MTQuNTZsNi00LjI5IDYgNC4yOVY0LjVjMC0uMjgtLjIyNC0uNS0uNS0uNWgtMTF6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              class="ml-24 cursor-pointer"
+              style="filter: invert(1)" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMTIgMi41OWw1LjcgNS43LTEuNDEgMS40MkwxMyA2LjQxVjE2aC0yVjYuNDFsLTMuMyAzLjMtMS40MS0xLjQyTDEyIDIuNTl6TTIxIDE1bC0uMDIgMy41MWMwIDEuMzgtMS4xMiAyLjQ5LTIuNSAyLjQ5SDUuNUM0LjExIDIxIDMgMTkuODggMyAxOC41VjE1aDJ2My41YzAgLjI4LjIyLjUuNS41aDEyLjk4Yy4yOCAwIC41LS4yMi41LS41TDE5IDE1aDJ6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              class="ml-4 cursor-pointer"
+              style="filter: invert(1)" />
+          </section>
+          <p class="border border-gray-800 mt-4"></p>
+        </div>
+        <div class="cmt5">
+          <section class="ml-12 mt-4 flex">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRooEnD32-UtBw55GBfDTxxUZApMhWWnRaoLw&s"
+              alt=""
+              class="rounded-full"
+              width="50px" />
+            <h2 class="ml-3">Crypto Rover</h2>
+            <span class="mt-8 ml-2">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMiAyMiIgYXJpYS1sYWJlbD0iVmVyaWZpZWQgYWNjb3VudCIgcm9sZT0iaW1nIiBjbGFzcz0ici00cXRxcDkgci15eXl5b28gci0xeHZsaTV0IHItYm53cWltIHItbHJ2aWJyIHItbTZyZ3BkIHItMWN2bDJociByLWY5amE4cCByLW9nOXRlMSByLTN0NHU2aSIgZGF0YS10ZXN0aWQ9Imljb24tdmVyaWZpZWQiPjxnPjxwYXRoIGQ9Ik0yMC4zOTYgMTFjLS4wMTgtLjY0Ni0uMjE1LTEuMjc1LS41Ny0xLjgxNi0uMzU0LS41NC0uODUyLS45NzItMS40MzgtMS4yNDYuMjIzLS42MDcuMjctMS4yNjQuMTQtMS44OTctLjEzMS0uNjM0LS40MzctMS4yMTgtLjg4Mi0xLjY4Ny0uNDctLjQ0NS0xLjA1My0uNzUtMS42ODctLjg4Mi0uNjMzLS4xMy0xLjI5LS4wODMtMS44OTcuMTQtLjI3My0uNTg3LS43MDQtMS4wODYtMS4yNDUtMS40NFMxMS42NDcgMS42MiAxMSAxLjYwNGMtLjY0Ni4wMTctMS4yNzMuMjEzLTEuODEzLjU2OHMtLjk2OS44NTQtMS4yNCAxLjQ0Yy0uNjA4LS4yMjMtMS4yNjctLjI3Mi0xLjkwMi0uMTQtLjYzNS4xMy0xLjIyLjQzNi0xLjY5Ljg4Mi0uNDQ1LjQ3LS43NDkgMS4wNTUtLjg3OCAxLjY4OC0uMTMuNjMzLS4wOCAxLjI5LjE0NCAxLjg5Ni0uNTg3LjI3NC0xLjA4Ny43MDUtMS40NDMgMS4yNDUtLjM1Ni41NC0uNTU1IDEuMTctLjU3NCAxLjgxNy4wMi42NDcuMjE4IDEuMjc2LjU3NCAxLjgxNy4zNTYuNTQuODU2Ljk3MiAxLjQ0MyAxLjI0NS0uMjI0LjYwNi0uMjc0IDEuMjYzLS4xNDQgMS44OTYuMTMuNjM0LjQzMyAxLjIxOC44NzcgMS42ODguNDcuNDQzIDEuMDU0Ljc0NyAxLjY4Ny44NzguNjMzLjEzMiAxLjI5LjA4NCAxLjg5Ny0uMTM2LjI3NC41ODYuNzA1IDEuMDg0IDEuMjQ2IDEuNDM5LjU0LjM1NCAxLjE3LjU1MSAxLjgxNi41NjkuNjQ3LS4wMTYgMS4yNzYtLjIxMyAxLjgxNy0uNTY3cy45NzItLjg1NCAxLjI0NS0xLjQ0Yy42MDQuMjM5IDEuMjY2LjI5NiAxLjkwMy4xNjQuNjM2LS4xMzIgMS4yMi0uNDQ3IDEuNjgtLjkwNy40Ni0uNDYuNzc2LTEuMDQ0LjkwOC0xLjY4MXMuMDc1LTEuMjk5LS4xNjUtMS45MDNjLjU4Ni0uMjc0IDEuMDg0LS43MDUgMS40MzktMS4yNDYuMzU0LS41NC41NTEtMS4xNy41NjktMS44MTZ6TTkuNjYyIDE0Ljg1bC0zLjQyOS0zLjQyOCAxLjI5My0xLjMwMiAyLjA3MiAyLjA3MiA0LjQtNC43OTQgMS4zNDcgMS4yNDZ6Ii8+PC9nPjwvc3ZnPg=="
+                width="20px"
+                style="filter: invert(1)"
+                alt=""
+                class="-mt-8" /></span
+            ><br />
+          </section>
+          <h2 class="ml-28 mt-[-1rem]">#BITCOIN CRASH ALERT.🚨</h2>
+
+          <br />
+          <section class="pictures mt-4 ml-28">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCWsEfr1IYLjHtlhWBHSRtuK9KZmSYzSQDEw&s "
+              alt=""
+              height="400px"
+              width="350px"
+              class="rounded-xl" />
+          </section>
+          <section class="flex mt-8 ml-24 text-xs">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMS43NTEgMTBjMC00LjQyIDMuNTg0LTggOC4wMDUtOGg0LjM2NmM0LjQ5IDAgOC4xMjkgMy42NCA4LjEyOSA4LjEzIDAgMi45Ni0xLjYwNyA1LjY4LTQuMTk2IDcuMTFsLTguMDU0IDQuNDZ2LTMuNjloLS4wNjdjLTQuNDkuMS04LjE4My0zLjUxLTguMTgzLTguMDF6bTguMDA1LTZjLTMuMzE3IDAtNi4wMDUgMi42OS02LjAwNSA2IDAgMy4zNyAyLjc3IDYuMDggNi4xMzggNi4wMWwuMzUxLS4wMWgxLjc2MXYyLjNsNS4wODctMi44MWMxLjk1MS0xLjA4IDMuMTYzLTMuMTMgMy4xNjMtNS4zNiAwLTMuMzktMi43NDQtNi4xMy02LjEyOS02LjEzSDkuNzU2eiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              class="cursor-pointer"
+              style="filter: invert(1)" />278
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNNC41IDMuODhsNC40MzIgNC4xNC0xLjM2NCAxLjQ2TDUuNSA3LjU1VjE2YzAgMS4xLjg5NiAyIDIgMkgxM3YySDcuNWMtMi4yMDkgMC00LTEuNzktNC00VjcuNTVMMS40MzIgOS40OC4wNjggOC4wMiA0LjUgMy44OHpNMTYuNSA2SDExVjRoNS41YzIuMjA5IDAgNCAxLjc5IDQgNHY4LjQ1bDIuMDY4LTEuOTMgMS4zNjQgMS40Ni00LjQzMiA0LjE0LTQuNDMyLTQuMTQgMS4zNjQtMS40NiAyLjA2OCAxLjkzVjhjMC0xLjEtLjg5Ni0yLTItMnoiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />142
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMTYuNjk3IDUuNWMtMS4yMjItLjA2LTIuNjc5LjUxLTMuODkgMi4xNmwtLjgwNSAxLjA5LS44MDYtMS4wOUM5Ljk4NCA2LjAxIDguNTI2IDUuNDQgNy4zMDQgNS41Yy0xLjI0My4wNy0yLjM0OS43OC0yLjkxIDEuOTEtLjU1MiAxLjEyLS42MzMgMi43OC40NzkgNC44MiAxLjA3NCAxLjk3IDMuMjU3IDQuMjcgNy4xMjkgNi42MSAzLjg3LTIuMzQgNi4wNTItNC42NCA3LjEyNi02LjYxIDEuMTExLTIuMDQgMS4wMy0zLjcuNDc3LTQuODItLjU2MS0xLjEzLTEuNjY2LTEuODQtMi45MDgtMS45MXptNC4xODcgNy42OWMtMS4zNTEgMi40OC00LjAwMSA1LjEyLTguMzc5IDcuNjdsLS41MDMuMy0uNTA0LS4zYy00LjM3OS0yLjU1LTcuMDI5LTUuMTktOC4zODItNy42Ny0xLjM2LTIuNS0xLjQxLTQuODYtLjUxNC02LjY3Ljg4Ny0xLjc5IDIuNjQ3LTIuOTEgNC42MDEtMy4wMSAxLjY1MS0uMDkgMy4zNjguNTYgNC43OTggMi4wMSAxLjQyOS0xLjQ1IDMuMTQ2LTIuMSA0Ljc5Ni0yLjAxIDEuOTU0LjEgMy43MTQgMS4yMiA0LjYwMSAzLjAxLjg5NiAxLjgxLjg0NiA0LjE3LS41MTQgNi42N3oiLz48L2c+PC9zdmc+"
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />1.4k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNOC43NSAyMVYzaDJ2MThoLTJ6TTE4IDIxVjguNWgyVjIxaC0yek00IDIxbC4wMDQtMTBoMkw2IDIxSDR6bTkuMjQ4IDB2LTdoMnY3aC0yeiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              class="ml-8 cursor-pointer"
+              style="filter: invert(1)" />142k
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNNCA0LjVDNCAzLjEyIDUuMTE5IDIgNi41IDJoMTFDMTguODgxIDIgMjAgMy4xMiAyMCA0LjV2MTguNDRsLTgtNS43MS04IDUuNzFWNC41ek02LjUgNGMtLjI3NiAwLS41LjIyLS41LjV2MTQuNTZsNi00LjI5IDYgNC4yOVY0LjVjMC0uMjgtLjIyNC0uNS0uNS0uNWgtMTF6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              class="ml-24 cursor-pointer"
+              style="filter: invert(1)" />
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTF4dmxpNXQgci0xaGR2MHFpIj48Zz48cGF0aCBkPSJNMTIgMi41OWw1LjcgNS43LTEuNDEgMS40MkwxMyA2LjQxVjE2aC0yVjYuNDFsLTMuMyAzLjMtMS40MS0xLjQyTDEyIDIuNTl6TTIxIDE1bC0uMDIgMy41MWMwIDEuMzgtMS4xMiAyLjQ5LTIuNSAyLjQ5SDUuNUM0LjExIDIxIDMgMTkuODggMyAxOC41VjE1aDJ2My41YzAgLjI4LjIyLjUuNS41aDEyLjk4Yy4yOCAwIC41LS4yMi41LS41TDE5IDE1aDJ6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+              width="20px"
+              class="ml-4 cursor-pointer"
+              style="filter: invert(1)" />
+          </section>
+          <p class="border border-gray-800 mt-4"></p>
+        </div>
+      </section>
+      <p class="border border-gray-800 "></p>
+      <section class="r pl-[4rem] pr-[1.5rem]" id="right">
+        <input
+          type="search"
+          class="bg-gray-500 w-80 rounded-full p-2 mt-2 ml-4 pl-20"
+          style="
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLWRubXJ6cyByLWJud3FpbSByLWxydmliciByLW02cmdwZCByLTFuYW8zM2kgci1sd2h3OW8gci1jbm56OWUiPjxnPjxwYXRoIGZpbGw9IndoaXRlIiBkPSJNMTAuMjUgMy43NWMtMy41OSAwLTYuNSAyLjkxLTYuNSA2LjVzMi45MSA2LjUgNi41IDYuNWMxLjc5NSAwIDMuNDE5LS43MjYgNC41OTYtMS45MDQgMS4xNzgtMS4xNzcgMS45MDQtMi44MDEgMS45MDQtNC41OTYgMC0zLjU5LTIuOTEtNi41LTYuNS02LjV6bS04LjUgNi41YzAtNC42OTQgMy44MDYtOC41IDguNS04LjVzOC41IDMuODA2IDguNSA4LjVjMCAxLjk4Ni0uNjgyIDMuODE1LTEuODI0IDUuMjYybDQuNzgxIDQuNzgxLTEuNDE0IDEuNDE0LTQuNzgxLTQuNzgxYy0xLjQ0NyAxLjE0Mi0zLjI3NiAxLjgyNC01LjI2MiAxLjgyNC00LjY5NCAwLTguNS0zLjgwNi04LjUtOC41eiIvPjwvZz48L3N2Zz4=);
+            background-repeat: no-repeat;
+            background-position: 22px;
+            background-size: 25px; 
+          "
+          placeholder="Search" />
+        <div class="premium border ml-4 mr-4 mt-4 p-4 rounded-2xl">
+          <h2 class="font-bold">Subscribe to Premium</h2>
+          <br />
+          <h2 class="text-sm">
+            Subscribe to unlock new features and if <br />eligible, receive a
+            share of revenue.
+          </h2>
+          <button class="bg-indigo-500 p-2 pl-4 pr-4 mt-2 rounded-full hover:border border-indigo-500 hover:text-indigo-500 hover:bg-black">
+            Subscribe
+          </button>
+        </div>
+        <div class="border mt-4 ml-4 mr-4 rounded-2xl p-4">
+          <h2>What's happening</h2>
+          <h4 class="mt-8">Trending in India</h4>
+          <section class="flex">
+            <h2 class="mt-2">#MalaikaArora</h2>
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLTF4dmxpNXQgci1kbm1yenMgci1ibndxaW0gci1scnZpYnIgci1tNnJncGQgci0xbmFvMzNpIj48Zz48cGF0aCBkPSJNMyAxMmMwLTEuMS45LTIgMi0yczIgLjkgMiAyLS45IDItMiAyLTItLjktMi0yem05IDJjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyem03IDBjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyeiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              style="filter: invert(1)"
+              class="ml-44" />
+          </section>
+          <h3 class="">Trending with ArjunKapoor</h3>
+
+          <h4 class="mt-8">Sports . Trending</h4>
+          <section class="flex">
+            <h2 class="mt-2">#BengaluruBulls</h2>
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLTF4dmxpNXQgci1kbm1yenMgci1ibndxaW0gci1scnZpYnIgci1tNnJncGQgci0xbmFvMzNpIj48Zz48cGF0aCBkPSJNMyAxMmMwLTEuMS45LTIgMi0yczIgLjkgMiAyLS45IDItMiAyLTItLjktMi0yem05IDJjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyem03IDBjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyeiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              style="filter: invert(1)"
+              class="ml-44" />
+          </section>
+          <h4 class="mt-8">Entertainment Trending</h4>
+          <section class="flex">
+            <h2 class="mt-2">#Nagachaitanya</h2>
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLTF4dmxpNXQgci1kbm1yenMgci1ibndxaW0gci1scnZpYnIgci1tNnJncGQgci0xbmFvMzNpIj48Zz48cGF0aCBkPSJNMyAxMmMwLTEuMS45LTIgMi0yczIgLjkgMiAyLS45IDItMiAyLTItLjktMi0yem05IDJjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyem03IDBjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyeiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              style="filter: invert(1)"
+              class="ml-44" />
+          </section>
+          <h3 class="">2,662 posts</h3>
+          <h4 class="mt-8">Trending in India</h4>
+          <section class="flex">
+            <h2 class="mt-2">#grandefratello</h2>
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGNsYXNzPSJyLTRxdHFwOSByLXl5eXlvbyByLTF4dmxpNXQgci1kbm1yenMgci1ibndxaW0gci1scnZpYnIgci1tNnJncGQgci0xbmFvMzNpIj48Zz48cGF0aCBkPSJNMyAxMmMwLTEuMS45LTIgMi0yczIgLjkgMiAyLS45IDItMiAyLTItLjktMi0yem05IDJjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyem03IDBjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyeiIvPjwvZz48L3N2Zz4="
+              alt=""
+              width="20px"
+              style="filter: invert(1)"
+              class="ml-44" />
+          </section>
+          <h3 class="">124K posts</h3>
+        </div>
+        
+        <div class="follow ml-4 mr-4 mt-4 p-4 border rounded-2xl">
+          <h2 class="mt-4 font-bold">Who to follow</h2>
+          <section class="flex mt-4 text-xs">
+            <img
+              src="https://pbs.twimg.com/profile_images/1688266765095276544/EyCtuQS2_400x400.jpg"
+              alt=""
+              width="50px"
+              class="rounded-full" />
+            <h2 class="ml-4 mt-2">Niraj Walia <span class="mt-8 ml-2"><br>
+                <h3 class="text-gray-500">@Ezneppet</h3>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMiAyMiIgYXJpYS1sYWJlbD0iVmVyaWZpZWQgYWNjb3VudCIgcm9sZT0iaW1nIiBjbGFzcz0ici00cXRxcDkgci15eXl5b28gci0xeHZsaTV0IHItYm53cWltIHItbHJ2aWJyIHItbTZyZ3BkIHItMWN2bDJociByLWY5amE4cCByLW9nOXRlMSByLTN0NHU2aSIgZGF0YS10ZXN0aWQ9Imljb24tdmVyaWZpZWQiPjxnPjxwYXRoIGQ9Ik0yMC4zOTYgMTFjLS4wMTgtLjY0Ni0uMjE1LTEuMjc1LS41Ny0xLjgxNi0uMzU0LS41NC0uODUyLS45NzItMS40MzgtMS4yNDYuMjIzLS42MDcuMjctMS4yNjQuMTQtMS44OTctLjEzMS0uNjM0LS40MzctMS4yMTgtLjg4Mi0xLjY4Ny0uNDctLjQ0NS0xLjA1My0uNzUtMS42ODctLjg4Mi0uNjMzLS4xMy0xLjI5LS4wODMtMS44OTcuMTQtLjI3My0uNTg3LS43MDQtMS4wODYtMS4yNDUtMS40NFMxMS42NDcgMS42MiAxMSAxLjYwNGMtLjY0Ni4wMTctMS4yNzMuMjEzLTEuODEzLjU2OHMtLjk2OS44NTQtMS4yNCAxLjQ0Yy0uNjA4LS4yMjMtMS4yNjctLjI3Mi0xLjkwMi0uMTQtLjYzNS4xMy0xLjIyLjQzNi0xLjY5Ljg4Mi0uNDQ1LjQ3LS43NDkgMS4wNTUtLjg3OCAxLjY4OC0uMTMuNjMzLS4wOCAxLjI5LjE0NCAxLjg5Ni0uNTg3LjI3NC0xLjA4Ny43MDUtMS40NDMgMS4yNDUtLjM1Ni41NC0uNTU1IDEuMTctLjU3NCAxLjgxNy4wMi42NDcuMjE4IDEuMjc2LjU3NCAxLjgxNy4zNTYuNTQuODU2Ljk3MiAxLjQ0MyAxLjI0NS0uMjI0LjYwNi0uMjc0IDEuMjYzLS4xNDQgMS44OTYuMTMuNjM0LjQzMyAxLjIxOC44NzcgMS42ODguNDcuNDQzIDEuMDU0Ljc0NyAxLjY4Ny44NzguNjMzLjEzMiAxLjI5LjA4NCAxLjg5Ny0uMTM2LjI3NC41ODYuNzA1IDEuMDg0IDEuMjQ2IDEuNDM5LjU0LjM1NCAxLjE3LjU1MSAxLjgxNi41NjkuNjQ3LS4wMTYgMS4yNzYtLjIxMyAxLjgxNy0uNTY3cy45NzItLjg1NCAxLjI0NS0xLjQ0Yy42MDQuMjM5IDEuMjY2LjI5NiAxLjkwMy4xNjQuNjM2LS4xMzIgMS4yMi0uNDQ3IDEuNjgtLjkwNy40Ni0uNDYuNzc2LTEuMDQ0LjkwOC0xLjY4MXMuMDc1LTEuMjk5LS4xNjUtMS45MDNjLjU4Ni0uMjc0IDEuMDg0LS43MDUgMS40MzktMS4yNDYuMzU0LS41NC41NTEtMS4xNy41NjktMS44MTZ6TTkuNjYyIDE0Ljg1bC0zLjQyOS0zLjQyOCAxLjI5My0xLjMwMiAyLjA3MiAyLjA3MiA0LjQtNC43OTQgMS4zNDcgMS4yNDZ6Ii8+PC9nPjwvc3ZnPg=="
+                width="20px"
+                style="filter: invert(1)"
+                alt=""
+                class="ml-16 -mt-8" /></h2>
+                <button class="ml-20 bg-white text-black rounded-full p-2 pl-6 pr-8 hover:bg-black hover: border border-gray-500 hover:text-white">Follow</button>
+          </section>
+          <section class="flex mt-4 text-xs">
+            <img
+              src="https://www.hindustantimes.com/static-content/1y/cricket-logos/players/virat-kohli.png"
+              alt=""
+              width="50px"
+              class="rounded-full" />
+            <h2 class="ml-4 mt-2">Virat Kholi<span class="mt-8 ml-2"><br>
+                <h3 class="text-gray-500">@IamVKholi</h3>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMiAyMiIgYXJpYS1sYWJlbD0iVmVyaWZpZWQgYWNjb3VudCIgcm9sZT0iaW1nIiBjbGFzcz0ici00cXRxcDkgci15eXl5b28gci0xeHZsaTV0IHItYm53cWltIHItbHJ2aWJyIHItbTZyZ3BkIHItMWN2bDJociByLWY5amE4cCByLW9nOXRlMSByLTN0NHU2aSIgZGF0YS10ZXN0aWQ9Imljb24tdmVyaWZpZWQiPjxnPjxwYXRoIGQ9Ik0yMC4zOTYgMTFjLS4wMTgtLjY0Ni0uMjE1LTEuMjc1LS41Ny0xLjgxNi0uMzU0LS41NC0uODUyLS45NzItMS40MzgtMS4yNDYuMjIzLS42MDcuMjctMS4yNjQuMTQtMS44OTctLjEzMS0uNjM0LS40MzctMS4yMTgtLjg4Mi0xLjY4Ny0uNDctLjQ0NS0xLjA1My0uNzUtMS42ODctLjg4Mi0uNjMzLS4xMy0xLjI5LS4wODMtMS44OTcuMTQtLjI3My0uNTg3LS43MDQtMS4wODYtMS4yNDUtMS40NFMxMS42NDcgMS42MiAxMSAxLjYwNGMtLjY0Ni4wMTctMS4yNzMuMjEzLTEuODEzLjU2OHMtLjk2OS44NTQtMS4yNCAxLjQ0Yy0uNjA4LS4yMjMtMS4yNjctLjI3Mi0xLjkwMi0uMTQtLjYzNS4xMy0xLjIyLjQzNi0xLjY5Ljg4Mi0uNDQ1LjQ3LS43NDkgMS4wNTUtLjg3OCAxLjY4OC0uMTMuNjMzLS4wOCAxLjI5LjE0NCAxLjg5Ni0uNTg3LjI3NC0xLjA4Ny43MDUtMS40NDMgMS4yNDUtLjM1Ni41NC0uNTU1IDEuMTctLjU3NCAxLjgxNy4wMi42NDcuMjE4IDEuMjc2LjU3NCAxLjgxNy4zNTYuNTQuODU2Ljk3MiAxLjQ0MyAxLjI0NS0uMjI0LjYwNi0uMjc0IDEuMjYzLS4xNDQgMS44OTYuMTMuNjM0LjQzMyAxLjIxOC44NzcgMS42ODguNDcuNDQzIDEuMDU0Ljc0NyAxLjY4Ny44NzguNjMzLjEzMiAxLjI5LjA4NCAxLjg5Ny0uMTM2LjI3NC41ODYuNzA1IDEuMDg0IDEuMjQ2IDEuNDM5LjU0LjM1NCAxLjE3LjU1MSAxLjgxNi41NjkuNjQ3LS4wMTYgMS4yNzYtLjIxMyAxLjgxNy0uNTY3cy45NzItLjg1NCAxLjI0NS0xLjQ0Yy42MDQuMjM5IDEuMjY2LjI5NiAxLjkwMy4xNjQuNjM2LS4xMzIgMS4yMi0uNDQ3IDEuNjgtLjkwNy40Ni0uNDYuNzc2LTEuMDQ0LjkwOC0xLjY4MXMuMDc1LTEuMjk5LS4xNjUtMS45MDNjLjU4Ni0uMjc0IDEuMDg0LS43MDUgMS40MzktMS4yNDYuMzU0LS41NC41NTEtMS4xNy41NjktMS44MTZ6TTkuNjYyIDE0Ljg1bC0zLjQyOS0zLjQyOCAxLjI5My0xLjMwMiAyLjA3MiAyLjA3MiA0LjQtNC43OTQgMS4zNDcgMS4yNDZ6Ii8+PC9nPjwvc3ZnPg=="
+                width="20px"
+                style="filter: invert(1)"
+                alt=""
+                class="ml-16 -mt-8" /></h2>
+                <button class="ml-20 bg-white text-black rounded-full p-2 pl-6 pr-8 hover:bg-black hover: border border-gray-500 hover:text-white">Follow</button>
+          </section>
+          <section class="flex mt-4 text-xs">
+            <img
+              src="https://yt3.googleusercontent.com/3K6h6gpMPf4mK9qh6SXTl0W3PLxnOMzUnFHc2lbS9t-ucS-b4JGcR8nW7ja9XDYkHM-kAnijk2c=s900-c-k-c0x00ffffff-no-rj"
+              alt=""
+              width="50px"
+              class="rounded-full" />
+            <h2 class="ml-4 mt-2">ICC<span class="mt-8 ml-2"><br>
+                <h3 class="text-gray-500">@icc</h3>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMiAyMiIgYXJpYS1sYWJlbD0iVmVyaWZpZWQgYWNjb3VudCIgcm9sZT0iaW1nIiBjbGFzcz0ici00cXRxcDkgci15eXl5b28gci0xeHZsaTV0IHItYm53cWltIHItbHJ2aWJyIHItbTZyZ3BkIHItMWN2bDJociByLWY5amE4cCByLW9nOXRlMSByLTN0NHU2aSIgZGF0YS10ZXN0aWQ9Imljb24tdmVyaWZpZWQiPjxnPjxwYXRoIGQ9Ik0yMC4zOTYgMTFjLS4wMTgtLjY0Ni0uMjE1LTEuMjc1LS41Ny0xLjgxNi0uMzU0LS41NC0uODUyLS45NzItMS40MzgtMS4yNDYuMjIzLS42MDcuMjctMS4yNjQuMTQtMS44OTctLjEzMS0uNjM0LS40MzctMS4yMTgtLjg4Mi0xLjY4Ny0uNDctLjQ0NS0xLjA1My0uNzUtMS42ODctLjg4Mi0uNjMzLS4xMy0xLjI5LS4wODMtMS44OTcuMTQtLjI3My0uNTg3LS43MDQtMS4wODYtMS4yNDUtMS40NFMxMS42NDcgMS42MiAxMSAxLjYwNGMtLjY0Ni4wMTctMS4yNzMuMjEzLTEuODEzLjU2OHMtLjk2OS44NTQtMS4yNCAxLjQ0Yy0uNjA4LS4yMjMtMS4yNjctLjI3Mi0xLjkwMi0uMTQtLjYzNS4xMy0xLjIyLjQzNi0xLjY5Ljg4Mi0uNDQ1LjQ3LS43NDkgMS4wNTUtLjg3OCAxLjY4OC0uMTMuNjMzLS4wOCAxLjI5LjE0NCAxLjg5Ni0uNTg3LjI3NC0xLjA4Ny43MDUtMS40NDMgMS4yNDUtLjM1Ni41NC0uNTU1IDEuMTctLjU3NCAxLjgxNy4wMi42NDcuMjE4IDEuMjc2LjU3NCAxLjgxNy4zNTYuNTQuODU2Ljk3MiAxLjQ0MyAxLjI0NS0uMjI0LjYwNi0uMjc0IDEuMjYzLS4xNDQgMS44OTYuMTMuNjM0LjQzMyAxLjIxOC44NzcgMS42ODguNDcuNDQzIDEuMDU0Ljc0NyAxLjY4Ny44NzguNjMzLjEzMiAxLjI5LjA4NCAxLjg5Ny0uMTM2LjI3NC41ODYuNzA1IDEuMDg0IDEuMjQ2IDEuNDM5LjU0LjM1NCAxLjE3LjU1MSAxLjgxNi41NjkuNjQ3LS4wMTYgMS4yNzYtLjIxMyAxLjgxNy0uNTY3cy45NzItLjg1NCAxLjI0NS0xLjQ0Yy42MDQuMjM5IDEuMjY2LjI5NiAxLjkwMy4xNjQuNjM2LS4xMzIgMS4yMi0uNDQ3IDEuNjgtLjkwNy40Ni0uNDYuNzc2LTEuMDQ0LjkwOC0xLjY4MXMuMDc1LTEuMjk5LS4xNjUtMS45MDNjLjU4Ni0uMjc0IDEuMDg0LS43MDUgMS40MzktMS4yNDYuMzU0LS41NC41NTEtMS4xNy41NjktMS44MTZ6TTkuNjYyIDE0Ljg1bC0zLjQyOS0zLjQyOCAxLjI5My0xLjMwMiAyLjA3MiAyLjA3MiA0LjQtNC43OTQgMS4zNDcgMS4yNDZ6Ii8+PC9nPjwvc3ZnPg=="
+                width="20px"
+                style="filter: invert(1)"
+                alt=""
+                class="ml-16 -mt-8" /></h2>
+                <button id="lastElement" class="ml-20 bg-white text-black rounded-full p-2 pl-6 pr-8 hover:bg-black hover: border border-gray-500 hover:text-white">Follow</button>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script >
+    /** @format */
+
+let mid = document.getElementById("mid");
+mid.style.display = "none";
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    mid.style.display = "flex";
+    mid.style.position = "fixed";
+    mid.style.top = "0";
+    mid.style.left = "0";
+    mid.style.width = "100%";
+    mid.style.zIndex = "1000";
+    mid.style.backgroundColor = "gray";
+  } else {
+    // Hide the navbar when scrolled back to top
+    mid.style.display = "none";
+  }
+});
+
+let right = document.getElementById("right");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    right.style.position = "";
+    right.style.top = "0";
+    right.style.right = "0";
+    right.style.zIndex = "1000";
+    right.style.backgroundColor = "black";
+  }
+});
+
+  </script>
+</html>

@@ -1,0 +1,95 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter-X</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-black text-white">
+    <main class="flex justify-around mt-24">
+      <left class="1">
+        <img
+          src="https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png"
+          alt=""
+          width="500px" />
+      </left>
+      <right class="1">
+        <h1 class="text-7xl font-bold">Happening now</h1>
+        <br />
+        <h4 class="font-bold text-3xl mt-8">Join today.</h4>
+        <button
+          id="link"
+          class="bg-white text-black p-2 rounded-full pl-12 pr-12 flex mt-8 hover:bg-red-600 hover:text-white">
+          Sign up with Google
+          <img
+            src="Social-Media-Svg/fi-brands-google.svg"
+            alt=""
+            width="20px"
+            class="ml-4" />
+        </button>
+        <button
+          class="bg-white mt-2 text-black p-2 rounded-full pl-12 pr-14 flex hover:bg-gray-400 hover:text-white">
+          Sign up with Apple<img
+            src="Social-Media-Svg/fi-brands-apple.svg"
+            alt=""
+            width="20px"
+            class="ml-6" />
+        </button>
+        <span class="">
+          <p class="border mt-6 underline mr-[28rem]"></p>
+          <h2 class="text-xl ml-28">or</h2>
+          <p class="border underline ml-40 mr-72"></p>
+        </span>
+        <button
+          class="bg-indigo-500 p-2 pl-20 pr-20 rounded-full mt-8 mr-44 hover:text-indigo-500 hover:bg-white">
+          Create account
+        </button>
+        <p class="text-nowrap whitespace-nowrap text-xs mt-2">
+          By signing up, you agree to the
+          <span class="text-indigo-500"> Terms of Service</span> and
+          <span class="text-indigo-500"
+            >Privacy <br />
+            Policy</span
+          >, including <span class="text-indigo-500">Cookie Use.</span>
+        </p>
+        <p class="mt-4 text-xl font-semibold">Already have an account?</p>
+        <button
+          class="text-indigo-500 border border-indigo-500 p-2 pl-28 pr-28 rounded-full mt-4">
+          Sign in
+        </button>
+      </right>
+    </main>
+    <footer class="text-xs mt-16 mb-2 text-gray-400">
+      <ul class="flex justify-evenly">
+        <li>About</li>
+        <li>Download the X app</li>
+        <li>Help Center</li>
+        <li>Terms of Service</li>
+        <li>Privacy Policy</li>
+        <li>Cookie Policy</li>
+        <li>Accessibility</li>
+        <li>Ads info</li>
+        <li>Blog</li>
+        <li>Careers</li>
+        <li>Brand Resources</li>
+        <li>Advertising</li>
+        <li>Marketing</li>
+        <li>X for Business</li>
+        <li>Developers</li>
+        <li>Directory</li>
+        <li>Settings</li>
+      </ul>
+      <li class="text-center mt-4 mb-2 list-none">© 2024 X Corp.</li>
+    </footer>
+    <script>
+      let link = document.getElementById("link");
+
+      link.addEventListener("click", () => {
+        window.location.href = "http://127.0.0.1:5500/X.html";
+      });
+    </script>
+  </body>
+</html>

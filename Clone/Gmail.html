@@ -1,0 +1,327 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gmail</title>
+  <link rel="stylesheet" href="output.css" />
+</head>
+
+<body>
+  <nav id="nav" class="bg-gray-200 p-2 flex justify-between">
+    <section class="flex pt-2">
+      <img src="./Components/image copy 54.png" alt="" width="40px"
+        class="rounded-full p-2 border hover:bg-gray-300 ml-2 cursor-pointer" />
+
+      <img src="./Components/image copy 53.png" alt="" width="30px" class="ml-4 mt-2" />
+      <h2 class="mt-2 ml-2 text-xl font-semibold font-sans">Gmail</h2>
+      <div class="relative w-[40rem] ml-40">
+        <input type="mail" name="" id="" placeholder="Search Mail"
+          class="w-full rounded-full p-2 placeholder:pl-2 bg-slate-300 placeholder:text-white pl-10 pr-12" style="
+              background-image: url('Social-Media-Svg/search.png');
+              background-position: 12px 8px;
+              background-repeat: no-repeat;
+              background-size: 20px;
+              font-size: 16px;
+            " />
+
+        <button
+          class="absolute right-1 -top-1 mt-1 mr-1 rounded-full p-2 hover:border hover:bg-gray-300 cursor-pointer">
+          <img src="./Components/image copy 24.png" alt="Settings" width="20px" />
+        </button>
+      </div>
+    </section>
+    <section class="flex">
+      <button>
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjMDAwMDAwIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTExIDE4aDJ2LTJoLTJ2MnptMS0xNkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAxOGMtNC40MSAwLTgtMy41OS04LThzMy41OS04IDgtOCA4IDMuNTkgOCA4LTMuNTkgOC04IDh6bTAtMTRjLTIuMjEgMC00IDEuNzktNCA0aDJjMC0xLjEuOS0yIDItMnMyIC45IDIgMmMwIDItMyAxLjc1LTMgNWgyYzAtMi4yNSAzLTIuNSAzLTUgMC0yLjIxLTEuNzktNC00LTR6Ii8+PC9zdmc+"
+          alt="" width="30px" class="rounded-full size-10 p-2 hover:bg-gray-300" />
+      </button>
+      <button>
+        <img src="./Components/image copy 56.png" alt="" width="30px" class="rounded-full p-2 size-10 hover:bg-gray-300 ml-4" />
+      </button>
+      <button>
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZvY3VzYWJsZT0iZmFsc2UiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiBoZWlnaHQ9IjI4IiB3aWR0aD0iMjgiIGNsYXNzPSJFaVZwS2MgYW9IIj48cGF0aCBkPSJNNDgwLTgwcTIsMCAyLTJxMC04MiAzMS0xNTR0ODUtMTI2dDEyNi04NXQxNTQtMzFxMiwwIDItMnQtMi0ycS04MiwwLTE1NC0zMVQ1OTgtNTk4VDUxMy03MjRUNDgyLTg3OHEwLTItMi0ydC0yLDJxMCw4Mi0zMSwxNTRUMzYyLTU5OFQyMzYtNTEzVDgyLTQ4MnEtMiwwLTIsMnQyLDJxODIsMCAxNTQsMzF0MTI2LDg1dDg1LDEyNlQ0NzgtODJxMCwyIDIsMloiLz48L3N2Zz4="
+          alt="" width="30px" class="rounded-full p-2 size-10 hover:bg-gray-300 ml-4" />
+      </button>
+      <button>
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJnYl9FIiBmb2N1c2FibGU9ImZhbHNlIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik02LDhjMS4xLDAgMiwtMC45IDIsLTJzLTAuOSwtMiAtMiwtMiAtMiwwLjkgLTIsMiAwLjksMiAyLDJ6TTEyLDIwYzEuMSwwIDIsLTAuOSAyLC0ycy0wLjksLTIgLTIsLTIgLTIsMC45IC0yLDIgMC45LDIgMiwyek02LDIwYzEuMSwwIDIsLTAuOSAyLC0ycy0wLjksLTIgLTIsLTIgLTIsMC45IC0yLDIgMC45LDIgMiwyek02LDE0YzEuMSwwIDIsLTAuOSAyLC0ycy0wLjksLTIgLTIsLTIgLTIsMC45IC0yLDIgMC45LDIgMiwyek0xMiwxNGMxLjEsMCAyLC0wLjkgMiwtMnMtMC45LC0yIC0yLC0yIC0yLDAuOSAtMiwyIDAuOSwyIDIsMnpNMTYsNmMwLDEuMSAwLjksMiAyLDJzMiwtMC45IDIsLTIgLTAuOSwtMiAtMiwtMiAtMiwwLjkgLTIsMnpNMTIsOGMxLjEsMCAyLC0wLjkgMiwtMnMtMC45LC0yIC0yLC0yIC0yLDAuOSAtMiwyIDAuOSwyIDIsMnpNMTgsMTRjMS4xLDAgMiwtMC45IDIsLTJzLTAuOSwtMiAtMiwtMiAtMiwwLjkgLTIsMiAwLjksMiAyLDJ6TTE4LDIwYzEuMSwwIDIsLTAuOSAyLC0ycy0wLjksLTIgLTIsLTIgLTIsMC45IC0yLDIgMC45LDIgMiwyeiIvPjxpbWFnZSBzcmM9Imh0dHBzOi8vc3NsLmdzdGF0aWMuY29tL2diL2ltYWdlcy9iYXIvYWwtaWNvbi5wbmciIGFsdD0iIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHN0eWxlPSJib3JkZXI6bm9uZTtkaXNwbGF5Om5vbmUgXDkiLz48L3N2Zz4="
+          alt="" width="30px" class="rounded-full p-2 size-10 hover:bg-gray-300 ml-4" />
+      </button>
+      <button>
+        <img src="./Components/image copy 5.png" alt="" width="30px" class="rounded-full p-2 size-10 hover:bg-gray-300 ml-4" />
+      </button>
+    </section>
+  </nav>
+  <nav class="bg-gray-200 p-2 flex justify-between">
+    <section class="flex pt-2">
+      <img src="./Components/image copy 54.png" alt="" width="40px"
+        class="rounded-full p-2 border hover:bg-gray-300 ml-2 cursor-pointer" />
+
+      <img src="./Components/image copy 53.png" alt="" width="30px" class="ml-4 mt-2" />
+      <h2 class="mt-2 ml-2 text-xl font-semibold font-sans">Gmail</h2>
+      <div class="relative w-[40rem] ml-40">
+        <input type="mail" name="" id="" placeholder="Search Mail"
+          class="w-full rounded-full p-2 placeholder:pl-2 bg-slate-300 placeholder:text-white pl-10 pr-12" style="
+              background-image: url('Social-Media-Svg/search.png');
+              background-position: 12px 8px;
+              background-repeat: no-repeat;
+              background-size: 20px;
+              font-size: 16px;
+            " />
+
+        <button
+          class="absolute right-1 -top-1 mt-1 mr-1 rounded-full p-2 hover:border hover:bg-gray-300 cursor-pointer">
+          <img src="./Components/image copy 24.png" alt="Settings" width="20px" />
+        </button>
+      </div>
+    </section>
+    <section class="flex">
+      <button>
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjMDAwMDAwIiBmb2N1c2FibGU9ImZhbHNlIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTExIDE4aDJ2LTJoLTJ2MnptMS0xNkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAxOGMtNC40MSAwLTgtMy41OS04LThzMy41OS04IDgtOCA4IDMuNTkgOCA4LTMuNTkgOC04IDh6bTAtMTRjLTIuMjEgMC00IDEuNzktNCA0aDJjMC0xLjEuOS0yIDItMnMyIC45IDIgMmMwIDItMyAxLjc1LTMgNWgyYzAtMi4yNSAzLTIuNSAzLTUgMC0yLjIxLTEuNzktNC00LTR6Ii8+PC9zdmc+"
+          alt="" width="30px" class="rounded-full size-10 p-2 hover:bg-gray-300" />
+      </button>
+      <button>
+        <img src="./Components/image copy 56.png" alt="" width="30px" class="rounded-full p-2 size-10 hover:bg-gray-300 ml-4" />
+      </button>
+      <button>
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZvY3VzYWJsZT0iZmFsc2UiIHZpZXdCb3g9IjAgLTk2MCA5NjAgOTYwIiBoZWlnaHQ9IjI4IiB3aWR0aD0iMjgiIGNsYXNzPSJFaVZwS2MgYW9IIj48cGF0aCBkPSJNNDgwLTgwcTIsMCAyLTJxMC04MiAzMS0xNTR0ODUtMTI2dDEyNi04NXQxNTQtMzFxMiwwIDItMnQtMi0ycS04MiwwLTE1NC0zMVQ1OTgtNTk4VDUxMy03MjRUNDgyLTg3OHEwLTItMi0ydC0yLDJxMCw4Mi0zMSwxNTRUMzYyLTU5OFQyMzYtNTEzVDgyLTQ4MnEtMiwwLTIsMnQyLDJxODIsMCAxNTQsMzF0MTI2LDg1dDg1LDEyNlQ0NzgtODJxMCwyIDIsMloiLz48L3N2Zz4="
+          alt="" width="30px" class="rounded-full p-2 size-10 hover:bg-gray-300 ml-4" />
+      </button>
+      <button>
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJnYl9FIiBmb2N1c2FibGU9ImZhbHNlIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik02LDhjMS4xLDAgMiwtMC45IDIsLTJzLTAuOSwtMiAtMiwtMiAtMiwwLjkgLTIsMiAwLjksMiAyLDJ6TTEyLDIwYzEuMSwwIDIsLTAuOSAyLC0ycy0wLjksLTIgLTIsLTIgLTIsMC45IC0yLDIgMC45LDIgMiwyek02LDIwYzEuMSwwIDIsLTAuOSAyLC0ycy0wLjksLTIgLTIsLTIgLTIsMC45IC0yLDIgMC45LDIgMiwyek02LDE0YzEuMSwwIDIsLTAuOSAyLC0ycy0wLjksLTIgLTIsLTIgLTIsMC45IC0yLDIgMC45LDIgMiwyek0xMiwxNGMxLjEsMCAyLC0wLjkgMiwtMnMtMC45LC0yIC0yLC0yIC0yLDAuOSAtMiwyIDAuOSwyIDIsMnpNMTYsNmMwLDEuMSAwLjksMiAyLDJzMiwtMC45IDIsLTIgLTAuOSwtMiAtMiwtMiAtMiwwLjkgLTIsMnpNMTIsOGMxLjEsMCAyLC0wLjkgMiwtMnMtMC45LC0yIC0yLC0yIC0yLDAuOSAtMiwyIDAuOSwyIDIsMnpNMTgsMTRjMS4xLDAgMiwtMC45IDIsLTJzLTAuOSwtMiAtMiwtMiAtMiwwLjkgLTIsMiAwLjksMiAyLDJ6TTE4LDIwYzEuMSwwIDIsLTAuOSAyLC0ycy0wLjksLTIgLTIsLTIgLTIsMC45IC0yLDIgMC45LDIgMiwyeiIvPjxpbWFnZSBzcmM9Imh0dHBzOi8vc3NsLmdzdGF0aWMuY29tL2diL2ltYWdlcy9iYXIvYWwtaWNvbi5wbmciIGFsdD0iIiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHN0eWxlPSJib3JkZXI6bm9uZTtkaXNwbGF5Om5vbmUgXDkiLz48L3N2Zz4="
+          alt="" width="30px" class="rounded-full p-2 size-10 hover:bg-gray-300 ml-4" />
+      </button>
+      <button>
+        <img src="./Components/images.jpeg" alt="" width="30px" class="rounded-full p-2 size-12 hover:bg-gray-300 ml-4" />
+      </button>
+    </section>
+  </nav>
+  <main class="flex">
+    <section class="bg-gray-200">
+      <div class="flex flex-col ml-4 pr-4 ">
+        <button>
+          <img src="https://www.gstatic.com/images/icons/material/system_gm/1x/create_black_24dp.png" alt=""
+            width="40px" class="mt-2 border bg-blue-400 rounded-xl p-2 size-12" /></button><button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/inbox_fill_baseline_p900_20dp.png" alt=""
+            width="30px" class="mt-2" /></button><button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png" alt="" width="30px"
+            class="mt-2" /></button><button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png" alt=""
+            width="30px" class="mt-2" /></button><button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/draft_baseline_nv700_20dp.png" alt="" width="30px"
+            class="mt-2" /></button><button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/label_baseline_nv700_20dp.png" alt="" width="30px"
+            class="mt-2" /></button><button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/group_baseline_nv700_20dp.png" alt="" width="30px"
+            class="mt-2" /></button><button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/info_baseline_nv700_20dp.png" alt="" width="30px"
+            class="mt-2" /></button><button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/forum_baseline_nv700_20dp.png" alt="" width="30px"
+            class="mt-2" /></button><button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/sell_baseline_nv700_20dp.png" alt="" width="30px"
+            class="mt-2" /></button><button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/arrow_drop_down_baseline_nv700_20dp.png" alt=""
+            width="30px" class="mt-2" />
+        </button>
+        <button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/add_large_baseline_nv700_20dp.png" alt=""
+            width="30px" class="mt-8" /></button><button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/label_baseline_nv700_20dp.png" alt="" width="30px"
+            class="mt-2 pb-44" style="filter: invert(1)" />
+        </button>
+      </div>
+    </section>
+    <section class="bg-slate-300">
+      <div class="flex p-4 border rounded-3xl bg-white  ">
+        <nav class="flex ">
+          <img src="./Components/image copy 59.png" alt="" class=" cursor-pointer size-6 " />
+          <img src="./Components/image copy 57.png" alt="" class=" cursor-pointer size-4 mt-1 ml-2" />
+          <img src="./Components/image copy 58.png" alt="" class=" cursor-pointer size-6 ml-4" />
+          <img src="./Components/image copy 60.png" alt="" class=" cursor-pointer size-4 mt-1 ml-4" />
+        </nav>
+        <div class="flex mt-16 -ml-32">
+          <main class="flex whitespace-nowrap">
+            <img src="./Components/image copy 57.png" alt="" class="size-4 mt-1 ml-2" style="transform: rotate(180deg);" />
+            <h2 class="ml-4 mr-[4rem]">Important</h2>
+            <span class="ml-[rem]">
+            <h4 class="pl-[30rem] invisible">1-25 0f 139</h4></span>
+              
+          </main>
+        </div>
+        <nav class="flex ml-[40rem]">
+          <img src="./Components/image copy 61.png" alt="" class="cursor-pointer size-8"  />
+          <img src="./Components/image copy 57.png" alt="" class="cursor-pointer size-4 mt-2 ml-2" />
+        </nav>
+      </div>
+
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Freefy</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 14</h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Spotify</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 10 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Spotify</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 10 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Spotify</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 10 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Spotify</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 10 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Spotify</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 10 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Spotify</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 10 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Spotify</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 10 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Spotify</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 10 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Spotify</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 10 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Spotify</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 10 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Spotify</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Nov 10 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">yotuer</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Mar 14 </h4>
+        </main>
+      </div>
+      <div class="flex border p-2 cursor-pointer transition-transform transform hover:translate-x-2 bg-slate-300 hover:bg-gray-200 border-gray-200">
+        <img src="./Components/image copy 59.png" alt="" class="size-4 ml-4 mt-1" />
+        <img src="./Components/image copy 65.png" alt="" class="size-4 ml-4 mt-1" />
+        <main class="flex whitespace-nowrap">
+          <h2 class="ml-4">Supriya</h2>
+          <p class="ml-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing . Veritatis quidem veniam voluptatibus
+            quisquam?</p>
+          <h4 class="ml-[30rem] mr-8">Jan 28 </h4>
+        </main>
+      </div>
+
+    </section>
+    <section class="bg-gray-200 relative">
+      <div class="flex flex-col ml-4 pr-4 ">
+
+        <img src="./Components/image copy 62.png" alt="" width="30px" class="mt-6" /></button><button>
+          <img src="./Components/image copy 63.png" alt="" width="30px" class="mt-6" /></button><button>
+          <img src="./Components/image copy 64.png" alt="" width="30px" class="mt-6" /></button><button>
+          <img src="./Components/image copy 5.png" alt="" width="30px" class="mt-6" /></button>
+        <button>
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/add_large_baseline_nv700_20dp.png" alt=""
+            width="30px" class="mt-32" /></button>
+      </div>
+    </section>
+  </main>
+  <script>
+    const nav = document.getElementById("nav");
+    nav.style.display = "none";
+  </script>
+</body>
+
+</html>

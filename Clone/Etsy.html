@@ -1,0 +1,436 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="output.css" />
+  <title>Etsy.com</title>
+</head>
+
+<body>
+  <nav>
+    <ul class="flex justify-between p-2">
+      <h3 class="text-5xl ml-28 font-serif font-bold text-orange-400">
+        Etsy
+      </h3>
+      <button class="-ml-12 flex p-4 hover:bg-zinc-300 rounded-full">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+          focusable="false" width="18" height="18">
+          <rect x="2" y="8" width="14" height="2"></rect>
+          <rect x="2" y="13" width="14" height="2"></rect>
+          <rect x="2" y="3" width="14" height="2" fill="#222222"></rect>
+        </svg>
+        <li class="ml-2 -mt-1">Categories</li>
+      </button>
+
+      <input class="border w-[40rem] rounded-full pl-7" type="text" placeholder="Search for anything" />
+      <button class="-ml-28 rounded-full bg-orange-400 p-4 hover:bg-blue-400">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          aria-hidden="true" focusable="false" width="24" height="24">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M10.5 19a8.46 8.46 0 0 0 5.262-1.824l4.865 4.864 1.414-1.414-4.865-4.865A8.5 8.5 0 1 0 10.5 19m0-2a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13"
+            fill="black"></path>
+        </svg>
+      </button>
+      <button class="hover:bg-zinc-300 rounded-full p-4 -mr-16">
+        Sign in
+      </button>
+      <button class="hover:bg-blue-400 rounded-full p-4 -mr-16">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjx0aXRsZT5JTkRJQTwvdGl0bGU+PGRlZnM+PHBhdGggZD0iTS4wMDMgMTBjMCA1LjUxNiA0LjQ4NSAxMC4wMDIgMTAgMTAuMDAyczEwLTQuNDg2IDEwLTEwYzAtNS41MTYtNC40ODUtMTAtMTAtMTBzLTEwIDQuNDg0LTEwIDEweiIgaWQ9ImEiLz48cGF0aCBkPSJNMTAuMDAzIDIwLjAwMmM1LjUxNSAwIDEwLTQuNDg2IDEwLTEwIDAtNS41MTYtNC40ODUtMTAtMTAtMTBzLTEwIDQuNDg0LTEwIDEwYzAgNS41MTQgNC40ODUgMTAgMTAgMTB6IiBpZD0iZCIvPjxmaWx0ZXIgeD0iLTIuNSUiIHk9Ii0yLjUlIiB3aWR0aD0iMTA1JSIgaGVpZ2h0PSIxMDUlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIGlkPSJjIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIuNSIgaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9InNoYWRvd0JsdXJJbm5lcjEiLz48ZmVPZmZzZXQgaW49InNoYWRvd0JsdXJJbm5lcjEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0SW5uZXIxIi8+PGZlQ29tcG9zaXRlIGluPSJzaGFkb3dPZmZzZXRJbm5lcjEiIGluMj0iU291cmNlQWxwaGEiIG9wZXJhdG9yPSJhcml0aG1ldGljIiBrMj0iLTEiIGszPSIxIiByZXN1bHQ9InNoYWRvd0lubmVySW5uZXIxIi8+PGZlQ29sb3JNYXRyaXggdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIgaW49InNoYWRvd0lubmVySW5uZXIxIi8+PC9maWx0ZXI+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PG1hc2sgaWQ9ImIiIGZpbGw9IiNGRkZGRkYiPjx1c2UgeGxpbms6aHJlZj0iI2EiLz48L21hc2s+PHBhdGggZmlsbD0iIzAwODAwMCIgbWFzaz0idXJsKCNiKSIgZD0iTTAgMjBoMjB2LTZIMCIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIG1hc2s9InVybCgjYikiIGQ9Ik0wIDE0VjZoMjB2OCIvPjxwYXRoIGZpbGw9IiNGRkE1MDAiIG1hc2s9InVybCgjYikiIGQ9Ik0wIDZoMjBWMEgwIi8+PHVzZSBmaWx0ZXI9InVybCgjYykiIHhsaW5rOmhyZWY9IiNkIiBmaWxsPSIjMDAwIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwLDEwKSI+PGNpcmNsZSByPSIwLjgiIGZpbGw9IiMwMDAwODgiLz48Y2lyY2xlIHI9IjAuNSIgZmlsbD0iI0ZGRkZGRiIvPjxjaXJjbGUgcj0iMC44IiBmaWxsPSIjMDAwMDg4Ii8+PGcgaWQ9ImoiPjxnIGlkPSJpIj48ZyBpZD0iaCI+PGcgaWQ9ImciPjxjaXJjbGUgcj0iMC4zIiBmaWxsPSIjMDAwMDg4IiB0cmFuc2Zvcm09InJvdGF0ZSgyLjUpIHRyYW5zbGF0ZSgyLjUpIi8+PHBhdGggZmlsbD0iIzAwMDA4OCIgZD0iTSAwLCAwLjksIEMgMC42LDQgMCwyIDAsMiAwLDIgLTAuNiwwIC0wLjYsIEwgMCwxMiB6Ii8+PC9nPjx1c2UgeGxpbms6aHJlZj0iI2ciIHRyYW5zZm9ybT0icm90YXRlKDE1KSIvPjwvZz48dXNlIHhsaW5rOmhyZWY9IiNoIiB0cmFuc2Zvcm09InJvdGF0ZSgzMCkiLz48L2c+PHVzZSB4bGluazpocmVmPSIjaSIgdHJhbnNmb3JtPSJyb3RhdGUoNjApIi8+PC9nPjx1c2UgeGxpbms6aHJlZj0iI2oiIHRyYW5zZm9ybT0icm90YXRlKDEyMCkiLz48dXNlIHhsaW5rOmhyZWY9IiNqIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTIwKSIvPjwvZz48L3N2Zz4="
+          alt="" />
+      </button>
+      <button class="hover:bg-blue-400 rounded-full p-4 -mr-16">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          aria-hidden="true" focusable="false" width="24" height="24">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20.877 12.52q.081-.115.147-.239A6 6 0 0 0 12 4.528a6 6 0 0 0-9.024 7.753q.066.123.147.24l.673.961a6 6 0 0 0 .789.915L12 21.422l7.415-7.025q.44-.418.789-.915zm-14.916.425L12 18.667l6.04-5.722q.293-.279.525-.61l.673-.961a.3.3 0 0 0 .044-.087 4 4 0 1 0-7.268-2.619v.003L12 8.667l-.013.004v-.002l-.006-.064a3.98 3.98 0 0 0-1.232-2.51 4 4 0 0 0-6.031 5.193q.014.045.044.086l.673.961a4 4 0 0 0 .526.61"
+            fill="#222222"></path>
+        </svg>
+      </button>
+      <button class="hover:bg-blue-400 rounded-full p-4 -mr-16">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          aria-hidden="true" focusable="false" width="24" height="24">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z"
+            fill="#222222"></path>
+        </svg>
+      </button>
+      <button class="mr-28 hover:bg-blue-400 rounded-full p-4">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          aria-hidden="true" focusable="false" width="24" height="24">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m5.766 5-.618-3H1v2h2.518l2.17 10.535L6.18 17h14.307l2.4-12zM7.82 15l-1.6-8h14.227l-1.6 8z"
+            fill="#222222"></path>
+          <path d="M10.667 20.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m8.333 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"
+            fill="#222222"></path>
+        </svg>
+      </button>
+    </ul>
+  </nav>
+  <nav>
+    <ul class="flex justify-center">
+      <button class="hover:bg-zinc-300 rounded-full p-4 flex">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          aria-hidden="true" focusable="false" width="24" height="24">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7zm9.466 0H13V5a2 2 0 1 1 2.001 2M11 5a2 2 0 1 0-2.001 2H11zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.98 4.98 0 0 0 3-1v3H4V9zM13 11c.836.628 1.874 1 3 1v-2a3 3 0 0 1-2.236-1H20v5h-7zm-8 5v4h6v-4zm8 4v-4h6v4z"
+            fill="#222222"></path>
+        </svg>
+        <li class="ml-2">Gifts</li>
+      </button>
+      <button class="hover:bg-zinc-300 rounded-full p-4">
+        <li>Cyber Deals</li>
+      </button>
+      <button class="hover:bg-zinc-300 rounded-full p-4">
+        <li>Home Favourite</li>
+      </button>
+      <button class="hover:bg-zinc-300 rounded-full p-4">
+        <li>Fashion Finds</li>
+      </button>
+      <button class="hover:bg-zinc-300 rounded-full p-4">
+        <li>Registery</li>
+      </button>
+    </ul>
+  </nav>
+  <p class="border border-zinc-300"></p>
+
+  <h2 class="text-center mt-3 text-3xl font-serif">
+    Discover the most popular Etsy finds at every price
+  </h2>
+  <article class="flex justify-around text-center mt-6">
+    <div class="w-32 ml-56 cursor-pointer space-x-2 hover:transition hover:-translate-y-4">
+      <img src="https://i.etsystatic.com/18916943/r/il/0bfdb9/3649410319/il_300x300.3649410319_gpau.jpg" alt=""
+        class="rounded-full size-32 hover:border border-blue-400 border-spacing-x-20" />
+      <p class="font-semibold">Personalised portraits</p>
+    </div>
+    <div class="w-32 cursor-pointer space-x-2 hover:transition hover:-translate-y-4">
+      <img src="https://i.etsystatic.com/16200494/r/il/eb7e58/6312702655/il_300x300.6312702655_7o60.jpg" alt=""
+        class="rounded-full size-32 hover:border border-blue-400 border-spacing-x-20" />
+      <p class="font-semibold">Birthstone Jewellery</p>
+    </div>
+    <div class="w-32 cursor-pointer space-x-2 hover:transition hover:-translate-y-4">
+      <img src="https://i.etsystatic.com/37506535/r/il/622123/6036400426/il_300x300.6036400426_hwdx.jpg" alt=""
+        class="rounded-full size-32 hover:border border-blue-400 border-spacing-x-20" />
+      <p class="font-semibold">Kid's name jumpers</p>
+    </div>
+    <div class="w-32 cursor-pointer space-x-2 hover:transition hover:-translate-y-4">
+      <img
+        src="https://i.etsystatic.com/28070258/c/2500/2500/256/298/il/8cafa5/3707333275/il_300x300.3707333275_f68j.jpg"
+        alt="" class="rounded-full size-32 hover:border border-blue-400 border-spacing-x-20" />
+      <p class="font-semibold">Personalised barware</p>
+    </div>
+    <div class="w- cursor-pointer space-x-2 hover:transition hover:-translate-y-4">
+      <img src="https://i.etsystatic.com/9623213/r/il/549572/5418982727/il_300x300.5418982727_2dzo.jpg" alt=""
+        class="rounded-full size-32 hover:border border-blue-400 border-spacing-x-20" />
+      <p class="font-semibold">
+        Personalised <br />
+        serving boards
+      </p>
+    </div>
+    <div class="w-32 mr-56 cursor-pointer space-x-2 hover:transition hover:-translate-y-4">
+      <img src="https://i.etsystatic.com/54626095/c/672/672/63/63/il/c4c41e/6436562193/il_300x300.6436562193_lyv8.jpg"
+        alt="" class="rounded-full size-32 hover:border border-blue-400 border-spacing-x-20" />
+      <p class="font-semibold">Wreaths</p>
+    </div>
+  </article>
+  <main class="ml-32 mr-32">
+    <h2 class="text-2xl font-semibold mt-20">Featured categories</h2>
+    <article class="mt-12 flex justify-around">
+      <div class="cursor-pointer hover:transition hover:-translate-y-4 hover:translate-x-2">
+        <img
+          src="https://i.etsystatic.com/32449061/c/1459/1459/1114/362/il/f515a3/6362798735/il_300x300.6362798735_n5v6.jpg"
+          alt="" width="280px" class="rounded-xl" />
+        <p class="font-medium text-lg">Signs</p>
+      </div>
+      <div class="cursor-pointer ml-4 hover:transition hover:-translate-y-4 hover:translate-x-2">
+        <img src="https://i.etsystatic.com/24685308/r/il/03990c/3411607173/il_300x300.3411607173_jmb6.jpg" alt=""
+          width="280px" class="rounded-2xl" />
+        <p class="font-medium text-lg">Christmas decoration</p>
+      </div>
+      <div class="cursor-pointer ml-4 hover:transition hover:-translate-y-4 hover:translate-x-2">
+        <img
+          src="https://i.etsystatic.com/10967690/c/2225/2225/361/0/il/57099d/6038598883/il_300x300.6038598883_ize7.jpg"
+          alt="" width="280px" class="rounded-2xl" />
+        <p class="font-medium text-lg">Digital prints</p>
+      </div>
+      <div class="cursor-pointer ml-4 hover:transition hover:-translate-y-4 hover:translate-x-2">
+        <img
+          src="https://i.etsystatic.com/13699315/c/1454/1454/278/0/il/f9b78a/6457291071/il_300x300.6457291071_hm1a.jpg"
+          alt="" width="280px" class="rounded-2xl" />
+        <p class="font-medium text-lg">Christmas decoration</p>
+      </div>
+      <div class="cursor-pointer ml-4 hover:transition hover:-translate-y-4 hover:translate-x-2">
+        <img
+          src="https://i.etsystatic.com/25168585/c/1800/1800/298/0/il/e0da11/5460954945/il_300x300.5460954945_9tu4.jpg"
+          alt="" width="280px" class="rounded-2xl" />
+        <p class="font-medium text-lg">Digital prints</p>
+      </div>
+      <div class="cursor-pointer ml-4 hover:transition hover:-translate-y-4 hover:translate-x-2">
+        <img src="https://i.etsystatic.com/23824347/r/il/67d7f1/5200553974/il_300x300.5200553974_4yjs.jpg" alt=""
+          width="280px" class="rounded-2xl" />
+        <p class="font-medium text-lg">Signs</p>
+      </div>
+    </article>
+    <h2 class="text-2xl font-semibold mt-20">Popular gifts right now</h2>
+    <div id="product-container" class="flex flex-wrap justify-evenly mt-12"></div>
+    <h2 class="text-2xl font-semibold mt-20">
+      Shop extraordinary items at special price
+    </h2>
+    <article class="flex mt-12">
+      <div class="hover:border p-3 rounded-2xl hover:transition hover:-translate-y-4 cursor-pointer hover:shadow-lg">
+        <img src="https://i.etsystatic.com/47741094/r/il/27963d/5575141121/il_300x300.5575141121_cmfv.jpg" alt=""
+          width="240px" class="rounded-2xl" />
+        <p class="font-medium text-lg">Gift for Her</p>
+        <p class="font-medium text-lg">up to 60% off</p>
+      </div>
+      <div
+        class="ml-4 hover:border p-3 rounded-2xl hover:transition hover:-translate-y-4 cursor-pointer hover:shadow-lg">
+        <img
+          src="https://i.etsystatic.com/10188937/c/1707/1707/0/36/il/6a897a/3328981788/il_300x300.3328981788_opn2.jpg"
+          alt="" width="240px" class="rounded-2xl" />
+        <p class="font-medium text-lg">Gift for Him</p>
+        <p class="font-medium text-lg">up to 60% off</p>
+      </div>
+      <div
+        class="ml-4 hover:border p-3 rounded-2xl hover:transition hover:-translate-y-4 cursor-pointer hover:shadow-lg">
+        <img src="https://i.etsystatic.com/17305851/r/il/d5a255/5593298611/il_300x300.5593298611_3pnm.jpg" alt=""
+          width="240px" class="rounded-2xl" />
+        <p class="font-medium text-lg">Gift for Kids</p>
+        <p class="font-medium text-lg">up to 60% off</p>
+      </div>
+      <div
+        class="ml-4 hover:border p-3 rounded-2xl hover:transition hover:-translate-y-4 cursor-pointer hover:shadow-lg">
+        <img
+          src="https://i.etsystatic.com/25440266/c/2250/2250/0/547/il/a12994/3263018476/il_300x300.3263018476_6h3o.jpg"
+          alt="" width="240px" class="rounded-2xl" />
+        <p class="font-medium text-lg">Personalised Gifts</p>
+        <p class="font-medium text-lg">up to 60% off</p>
+      </div>
+      <div
+        class="ml-4 hover:border p-3 rounded-2xl hover:transition hover:-translate-y-4 cursor-pointer hover:shadow-lg">
+        <img src="https://i.etsystatic.com/5896664/r/il/d1572a/304721741/il_300x300.304721741.jpg" alt="" width="240px"
+          class="rounded-2xl" />
+        <p class="font-medium text-lg">Personalised Gifts</p>
+        <p class="font-medium text-lg">up to 60% off</p>
+      </div>
+    </article>
+    <article class="mt-20 flex justify-around">
+      <div class="mt-12">
+        <p>Local finds? Etsy has it.</p>
+        <h2 class="text-3xl mt-4 font-bold">Discover shops in India</h2>
+        <input type="text" placeholder="Shop from local makers"
+          class="rounded-full p-2 pl-4 border mt-4 border-black placeholder:text-black cursor-pointer hover:bg-gray-200 hover:transition hover:-translate-y-3" />
+      </div>
+      <div class="relative hover:border rounded-2xl p-2 cursor-pointer">
+        <img src="https://i.etsystatic.com/23128745/r/il/01e3e6/5506000700/il_570xN.5506000700_8abt.jpg" alt=""
+          width="300px" class="rounded-xl" />
+        <button class="absolute top-2 right-4 bg-white p-2 ml-2 mt-2 rounded-full shadow-lg hover:bg-gray-200">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            aria-hidden="true" focusable="false" width="24" height="24">
+            <path
+              d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z"
+              fill="#222222"></path>
+          </svg>
+        </button>
+
+        <span class="flex mt-4">
+          <img src="https://i.etsystatic.com/isla/3d8d99/46425436/isla_75x75.46425436_sls1grlg.jpg?version=0" alt=""
+            width="35px" class="" />
+          <p class="text-center mt-2 ml-4 font-semibold">LuminosaColours</p>
+      </div>
+      <div class="relative hover:border rounded-2xl p-2 cursor-pointer">
+        <img src="https://i.etsystatic.com/21184009/r/il/536e7f/5957793347/il_570xN.5957793347_7im8.jpg" alt=""
+          width="300px"  class="rounded-xl" />
+        <button class="absolute top-2 right-4 bg-white p-2 ml-2 mt-2 rounded-full shadow-lg hover:bg-gray-200">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            aria-hidden="true" focusable="false" width="24" height="24">
+            <path
+              d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z"
+              fill="#222222"></path>
+          </svg>
+        </button>
+
+        <span class="flex mt-4">
+          <img src="https://i.etsystatic.com/isla/78c513/54105286/isla_75x75.54105286_625mytzv.jpg?version=0" alt=""
+            width="35px" class="rounded-full" />
+          <p class="text-center mt-2 ml-4 font-semibold">HazyPalette</p>
+      </div>
+      <div class="relative hover:border rounded-2xl p-2 cursor-pointer">
+        <img src="https://i.etsystatic.com/24043486/r/il/e8aa39/2657479248/il_570xN.2657479248_hhxk.jpg" alt=""
+          width="300px" class="rounded-xl" />
+        <button class="absolute top-2 right-4 bg-white ml-2 mt-2 p-2 rounded-full shadow-lg hover:bg-gray-200">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            aria-hidden="true" focusable="false" width="24" height="24">
+            <path
+              d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z"
+              fill="#222222"></path>
+          </svg>
+        </button>
+    </article>
+    <h2 class="text-2xl font-semibold mt-20 flex cursor-pointer">Fresh from blogs 
+      <img src="data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 12 24%22%3E%3Cpath fill%3D%22var%28--clg-color-sem-text-primary, %23222222%29%22 d%3D%22M11.3,12.7L12,12l-0.7-0.7l-4-4c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4L8.2,11H1c-0.6,0-1,0.4-1,1s0.4,1,1,1h7.2l-2.3,2.3 c-0.2,0.2-0.3,0.4-0.3,0.7c0,0.6,0.4,1,1,1c0.3,0,0.5-0.1,0.7-0.3C7.3,16.7,11.3,12.7,11.3,12.7z%22%2F%3E%3C%2Fsvg%3E" alt="" width="25px" class=" ml-4 size-8 hover:transition hover:translate-x-4 ">
+    </h2>
+    <div id="product1" class="flex flex-wrap justify-evenly mt-20"></div>
+  </main>
+  <footer class="mt-20 bg-orange-300 ">
+    <div class="text-center">
+    <h2 class="pt-12 text-4xl font-serif">What is Etsy India?</h2>
+    <p class="underline underline-offset-4 mt-2">Read our wonderfully weird story</p></div>
+    <main class="mt-20 ml-96">
+      <div>
+        <p>Etsy is a global marketplace for creative and one-of-a-kind goods. It’s home to a universe of special, extraordinary...</p>
+        <button class="border hover:bg-zinc-400 mt-2">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path fill="var(--clg-color-sem-text-on-surface-strong, #FFFFFF)" d="M12,15.414L7.293,10.707A1,1,0,1,1,8.707,9.293L12,12.586l3.293-3.293a1,1,0,0,1,1.414,1.414Z"></path></svg>
+        </button>
+      </div>
+      <h2 class="text-blue-600 text-xl font-semibold mt-4">Why Choose Etsy?</h2>
+      <div class="mt-4">
+        <p>A community doing good...</p>
+        <button class="border hover:bg-zinc-400 mt-2">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path fill="var(--clg-color-sem-text-on-surface-strong, #FFFFFF)" d="M12,15.414L7.293,10.707A1,1,0,1,1,8.707,9.293L12,12.586l3.293-3.293a1,1,0,0,1,1.414,1.414Z"></path></svg>
+        </button>
+      </div>
+      <h2 class="text-blue-600 text-xl font-semibold mt-4">What can you shop on Etsy?</h2>
+      <div class="mt-4">
+        <p>The imagination of Etsy sellers can run far and wide, which makes our platform a home to more than 100 million...</p>
+        <button class="border hover:bg-zinc-400 mt-2">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path fill="var(--clg-color-sem-text-on-surface-strong, #FFFFFF)" d="M12,15.414L7.293,10.707A1,1,0,1,1,8.707,9.293L12,12.586l3.293-3.293a1,1,0,0,1,1.414,1.414Z"></path></svg>
+        </button>
+      </div>
+      <h2 class="text-blue-600 text-xl font-semibold mt-4">How to buy on Etsy?</h2>
+      <div class="mt-4">
+        <p>If you’re looking for something specific, start by putting in the keywords in our search and then using filters to...</p>
+        <button class="border hover:bg-zinc-400 mt-2">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path fill="var(--clg-color-sem-text-on-surface-strong, #FFFFFF)" d="M12,15.414L7.293,10.707A1,1,0,1,1,8.707,9.293L12,12.586l3.293-3.293a1,1,0,0,1,1.414,1.414Z"></path></svg>
+        </button>
+      </div>
+      <h2 class="text-blue-600 text-xl font-semibold mt-4">How to sell on Etsy?</h2>
+      <div class="mt-4">
+        <p>You can sell handmade goods, vintage items, and craft supplies on Etsy. With low fees, powerful tools, and support...</p>
+        <button class="border hover:bg-zinc-400 mt-2">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path fill="var(--clg-color-sem-text-on-surface-strong, #FFFFFF)" d="M12,15.414L7.293,10.707A1,1,0,1,1,8.707,9.293L12,12.586l3.293-3.293a1,1,0,0,1,1.414,1.414Z"></path></svg>
+        </button>
+      </div>
+       </main>
+      <h2 class="text-center text-xl mt-8">Have a question? Well, we’ve got some answers.</h2>
+    <button class="border mb-12 p-4 text-black font-semibold rounded-full ml-[42rem] pl-8 pr-8 mt-4 hover:bg-orange-600">Go to Help Centre</button>
+  </footer>
+  <footer class="pt-12 bg-blue-200 pb-8">
+    <h2 class="text-center text-xl">Yes! Send me exclusive offers, unique gift ideas, and personalised tips for shopping and selling on Etsy.</h2>
+    <input type="text " placeholder=" Enter Your Email" class="w-[25rem] mt-8 ml-[35rem] rounded-full p-2 pl-4 border border-black">
+    <button class="border text-black font-semibold rounded-full -ml-24 p-3 border-none hover:bg-black hover:text-white">Subscribe</button>
+  </footer> 
+  <footer class="bg-blue-300 text-white pb-4">
+    <h2 class="flex justify-center pt-4  underline decoration-dotted underline-offset-4 text-xl "><img width="35px"  class="mr-4 invert" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPgogIDxwYXRoIGQ9Ik02MC4xIDM4SDQ5djExaC0yVjM4SDM1LjljMS45MzEgOS4zNjggNi42MjYgMTcgMTIuMSAxNyA1LjQ3NCAwIDEwLjE3MS03LjYzMiAxMi4xLTE3em0tMjUuMTQ1LTkuNWMtLjAwMyAyLjUxMS4xOSA1LjAxOS41NzcgNy41SDQ3VjE4LjUyMmwtMTAuOTI1LjIzOGE0MS42ODMgNDEuNjgzIDAgMDAtMS4xMiA5Ljc0ek00NyAyLjMxYy00LjEgMS4yNC04LjE4IDcuMTY4LTEwLjM4IDE0LjQzN0w0NyAxNi41MlYyLjMxeiIvPgogIDxwYXRoIGQ9Ik01Ny41MiA5LjQ1bDEuNzg0LS45YTMxLjc3NSAzMS43NzUgMCAwMTIuNTU4IDcuNjVsOS4xMTctLjIuMDQyIDItOC43OC4xOWMuNTUgMy40MS44MTggNi44NTcuOCAxMC4zMWE1MC44MzYgNTAuODM2IDAgMDEtLjU0IDcuNUg3MnYyaC05Ljg0NmMtMS42IDguMi01LjI0NCAxNS4wNTMtOS44NjIgMTcuNzU0QzY2LjgzNCA1NC4wNzkgNzYgNDMuNzkzIDc2IDI4LjU4OWMwLTguOTYyLTIuOTU4LTE2LjM1My04LjU1NC0yMS4zNzNBMjUuNDI0IDI1LjQyNCAwIDAwNDkgMS4wNHYxNS40MzhsMTAuODMtLjIzNmEyOS4zMiAyOS4zMiAwIDAwLTIuMzEtNi43OTF6TTQzLjUxIDU1LjY0M2MtNC41MjUtMi43OC04LjA4Ni05LjU2NC05LjY2NS0xNy42NDNIMjR2LTJoOS41YTUwLjg0IDUwLjg0IDAgMDEtLjU0OS03LjUgNDMuNzc2IDQzLjc3NiAwIDAxMS4wNzUtOS43bC05LjAwOS4yLS4wNDItMiA5LjU2Mi0uMjA4YzEuODktNi42NjcgNS4zMTctMTIuNDM2IDkuNDMyLTE1LjE0M0MyOS43MSA0LjQxMiAyMCAxNS4xMyAyMCAyOC41ODlhMjcuNjM2IDI3LjYzNiAwIDAwMjMuNTEgMjcuMDU0eiIvPgogIDxwYXRoIGQ9Ik02MS4wNDUgMjguNWE2MC4yNyA2MC4yNyAwIDAwLS44MTgtMTAuMjY1TDQ5IDE4LjQ3OXYxNy41MmgxMS40NjhjLjM4OC0yLjQ4LjU4LTQuOTg4LjU3Ny03LjV6TTkxLjcgNjBjLTIuMTgyIDQuNTI1LTUuNzM0IDguNjItMTAuODMyIDEzLjcxOWwtMS40MTQtMS40MTRjNi42LTYuNiAxMC41MTEtMTEuNDI0IDEyLjA4LTE3LjcuMDcyLS40MTUuMTM3LS44MzIuMjE1LTEuMjc4LjYwNy0zLjQ4LjI2Mi01Ljk1MS0xLjAyNy02LjA2OC0uNzItLjA2Ni0xLjU1OS42OC0xLjk0NyAyLjNhMzAuMTU4IDMwLjE1OCAwIDAxLTIuNDU0IDguMTQ4Yy0xLjc4IDQuNjYzLTguNTc1IDExLjA0OC04Ljg2NSAxMS4zMThsLTEuMzY2LTEuNDYxYy4wNjgtLjA2MyA2LjgtNi4zOTEgOC4zODEtMTAuNjJsLjA2MS0uMTMzYTMwLjY0NCAzMC42NDQgMCAwMDIuNTI2LTkuMTQ4Yy4xMS0xLjg4Ni4wOTUtNi40MzMtMS43OTMtNi41NTItMi4wODUtLjEzMi0yLjUzNyAzLjUwNS0zLjM2NyA3LjM3OS0uMjU5IDEuMjEtLjg5IDMuNDU2LTEuMTUzIDQuMjQzYTEuNTUgMS41NSAwIDAxLS4wOS4xNzdjLTEuMzg2IDQuMDUzLTUuMzIgNy44NTktNS41MTUgOC4wNDUtMi45ODQgMi45ODMtOS43MDcgOS43NC05LjcwNyA5Ljc0TDY0LjAxIDY5LjNzNi43MjYtNi43NjEgOS43MjctOS43NjFhMjguMTU4IDI4LjE1OCAwIDAwMy4wNjQtMy42Yy41LS43ODggMS40NTItMi42NDYuNTUtMy41NzItMS4xNDgtMS4xNzgtMy4yODctLjY0OC02LjA4Ljc0OC0xLjk4Ljk5Mi0xMS4yMSA3LjA4LTE1LjM4NCAxMy4zNC0xLjk5IDIuOTg1LTIuNzcyIDguODM5LTMuMDQyIDE0LjJsMTMuMTggMi43MjQgNi44IDEuMzU5YTguOTIgOC45MiAwIDAxMS0uNzc4YzcuMDc1LTQuNzQgMTQuNjYzLTExLjgzMyAxNy4zMTctMTYuNTQgMy41NjYtNi4zMiAxLjk4OC03LjUyLjU1OC03LjQyek01Mi43NzQgODIuNjczbC0uNzcgMTAuMjUyIDEuOTkzLjE1LjU5NS03LjkxMyAxMC42MTYgMi4xMjMgMy43NjUuNzc4TDcwLjAyIDkzLjJsMS45Ni0uNC0uODg1LTQuMzM4IDIuNTkyLjUxOC4zOTItMS45Ni04LjQ0Ny0xLjY5LTEyLjg1OC0yLjY1N3ptLTI5LjI0MiAyLjA1NWw2Ljc3LTEuMzU0IDEzLjIwNi0yLjczYy0uMjctNS4zNi0xLjA1Mi0xMS4yMTQtMy4wNDItMTQuMi00LjE3My02LjI1OC0xMy40LTEyLjM0Ny0xNS4zODQtMTMuMzQtMi43OTMtMS40LTQuOTMyLTEuOTI1LTYuMDgtLjc0Ny0uOS45MjYuMDU0IDIuNzg0LjU1IDMuNTcyYTI4LjE1OCAyOC4xNTggMCAwMDMuMDY0IDMuNmMzIDMgOS43MjcgOS43NiA5LjcyNyA5Ljc2bC0xLjQxOCAxLjQxcy02LjcyMy02Ljc1Ny05LjcwNy05Ljc0Yy0uMi0uMTg2LTQuMTI5LTMuOTkyLTUuNTE1LTguMDQ1YTEuNzQgMS43NCAwIDAxLS4wOS0uMTc3Yy0uMjYzLS43ODctLjg5NC0zLjAzMy0xLjE1My00LjI0My0uODMtMy44NzQtMS4yODItNy41MTEtMy4zNjctNy4zOC0xLjg4OC4xMi0xLjkgNC42NjctMS43OTMgNi41NTNhMzAuNjQ1IDMwLjY0NSAwIDAwMi41MjYgOS4xNDhsLjA2MS4xMzNjMS41OCA0LjIyOSA4LjMxMyAxMC41NTcgOC4zODEgMTAuNjJMMTguOSA2OS4wMzRjLS4yOS0uMjctNy4wODQtNi42NTUtOC44NjUtMTEuMzE4YTMwLjE2IDMwLjE2IDAgMDEtMi40NTQtOC4xNDhjLS4zODgtMS42MjItMS4yMjYtMi4zNy0xLjk0Ny0yLjMtMS4yODcuMTE0LTEuNjM0IDIuNTg2LTEuMDI1IDYuMDY1LjA3OC40NDYuMTQzLjg2My4yMTUgMS4yNzhDNi4zOTQgNjAuODgzIDEwLjMgNjUuNyAxNi45IDcyLjMwN2wtMS40MSAxLjQxNGMtNS4xLTUuMS04LjY1LTkuMTk0LTEwLjgzMi0xMy43Mi0xLjQzNC0uMTA0LTMuMDEzIDEuMS41NTMgNy40MiAyLjY1NCA0LjcwNiAxMC4yMzggMTEuOCAxNy4zMjEgMTYuNTI5YTguOTIgOC45MiAwIDAxMSAuNzc4em03LjE3NS42MDVsLTguNDMzIDEuNjg3LjM5MyAxLjk2IDIuNTkxLS41MTgtLjg4NSA0LjMzOCAxLjk2LjQgMS4wNDctNS4xMzcgMy43NS0uNzc1IDEwLjYzMS0yLjEyNi41OTUgNy45MTMgMS45OTQtLjE1LS43Ny0xMC4yNTItMTIuODczIDIuNjZ6Ii8+Cjwvc3ZnPg==" alt=""> Etsy is powered by 100% renewable electricity.</h2>
+  </footer>
+  <footer class="bg-blue-400 flex ">
+    <div class="bg-blue-950 ml-32 pl-32 pr-20 ">
+      <button class="bg-orange-600 text-white mt-12 ml-12 p-4 rounded-2xl text-xl font-bold">Esty</button><br>
+      <button class="rounded-full text-white p-2 border mt-4 bg-blue-600 hover:bg-blue-800">Download the Esty App</button>
+    </div>
+    <div class="flex p-4 text-white">
+      <ul class="ml-20">
+        <h2 class="font-bold">Shop</h2>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Gift Cards</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Esty Registery</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Sitemap</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Esty Blog</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Esty UK</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Esty Germany</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Esty Canada</li>
+      </ul>
+      <ul class="ml-20">
+        <h2 class="font-bold">Sell</h2>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Sell on Esty</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Teams</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Forums</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Affiliates & Creators</li>
+      </ul>
+      <ul class="ml-20">
+        <h2 class="font-bold">About</h2>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Esty, Inc.</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Policies</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Investors</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Careers</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Press</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Impact</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Legal Imprict</li>
+      </ul>
+      <ul class="ml-20">
+        <h2 class="font-bold">Help</h2>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Help Centre</li>
+        <li class="text-sm mt-1 hover:cursor-pointer hover:underline underline-offset-2">Privacy Settings</li>
+        <li>
+        <li class="flex mt-4">
+          <button class="hover:bg-white p-2 rounded-full"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGQ9Ik0xMiw1LjQ0N2MyLjEzNiwwLDIuMzg5LDAuMDA4LDMuMjMzLDAuMDQ3YzAuNzgsMC4wMzYsMS4yMDQsMC4xNjYsMS40ODUsMC4yNzVjMC4zNzMsMC4xNDUsMC42NCwwLjMxOCwwLjkyLDAuNTk4IGMwLjI4LDAuMjgsMC40NTMsMC41NDYsMC41OTgsMC45MmMwLjExLDAuMjgyLDAuMjQsMC43MDYsMC4yNzUsMS40ODVjMC4wMzgsMC44NDQsMC4wNDcsMS4wOTcsMC4wNDcsMy4yMzMgcy0wLjAwOCwyLjM4OS0wLjA0NywzLjIzM2MtMC4wMzYsMC43OC0wLjE2NiwxLjIwNC0wLjI3NSwxLjQ4NWMtMC4xNDUsMC4zNzMtMC4zMTgsMC42NC0wLjU5OCwwLjkyIGMtMC4yOCwwLjI4LTAuNTQ2LDAuNDUzLTAuOTIsMC41OThjLTAuMjgyLDAuMTEtMC43MDYsMC4yNC0xLjQ4NSwwLjI3NWMtMC44NDMsMC4wMzgtMS4wOTYsMC4wNDctMy4yMzMsMC4wNDcgcy0yLjM4OS0wLjAwOC0zLjIzMy0wLjA0N2MtMC43OC0wLjAzNi0xLjIwNC0wLjE2Ni0xLjQ4NS0wLjI3NWMtMC4zNzMtMC4xNDUtMC42NC0wLjMxOC0wLjkyLTAuNTk4IGMtMC4yOC0wLjI4LTAuNDUzLTAuNTQ2LTAuNTk4LTAuOTJjLTAuMTEtMC4yODItMC4yNC0wLjcwNi0wLjI3NS0xLjQ4NWMtMC4wMzgtMC44NDQtMC4wNDctMS4wOTctMC4wNDctMy4yMzMgUzUuNDUsOS42MTYsNS40ODgsOC43NzNjMC4wMzYtMC43OCwwLjE2Ni0xLjIwNCwwLjI3NS0xLjQ4NWMwLjE0NS0wLjM3MywwLjMxOC0wLjY0LDAuNTk4LTAuOTJjMC4yOC0wLjI4LDAuNTQ2LTAuNDUzLDAuOTItMC41OTggYzAuMjgyLTAuMTEsMC43MDYtMC4yNCwxLjQ4NS0wLjI3NUM5LjYxMSw1LjQ1NSw5Ljg2NCw1LjQ0NywxMiw1LjQ0NyBNMTIsNC4wMDVjLTIuMTczLDAtMi40NDUsMC4wMDktMy4yOTgsMC4wNDggQzcuODUsNC4wOTIsNy4yNjksNC4yMjcsNi43Niw0LjQyNUM2LjIzNCw0LjYzLDUuNzg3LDQuOTAzLDUuMzQzLDUuMzQ4QzQuODk4LDUuNzkzLDQuNjI0LDYuMjM5LDQuNDIsNi43NjUgYy0wLjE5OCwwLjUwOS0wLjMzMywxLjA5LTAuMzcyLDEuOTQyQzQuMDA5LDkuNTYsNCw5LjgzMyw0LDEyLjAwNWMwLDIuMTczLDAuMDA5LDIuNDQ1LDAuMDQ4LDMuMjk4IGMwLjAzOSwwLjg1MiwwLjE3NCwxLjQzMywwLjM3MiwxLjk0MmMwLjIwNCwwLjUyNiwwLjQ3OCwwLjk3MiwwLjkyMywxLjQxN2MwLjQ0NSwwLjQ0NSwwLjg5MSwwLjcxOCwxLjQxNywwLjkyMyBjMC41MDksMC4xOTgsMS4wOSwwLjMzMywxLjk0MiwwLjM3MmMwLjg1MywwLjAzOSwxLjEyNiwwLjA0OCwzLjI5OCwwLjA0OHMyLjQ0NS0wLjAwOSwzLjI5OC0wLjA0OCBjMC44NTItMC4wMzksMS40MzMtMC4xNzQsMS45NDItMC4zNzJjMC41MjYtMC4yMDQsMC45NzItMC40NzgsMS40MTctMC45MjNjMC40NDUtMC40NDUsMC43MTgtMC44OTEsMC45MjMtMS40MTcgYzAuMTk4LTAuNTA5LDAuMzMzLTEuMDksMC4zNzItMS45NDJDMTkuOTkxLDE0LjQ1LDIwLDE0LjE3OCwyMCwxMi4wMDVzLTAuMDA5LTIuNDQ1LTAuMDQ4LTMuMjk4IGMtMC4wMzktMC44NTItMC4xNzQtMS40MzMtMC4zNzItMS45NDJjLTAuMjA0LTAuNTI2LTAuNDc4LTAuOTcyLTAuOTIzLTEuNDE3Yy0wLjQ0NS0wLjQ0NS0wLjg5MS0wLjcxOC0xLjQxNy0wLjkyMyBjLTAuNTA5LTAuMTk4LTEuMDktMC4zMzMtMS45NDItMC4zNzJDMTQuNDQ1LDQuMDE0LDE0LjE3Myw0LjAwNSwxMiw0LjAwNUwxMiw0LjAwNXoiLz48cGF0aCBkPSJNMTIsNy44OTdjLTIuMjY5LDAtNC4xMDgsMS44MzktNC4xMDgsNC4xMDhTOS43MzEsMTYuMTEzLDEyLDE2LjExM3M0LjEwOC0xLjgzOSw0LjEwOC00LjEwOFMxNC4yNjksNy44OTcsMTIsNy44OTd6ICBNMTIsMTQuNjcyYy0xLjQ3MywwLTIuNjY3LTEuMTk0LTIuNjY3LTIuNjY3UzEwLjUyNyw5LjMzOSwxMiw5LjMzOXMyLjY2NywxLjE5NCwyLjY2NywyLjY2N1MxMy40NzMsMTQuNjcyLDEyLDE0LjY3MnoiLz48Y2lyY2xlIGN4PSIxNi4yNyIgY3k9IjcuNzM1IiByPSIwLjk2Ii8+PC9zdmc+" alt="" width="35px"></button>
+          <button class="hover:bg-white p-2 rounded-full"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGQ9Ik0yMCw1VjE5YTEuMDA3LDEuMDA3LDAsMCwxLTEsMUgxNVYxMy43NzZoMmwwLjMzNi0yLjNIMTVWOS42NTlhMC45MTIsMC45MTIsMCwwLDEsMS0xLjAzMWgxLjVWNi41NWExMS4yODQsMTEuMjg0LDAsMCwwLTEuNjQxLS4xMDljLTIuMiwwLTMuMywxLjIxOS0zLjMsMy4wMzl2MS45OTJoLTJ2Mi4zaDJWMjBINWExLjAwNywxLjAwNywwLDAsMS0xLTFWNUExLjAwNywxLjAwNywwLDAsMSw1LDRIMTlBMS4wMDcsMS4wMDcsMCwwLDEsMjAsNVoiLz48L3N2Zz4=" alt="" width="35px"></button>
+          <button class="hover:bg-white p-2 rounded-full"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGQ9Ik0xMiAzYy00Ljk3IDAtOSA0LjAzLTkgOSAwIDMuODEzIDIuMzcyIDcuMDcyIDUuNzIgOC4zODQtLjA4LS43MTItLjE1LTEuODA3LjAzLTIuNTg1LjE2NC0uNzAzIDEuMDU2LTQuNDc1IDEuMDU2LTQuNDc1cy0uMjctLjU0LS4yNy0xLjMzNmMwLTEuMjUyLjcyNi0yLjE4NyAxLjYzLTIuMTg3Ljc2OCAwIDEuMTQuNTc3IDEuMTQgMS4yNjggMCAuNzczLS40OTMgMS45MjgtLjc0NiAyLjk5OC0uMjEyLjg5Ni40NSAxLjYyNiAxLjMzMyAxLjYyNiAxLjYgMCAyLjgzLTEuNjg3IDIuODMtNC4xMiAwLTIuMTU2LTEuNTUtMy42NjMtMy43Ni0zLjY2My0yLjU2IDAtNC4wNjQgMS45MjItNC4wNjQgMy45MDcgMCAuNzczLjI5NyAxLjYwMy42NyAyLjA1NC4wNzMuMDkuMDgzLjE2OC4wNi4yNi0uMDY3LjI4My0uMjIuODk1LS4yNSAxLjAyLS4wMzguMTY1LS4xMy4yLS4zLjEyLTEuMTI0LS41MjMtMS44MjctMi4xNjctMS44MjctMy40ODcgMC0yLjg0IDIuMDYzLTUuNDQ2IDUuOTQ3LTUuNDQ2IDMuMTIyIDAgNS41NDggMi4yMjUgNS41NDggNS4xOTggMCAzLjEwMi0xLjk1NiA1LjU5OC00LjY3IDUuNTk4LS45MTIgMC0xLjc3LS40NzQtMi4wNjMtMS4wMzNsLS41NiAyLjE0Yy0uMjA0Ljc4LS43NTMgMS43Ni0xLjEyIDIuMzU4Ljg0Mi4yNiAxLjczNy40MDIgMi42NjUuNDAyIDQuOTcgMCA5LTQuMDMgOS05cy00LjAzLTktOS05Ii8+PC9zdmc+" alt="" width="35px"></button>
+          <button class="hover:bg-white p-2 rounded-full"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJtMTkuMDk4IDMuOTk1LTUuODI5IDYuNzc1IDYuMzM5IDkuMjI1aC00LjY2MmwtNC4yNjktNi4yMTItNS4zNDQgNi4yMTJIMy45NTJsNi4xMTItNy4xMDUtNi4xMTItOC44OTVoNC42NjJsNC4wNDIgNS44ODIgNS4wNi01Ljg4MmgxLjM4MlptLTEuMzggMTUuMDA3TDcuOTUxIDUuMDM1aC0yLjEybDkuNzY1IDEzLjk2N2gyLjEyMVoiLz48L3N2Zz4=" alt="" width="35px"></button>
+          <button class="hover:bg-white p-2 rounded-full"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjxwYXRoIGQ9Ik0yMCwxMmMwLDUuNjY0LDAsNS42NjQtOCw1LjY2NHMtOCwwLTgtNS42NjQsMC01LjY2NCw4LTUuNjY0UzIwLDYuMzMzLDIwLDEyWm0tNSwwTDEwLDl2NloiLz48L3N2Zz4=" alt="" width="35px"></button>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <footer class="bg-stone-800 text-white">
+    <main class="flex justify-around p-4 text-center">
+      <div>
+        <button class="flex gap-2 hover:bg-stone-500 rounded-full pl-4 pr-4">
+          <img width="35px" class="rounded-full" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgYXJpYS1oaWRkZW49InRydWUiIGZvY3VzYWJsZT0iZmFsc2UiPjx0aXRsZT5JTkRJQTwvdGl0bGU+PGRlZnM+PHBhdGggZD0iTS4wMDMgMTBjMCA1LjUxNiA0LjQ4NSAxMC4wMDIgMTAgMTAuMDAyczEwLTQuNDg2IDEwLTEwYzAtNS41MTYtNC40ODUtMTAtMTAtMTBzLTEwIDQuNDg0LTEwIDEweiIgaWQ9ImEiLz48cGF0aCBkPSJNMTAuMDAzIDIwLjAwMmM1LjUxNSAwIDEwLTQuNDg2IDEwLTEwIDAtNS41MTYtNC40ODUtMTAtMTAtMTBzLTEwIDQuNDg0LTEwIDEwYzAgNS41MTQgNC40ODUgMTAgMTAgMTB6IiBpZD0iZCIvPjxmaWx0ZXIgeD0iLTIuNSUiIHk9Ii0yLjUlIiB3aWR0aD0iMTA1JSIgaGVpZ2h0PSIxMDUlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIGlkPSJjIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIuNSIgaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9InNoYWRvd0JsdXJJbm5lcjEiLz48ZmVPZmZzZXQgaW49InNoYWRvd0JsdXJJbm5lcjEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0SW5uZXIxIi8+PGZlQ29tcG9zaXRlIGluPSJzaGFkb3dPZmZzZXRJbm5lcjEiIGluMj0iU291cmNlQWxwaGEiIG9wZXJhdG9yPSJhcml0aG1ldGljIiBrMj0iLTEiIGszPSIxIiByZXN1bHQ9InNoYWRvd0lubmVySW5uZXIxIi8+PGZlQ29sb3JNYXRyaXggdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIgaW49InNoYWRvd0lubmVySW5uZXIxIi8+PC9maWx0ZXI+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPjx1c2UgeGxpbms6aHJlZj0iI2EiLz48L21hc2s+PHBhdGggZmlsbD0iZ3JlZW4iIG1hc2s9InVybCgjYikiIGQ9Ik0wIDIwaDIwdi02SDAiLz48cGF0aCBmaWxsPSIjRkZGIiBtYXNrPSJ1cmwoI2IpIiBkPSJNMCAxNFY2aDIwdjgiLz48cGF0aCBmaWxsPSJvcmFuZ2UiIG1hc2s9InVybCgjYikiIGQ9Ik0wIDZoMjBWMEgwIi8+PHVzZSBmaWx0ZXI9InVybCgjYykiIHhsaW5rOmhyZWY9IiNkIiBmaWxsPSIjMDAwIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwLDEwKSI+PGNpcmNsZSByPSIwLjgiIGZpbGw9IiMwMDgiLz48Y2lyY2xlIHI9IjAuNSIgZmlsbD0iI2ZmZiIvPjxjaXJjbGUgcj0iMC44IiBmaWxsPSIjMDA4Ii8+PGcgaWQ9ImoiPjxnIGlkPSJpIj48ZyBpZD0iaCI+PGcgaWQ9ImciPjxjaXJjbGUgcj0iMC4zIiBmaWxsPSIjMDA4IiB0cmFuc2Zvcm09InJvdGF0ZSgyLjUpIHRyYW5zbGF0ZSgyLjUpIi8+PHBhdGggZmlsbD0iIzAwOCIgZD0iTSAwLCAwLjksIEMgMC42LDQgMCwyIDAsMiAwLDIgLTAuNiwwIC0wLjYsIEwgMCwxMiB6Ii8+PC9nPjx1c2UgeGxpbms6aHJlZj0iI2ciIHRyYW5zZm9ybT0icm90YXRlKDE1KSIvPjwvZz48dXNlIHhsaW5rOmhyZWY9IiNoIiB0cmFuc2Zvcm09InJvdGF0ZSgzMCkiLz48L2c+PHVzZSB4bGluazpocmVmPSIjaSIgdHJhbnNmb3JtPSJyb3RhdGUoNjApIi8+PC9nPjx1c2UgeGxpbms6aHJlZj0iI2oiIHRyYW5zZm9ybT0icm90YXRlKDEyMCkiLz48dXNlIHhsaW5rOmhyZWY9IiNqIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTIwKSIvPjwvZz48L3N2Zz4=" alt="">
+          <p class="border border-white h-6 mt-1"></p>
+          <h2>ENGLISH (IN)</h2>
+          <p class="border border-white h-6 mt-1"></p>
+          <h2> ₹ (INR)</h2>
+        </button>
+      </div>
+      <div>
+        <ul class="flex">
+          <li class="ml-4 cursor-not-allowed">© 2024 Etsy, Inc.</li>
+          <li class="ml-4 cursor-not-allowed">Terms of Use</li>
+          <li class="ml-4 cursor-pointer hover:underline underline-offset-4 ">Privacy</li>
+          <li class="ml-4 cursor-pointer hover:underline underline-offset-4 "> Interest-based ads</li>
+          <li class="ml-4 cursor-pointer hover:underline underline-offset-4 "> Local Shops</li>
+          <li class="ml-4 cursor-pointer hover:underline underline-offset-4 "> Regions</li>
+        </ul>
+      </div>
+    </main>
+  </footer>
+  <script>
+    fetch("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((json) => {
+        const products = json.slice(0, 4);
+        const productContainer = document.getElementById("product-container");
+        const products1 = json.slice(7, 11);
+        const product1 = document.getElementById("product1");
+
+
+        products.forEach((product) => {
+          productContainer.innerHTML += `
+            <div class="product-box bg-white shadow-lg rounded-xl p-4 w-72 flex flex-col hover:transition hover:-translate-y-4 hover:translate-x-2 hover:cursor-pointer items-center">
+              <img src="${product.image}" alt="${product.title}" class="rounded-xl mb-4 w-24  object-cover" />
+              <h2 class="text-xl font-semibold text-gray-800 mb-2 text-center">${product.title}</h2>
+              <p class="text-sm text-gray-600 mb-4 text-center">${product.description}</p>
+              <p class="text-lg font-semibold text-green-600">$${product.price}</p>
+            </div>
+          `;
+        });
+         products1.forEach((product) => {
+          product1.innerHTML += `
+            <div class="product-box bg-white shadow-lg rounded-xl p-4 w-72 flex flex-col hover:transition hover:-translate-y-4 hover:translate-x-2 hover:cursor-pointer items-center">
+              <img src="${product.image}" alt="${product.title}" class="rounded-xl mb-4 w-24  object-cover" />
+              <h2 class="text-xl font-semibold text-gray-800 mb-2 text-center">${product.title}</h2>
+              <p class="text-sm text-gray-600 mb-4 text-center">${product.description}</p>
+              <p class="text-lg font-semibold text-green-600">$${product.price}</p>
+            </div>
+          `;
+        });
+      })
+      .catch((error) => console.error("Error fetching products:", error));
+  </script>
+</body>
+
+</html>

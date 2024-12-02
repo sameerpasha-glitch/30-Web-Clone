@@ -1,0 +1,769 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb.com</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="airbbnb.css" />
+  </head>
+  <body>
+    <header class="flex justify-between mt-5 text-center">
+      <div class="flex ml-16 text-rose-500 text-2xl">
+        <img
+          src="Social-Media-Svg/airbnb.svg"
+          alt=""
+          width="40px"
+          class="font-bold text-center" />
+        <h3 class="font-bold hover:cursor-pointer">airbnb</h3>
+      </div>
+      <div class="flex text-center ml-[10rem]">
+        <button><h2 class="mr-8 font-bold">Stays</h2></button>
+        <button class="hover:bg-rose-500 p-2 rounded-full font-exytralight">
+          <h2>Experience</h2>
+        </button>
+      </div>
+      <div class="flex">
+        <button
+          class="mr-3 text-center font-bold border rounded-full p-2 border-hidden hover:bg-rose-500">
+          <h2>Airbnb your home</h2>
+        </button>
+        <button
+          class="border rounded-full pl-3 border-hidden hover:bg-rose-500">
+          <img
+            src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20enable-background%3D%22new%200%200%2034%2034%22%20viewBox%3D%220%200%2034%2034%22%3E%3Cpath%20d%3D%22M17%2C1C8.2%2C1%2C1%2C8.1%2C1%2C17c0%2C0%2C0%2C0%2C0%2C0s0%2C0%2C0%2C0c0%2C0%2C0%2C0%2C0%2C0c0%2C8.9%2C7.3%2C16%2C16%2C16c8.6%2C0%2C16-7%2C16-16C33%2C8.1%2C25.7%2C1%2C17%2C1z%0D%0A%09%09%20M28.8%2C24.5c-1-0.7-2.1-1.4-3.4-1.9c0.3-1.4%2C0.5-3%2C0.5-4.6h5C30.8%2C20.3%2C30.1%2C22.5%2C28.8%2C24.5z%20M22.4%2C29.9c1.1-1.4%2C2-3.2%2C2.6-5.3%0D%0A%09%09c1%2C0.4%2C1.9%2C0.9%2C2.7%2C1.5C26.1%2C27.9%2C24.4%2C29.1%2C22.4%2C29.9z%20M6.4%2C26.1C7.2%2C25.5%2C8.1%2C25%2C9%2C24.6c0.6%2C2.1%2C1.5%2C3.9%2C2.6%2C5.3%0D%0A%09%09C9.6%2C29.1%2C7.9%2C27.8%2C6.4%2C26.1z%20M5.2%2C9.5c1%2C0.7%2C2.1%2C1.4%2C3.4%2C1.9c-0.3%2C1.4-0.5%2C3-0.5%2C4.6H3C3.2%2C13.7%2C3.9%2C11.5%2C5.2%2C9.5z%20M11.6%2C4.1%0D%0A%09%09c-1.1%2C1.4-2%2C3.2-2.6%2C5.3C8.1%2C9%2C7.2%2C8.5%2C6.4%2C7.9C7.9%2C6.1%2C9.7%2C4.9%2C11.6%2C4.1z%20M27.6%2C7.9C26.8%2C8.5%2C25.9%2C9%2C25%2C9.4%0D%0A%09%09c-0.6-2.1-1.5-3.9-2.6-5.3C24.4%2C4.9%2C26.1%2C6.2%2C27.6%2C7.9z%20M16%2C11c-1.8-0.1-3.5-0.4-5.1-0.8c1.1-3.7%2C2.9-6.3%2C5.1-7V11z%20M16%2C13v3h-6%0D%0A%09%09c0.1-1.4%2C0.2-2.7%2C0.4-3.9C12.2%2C12.6%2C14.1%2C12.9%2C16%2C13z%20M16%2C18v3c-1.9%2C0.1-3.8%2C0.4-5.5%2C0.9c-0.2-1.2-0.4-2.6-0.4-3.9H16z%20M16%2C23v7.8%0D%0A%09%09c-2.1-0.6-4-3.3-5.1-6.9C12.5%2C23.4%2C14.2%2C23.1%2C16%2C23z%20M18%2C30.8V23c1.8%2C0.1%2C3.5%2C0.4%2C5.1%2C0.8C22%2C27.5%2C20.1%2C30.2%2C18%2C30.8z%20M18%2C21v-3h6%0D%0A%09%09c-0.1%2C1.4-0.2%2C2.7-0.4%2C3.9C21.8%2C21.4%2C19.9%2C21.1%2C18%2C21z%20M18%2C16v-3c1.9-0.1%2C3.8-0.4%2C5.5-0.9c0.2%2C1.2%2C0.4%2C2.6%2C0.4%2C3.9H18z%20M18%2C11V3.2%0D%0A%09%09c2.1%2C0.6%2C4%2C3.3%2C5.1%2C7C21.5%2C10.6%2C19.8%2C10.9%2C18%2C11z%20M8%2C18c0.1%2C1.6%2C0.2%2C3.2%2C0.5%2C4.6c-1.2%2C0.5-2.4%2C1.2-3.4%2C1.9c-1.2-2-2-4.2-2.1-6.5H8z%0D%0A%09%09%20M26%2C16c-0.1-1.6-0.2-3.2-0.5-4.6c1.2-0.5%2C2.4-1.2%2C3.4-1.9c1.2%2C2%2C2%2C4.2%2C2.1%2C6.5H26z%22%2F%3E%3C%2Fsvg%3E"
+            alt=""
+            width="20px"
+            class="mr-3 text-center" />
+        </button>
+        <button
+          class="flex mr-28 border rounded-full p-1 hover:bg-rose-500 hover:transition duration-150 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMWVtIiBoZWlnaHQ9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9ImN1cnJlbnRDb2xvciIgY2xhc3M9InVpLXN2Zy1pbmxpbmUiPjxwYXRoIGQ9Ik0zLDhIMjFhMSwxLDAsMCwwLDAtMkgzQTEsMSwwLDAsMCwzLDhabTE4LDhIM2ExLDEsMCwwLDAsMCwySDIxYTEsMSwwLDAsMCwwLTJabTAtNUgzYTEsMSwwLDAsMCwwLDJIMjFhMSwxLDAsMCwwLDAtMloiLz48L3N2Zz4="
+            width="15px"
+            loading="lazy"
+            class="mr-3 ml-3 mt-2" />
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-128/free-account-icon-download-in-svg-png-gif-file-formats--user-person-avatar-essential-web-2-pack-interface-icons-866236.png?f=webp"
+            alt=""
+            width="35px" />
+        </button>
+      </div>
+    </header>
+    <header class=" flex justify-between bg-white p-2" id="hidnav" >
+    <div class="flex  text-rose-500 text-2xl ml-16 ">
+        <img
+          src="Social-Media-Svg/airbnb.svg"
+          alt=""
+          width="40px" loading = "lazy"
+          class="font-bold text-center" />
+        <h3 class="font-bold hover:cursor-pointer mt-4 ml-2">airbnb</h3>
+      </div>
+    <nav
+      class="flex border border-black rounded-full text-left  ml-[8rem] p-2 ">
+      
+      <button
+        id="but1"
+        class="pl-6 pr-[2rem] rounded-full hover:bg-rose-500 text-left hover:text-white">
+        Any Where
+      </button>
+      <p id="p1" class="border 1px mt-3 mr-4 h-8"></p>
+      <button
+        id="but1"
+        class="pl-6 pr-[2rem] rounded-full hover:bg-rose-500 text-left hover:text-white">
+        Any Week
+      </button>
+      <p id="p1" class="border 1px mt-3 h-8"></p>
+      <button
+        id="but1"
+        class="pl-6 ml-2 pr-[2rem] rounded-full hover:bg-rose-500 text-left hover:text-white">
+        Add guests
+      </button>
+      <p id="p1" class="border mt-3 1px h-8"></p>
+      
+      <button class="bg-amber-100 border rounded-full p-3 ml-3">
+        <img src="Social-Media-Svg/search.png" alt="" width="20px" loading = "lazy" />
+      </button>
+    </nav>
+    <div class="flex mb-4">
+        <button
+          class="mr-3 text-center font-bold border rounded-full p-1 border-hidden hover:bg-rose-500 hover:text-white">
+          <h2>Airbnb your home</h2>
+        </button>
+        <button
+          class="border rounded-full pl-3 border-hidden hover:bg-rose-500">
+          <img
+            src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20enable-background%3D%22new%200%200%2034%2034%22%20viewBox%3D%220%200%2034%2034%22%3E%3Cpath%20d%3D%22M17%2C1C8.2%2C1%2C1%2C8.1%2C1%2C17c0%2C0%2C0%2C0%2C0%2C0s0%2C0%2C0%2C0c0%2C0%2C0%2C0%2C0%2C0c0%2C8.9%2C7.3%2C16%2C16%2C16c8.6%2C0%2C16-7%2C16-16C33%2C8.1%2C25.7%2C1%2C17%2C1z%0D%0A%09%09%20M28.8%2C24.5c-1-0.7-2.1-1.4-3.4-1.9c0.3-1.4%2C0.5-3%2C0.5-4.6h5C30.8%2C20.3%2C30.1%2C22.5%2C28.8%2C24.5z%20M22.4%2C29.9c1.1-1.4%2C2-3.2%2C2.6-5.3%0D%0A%09%09c1%2C0.4%2C1.9%2C0.9%2C2.7%2C1.5C26.1%2C27.9%2C24.4%2C29.1%2C22.4%2C29.9z%20M6.4%2C26.1C7.2%2C25.5%2C8.1%2C25%2C9%2C24.6c0.6%2C2.1%2C1.5%2C3.9%2C2.6%2C5.3%0D%0A%09%09C9.6%2C29.1%2C7.9%2C27.8%2C6.4%2C26.1z%20M5.2%2C9.5c1%2C0.7%2C2.1%2C1.4%2C3.4%2C1.9c-0.3%2C1.4-0.5%2C3-0.5%2C4.6H3C3.2%2C13.7%2C3.9%2C11.5%2C5.2%2C9.5z%20M11.6%2C4.1%0D%0A%09%09c-1.1%2C1.4-2%2C3.2-2.6%2C5.3C8.1%2C9%2C7.2%2C8.5%2C6.4%2C7.9C7.9%2C6.1%2C9.7%2C4.9%2C11.6%2C4.1z%20M27.6%2C7.9C26.8%2C8.5%2C25.9%2C9%2C25%2C9.4%0D%0A%09%09c-0.6-2.1-1.5-3.9-2.6-5.3C24.4%2C4.9%2C26.1%2C6.2%2C27.6%2C7.9z%20M16%2C11c-1.8-0.1-3.5-0.4-5.1-0.8c1.1-3.7%2C2.9-6.3%2C5.1-7V11z%20M16%2C13v3h-6%0D%0A%09%09c0.1-1.4%2C0.2-2.7%2C0.4-3.9C12.2%2C12.6%2C14.1%2C12.9%2C16%2C13z%20M16%2C18v3c-1.9%2C0.1-3.8%2C0.4-5.5%2C0.9c-0.2-1.2-0.4-2.6-0.4-3.9H16z%20M16%2C23v7.8%0D%0A%09%09c-2.1-0.6-4-3.3-5.1-6.9C12.5%2C23.4%2C14.2%2C23.1%2C16%2C23z%20M18%2C30.8V23c1.8%2C0.1%2C3.5%2C0.4%2C5.1%2C0.8C22%2C27.5%2C20.1%2C30.2%2C18%2C30.8z%20M18%2C21v-3h6%0D%0A%09%09c-0.1%2C1.4-0.2%2C2.7-0.4%2C3.9C21.8%2C21.4%2C19.9%2C21.1%2C18%2C21z%20M18%2C16v-3c1.9-0.1%2C3.8-0.4%2C5.5-0.9c0.2%2C1.2%2C0.4%2C2.6%2C0.4%2C3.9H18z%20M18%2C11V3.2%0D%0A%09%09c2.1%2C0.6%2C4%2C3.3%2C5.1%2C7C21.5%2C10.6%2C19.8%2C10.9%2C18%2C11z%20M8%2C18c0.1%2C1.6%2C0.2%2C3.2%2C0.5%2C4.6c-1.2%2C0.5-2.4%2C1.2-3.4%2C1.9c-1.2-2-2-4.2-2.1-6.5H8z%0D%0A%09%09%20M26%2C16c-0.1-1.6-0.2-3.2-0.5-4.6c1.2-0.5%2C2.4-1.2%2C3.4-1.9c1.2%2C2%2C2%2C4.2%2C2.1%2C6.5H26z%22%2F%3E%3C%2Fsvg%3E"
+            alt=""
+            width="20px" loading = "lazy"
+            class="mr-3 text-center" />
+        </button>
+        <button
+          class="flex mr-12 mt-2 rounded-md  hover:bg-rose-500 hover:transition duration-150 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMWVtIiBoZWlnaHQ9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9ImN1cnJlbnRDb2xvciIgY2xhc3M9InVpLXN2Zy1pbmxpbmUiPjxwYXRoIGQ9Ik0zLDhIMjFhMSwxLDAsMCwwLDAtMkgzQTEsMSwwLDAsMCwzLDhabTE4LDhIM2ExLDEsMCwwLDAsMCwySDIxYTEsMSwwLDAsMCwwLTJabTAtNUgzYTEsMSwwLDAsMCwwLDJIMjFhMSwxLDAsMCwwLDAtMloiLz48L3N2Zz4="
+            width="15px" loading = "lazy"
+            class="mr-3 ml-3 mt-2" />
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-128/free-account-icon-download-in-svg-png-gif-file-formats--user-person-avatar-essential-web-2-pack-interface-icons-866236.png?f=webp"
+            alt=""
+            width="35px" 
+            loading = "lazy" />
+        </button>
+      </div></header>
+    <nav
+      class="flex border border-black rounded-full text-left ml-[20rem] mr-[24rem] mt-8 p-2">
+      <button
+        id="but1"
+        class="ml-4 pl-6 pr-[4rem] flex rounded-full hover:bg-amber-100 text-left hover:text-white">
+        Where <br />Search destinations
+      </button>
+      <p id="p1" class="border 1px mt-3 mr-4 h-8"></p>
+      <button
+        id="but1"
+        class="pl-6 pr-[2rem] rounded-full hover:bg-amber-100 text-left hover:text-white">
+        Check in <br />
+        Add dates
+      </button>
+      <p id="p1" class="border 1px mt-3 h-8"></p>
+      <button
+        id="but1"
+        class="pl-6 ml-2 pr-[2rem] rounded-full hover:bg-amber-100 text-left hover:text-white">
+        Check out <br />
+        Add dates
+      </button>
+      <p id="p1" class="border mt-3 1px h-8"></p>
+      <button
+        class="pl-6 ml-2 pr-24 rounded-full hover:bg-amber-100 text-left hover:text-white">
+        Who <br />Add guests
+      </button>
+      <button class="bg-amber-100 border rounded-full p-3 ml-3">
+        <img src="Social-Media-Svg/search.png" alt="" width="20px" />
+      </button>
+    </nav>
+    <p class="border 1px mt-8"></p>
+    <div class="logos flex justify-between ml-20 mr-12 text-sm mt-4">
+      <div class="cursor-pointer underline underline-offset-4">
+        <img
+          id="im1"
+          src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg"
+          alt=""
+          width="30px"
+          loading="lazy"
+          class="ml-9" />
+        <p>Amazing pools</p>
+      </div>
+      <div class="cursor-pointer hover:underline underline-offset-4">
+        <img
+          id="im1"
+          src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png"
+          alt=""
+          width="30px"
+          loading="lazy"
+          class="" />
+        <p>Icons</p>
+      </div>
+      <div class="cursor-pointer hover:underline underline-offset-4">
+        <img
+          src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg"
+          alt=""
+          width="30px"
+          loading="lazy" />
+        <p>Farms</p>
+      </div>
+      <div class="cursor-pointer hover:underline underline-offset-4">
+        <img
+          src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg"
+          alt=""
+          width="30px"
+          loading="lazy" />
+        <p>OMG!</p>
+      </div>
+      <div class="cursor-pointer hover:underline underline-offset-4">
+        <img
+          src="https://a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg"
+          alt=""
+          width="30px"
+          loading="lazy"
+          class="ml-3" />
+        <p>A-frames</p>
+      </div>
+      <div class="cursor-pointer hover:underline underline-offset-4">
+        <img src="" alt="" width="30px" loading="lazy" /><img
+          src="https://a0.muscache.com/pictures/8b44f770-7156-4c7b-b4d3-d92549c8652f.jpg"
+          alt=""
+          width="30px" />
+        <p>Artic</p>
+      </div>
+      <div class="cursor-pointer hover:underline underline-offset-4">
+        <img
+          src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg"
+          alt=""
+          width="30px"
+          loading="lazy"
+          class="ml-9" />
+        <p>Amazing views</p>
+      </div>
+      <div class="cursor-pointer hover:underline underline-offset-4">
+        <img
+          src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg"
+          alt=""
+          width="30px"
+          loading="lazy"
+          class="ml-3" />
+        <p>Beachfront</p>
+      </div>
+      <div class="cursor-pointer hover:underline underline-offset-4">
+        <img
+          src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg"
+          alt=""
+          width="30px" loading="lazy"
+          class="ml-3" />
+        <p>Lakefront</p>
+      </div>
+      <div class="cursor-pointer hover:underline underline-offset-4">
+        <img
+          src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg"
+          alt=""
+          width="30px" loading="lazy" />
+        <p>Castle</p>
+      </div>
+      <button
+        class="border rounded-full p-3 hover:border-rose-400  hover:transition delay-200 ease-in-out hover:translate-x-2 -ml-8">
+        <img src="image copy.png" alt="" width="20px" />
+      </button>
+      <button
+        class="border rounded-xl p-2 hover:border-gray-600 hover:transition ease-in-out -ml-8">
+        <span class="flex">
+          <img src="image.png" alt="" width="20px" loading="lazy" />
+          <span class="ml-4">Filters</span></span
+        >
+      </button>
+      <button
+        class="border rounded-xl p-2 hover:border-gray-600 hover:transition ease-in-out -ml-8">
+        <p class="flex">
+          Display total before taxes
+          <img
+            src="Social-Media-Svg/toggle-off.svg"
+            alt=""
+            width="20px" loading="lazy"
+            class="ml-4" />
+        </p>
+      </button>
+    </div>
+    <main class="1 mt-8 ml-16 mr-16 flex justify-evenly">
+      <card class="1 hover:cursor-pointer  hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-777908525036300828/original/8b0f4942-ab59-4286-9961-d30b5e120345.jpeg?im_w=720"
+          alt="" loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            width="20px" loading="lazy"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Vadholi, India</span> <br />
+          138 Kilometers away <br />
+          21-26 Oct
+        </p>
+        <h3><span class="font-bold">₹18,890</span> / night</h3>
+      </card>
+      <card class="2 hover:cursor-pointer hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-1004233391696977387/original/b9e79464-7f9a-47b9-bfe3-d12f466a91b3.jpeg?im_w=720"
+          alt=""
+          style="width: 300px; height: 300px"
+          loading="lazy"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            width="20px"
+            loading="lazy"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Girnare, India</span> <br />
+          155 Kilometers away <br />
+          21-26 Oct
+        </p>
+        <h3><span class="font-bold">₹19,794</span> / night</h3>
+      </card>
+      <card class="3 hover:cursor-pointer hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-605371928419351152/original/c8f48e8b-091d-47ea-85ac-b31bc2604bbb.jpeg?im_w=720"
+          alt=""
+          style="width: 300px; height: 300px"
+          loading="lazy"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            width="20px"
+            loading="lazy"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Pimplak Nasik, India</span> <br />
+          134 Kilometers away <br />
+          28 Oct-2 Nov
+        </p>
+        <h3><span class="font-bold">₹25,538</span> / night</h3>
+      </card>
+      <card class="4 hover:cursor-pointer hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-1041703012892813453/original/189a363c-bb69-4e87-91de-918146672a65.jpeg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        <button class="border rounded-full p-1 bg-white text-black text-sm relative -top-[17rem] -left-5">
+          Guest favourite
+        </button>
+        <p>
+          <span class="font-bold">Sahan, India</span> <br />
+          40 Kilometers away <br />
+          28 Oct-2 Nov
+        </p>
+        <h3><span class="font-bold">₹22,824</span> / night</h3>
+      </card>
+    </main>
+    <main class="2 mt-8 ml-16 mr-16 flex justify-evenly">
+      <card class="1 hover:cursor-pointer  hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-675108014847583143/original/a40ae4d9-6f8d-45d4-9994-5a004d31bcea.jpeg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt="" loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Anjar, India</span> <br />
+          545 Kilometers away <br />
+          4-9 Nov
+        </p>
+        <h3><span class="font-bold">₹21,060</span> / night</h3>
+      </card>
+      <card class="2 hover:cursor-pointer hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/952d9196-f836-4975-b20d-4061f1901d1e.jpg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        <button class="border rounded-full p-1 bg-white text-black text-sm relative -top-[17rem] -left-5">
+          Guest favourite
+        </button>
+        <p>
+          <span class="font-bold">Avalas, India</span> <br />
+          53 Kilometers away <br />
+          4-9 Nov
+        </p>
+        <h3><span class="font-bold">₹3,426</span> / night</h3>
+      </card>
+      <card class="3 hover:cursor-pointer  hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/ml/photo_enhancement/pictures/9334fc54-f39c-4142-85ad-d9bd9d171e2d.jpg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Varca, India</span> <br />
+          434 Kilometers away <br />
+          10-15 Nov
+        </p>
+        <h3><span class="font-bold">₹7,000</span> / night</h3>
+      </card>
+      <card class="4 hover:cursor-pointer  hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-49020640/original/6e99ce14-6367-438c-8de6-1ada415f7ce6.jpeg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Nashik, India</span> <br />
+          145 Kilometers away <br />
+          2-7 Nov
+        </p>
+        <h3><span class="font-bold">₹3,652</span> / night</h3>
+      </card>
+    </main>
+    <main class="3 mt-8 ml-16 mr-16 flex justify-evenly">
+      <card class=" hover:cursor-pointer hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/b0ab77aa-2dc5-4f4d-88a8-5e6b88448c68.jpg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        <button class="border rounded-full p-1 bg-white text-black text-sm relative -top-[17rem] -left-5">
+          Guest favourite
+        </button>
+        <p>
+          <span class="font-bold">Akhegani, India</span> <br />
+          159 Kilometers away <br />
+          5-10 Nov
+        </p>
+        <h3><span class="font-bold">₹8,800</span> / night</h3>
+      </card>
+      <card class="1 hover:cursor-pointer  hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/54569497-8461-431f-853d-13011b0a950a.jpg?im_w=720"
+          alt="" 
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt="" 
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Pen, India</span> <br />
+          40 Kilometers away <br />
+          1-6 Nov
+        </p>
+        <h3><span class="font-bold">₹23,964</span> / night</h3>
+      </card>
+      <card class="2 hover:cursor-pointer  hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/6351e8f3-31d2-48d6-b0a5-b3b9473d84fb.jpg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Manor, India</span> <br />
+          87 Kilometers away <br />
+          9-14 Nov
+        </p>
+        <h3><span class="font-bold">₹1,940</span> / night</h3>
+      </card>
+      
+      <card class="4 hover:cursor-pointer  hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-26888809/original/85e85c8d-09ee-46e7-b437-477bc8a36883.jpeg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Chikmangalur, India</span> <br />
+          712 Kilometers away <br />
+          5-10 Nov
+        </p>
+        <h3><span class="font-bold">₹5,253</span> / night</h3>
+      </card>
+    </main>
+    <main class="4 mt-8 ml-16 mr-16 flex justify-evenly">
+      <card class="1 hover:cursor-pointer hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/7a02d92c-9bd1-47c4-bdc4-c9acfcb1e6f5.jpg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        <button class="border rounded-full p-1 bg-white text-black text-sm relative -top-[17rem] -left-5">
+          Guest favourite
+        </button>
+        <p>
+          <span class="font-bold">Lanja, India</span> <br />
+          243 Kilometers away <br />
+          1-6 Nov
+        </p>
+        <h3><span class="font-bold">₹18,287</span> / night</h3>
+      </card>
+      <card class="2 hover:cursor-pointer  hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/e2bdc16c-c581-48a7-92f4-fc9a02eed2e4.jpg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Panchagani, India</span> <br />
+          158 Kilometers away <br />
+          1-6 Nov
+        </p>
+        <h3><span class="font-bold">₹5,008</span> / night</h3>
+      </card>
+      <card class="2 hover:cursor-pointer  hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/1cf9ce24-01cf-417f-b0d4-f30914a31ed8.jpg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Salej, India</span> <br />
+          211 Kilometers away <br />
+          7-12 Nov
+        </p>
+        <h3><span class="font-bold">₹10,042</span> / night</h3>
+      </card>
+      
+      <card class="4 hover:cursor-pointer  hover:transition delay-150 hover:-translate-y-3">
+        <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-3762176/original/b8e4b5b7-eda7-4a6d-a78f-419f63d4d663.jpeg?im_w=720"
+          alt=""
+          loading="lazy"
+          style="width: 300px; height: 300px"
+          class="border rounded-xl relative"
+          id="bigimg" />
+        <button class="">
+          <img
+            src="./Components/image copy 2.png"
+            alt=""
+            loading="lazy"
+            width="20px"
+            class="relative -top-[17rem] -right-[16rem] border-white hover:transition delay-200 ease-in-out hover:-translate-y-1" />
+        </button>
+        </button>
+        <p>
+          <span class="font-bold">Raigad, India</span> <br />
+          60 Kilometers away <br />
+          2-7 Nov
+        </p>
+        <h3><span class="font-bold">₹4,382</span> / night</h3>
+      </card>
+    </main>
+    <section class="text-center mt-8">
+      <h2 class="font-bold text-xl">Continue exploring farms</h2>
+      <button class="border bg-black text-white rounded-lg p-1 mt-1">Show more</button>
+    </section>
+
+    <footer class="mt-8 bg-gray-200 pb-6">
+      <div class="ml-16">
+      <h2 class="mt-16 text-2xl text-black">Inspiration for future getaways</h2>
+        <ul class="flex mt-4 text-xl ml-[6.2rem]">
+          <li class="ml-8 underline underline-offset-4 cursor-pointer">Popular</li>
+          <li class="ml-8 hover:underline underline-offset-4 cursor-pointer ">Arts & culture</li>
+          <li class="ml-8 hover:underline underline-offset-4 cursor-pointer ">Outdoors</li>
+          <li class="ml-8 hover:underline underline-offset-4 cursor-pointer ">Mountains</li>
+          <li class="ml-8 hover:underline underline-offset-4 cursor-pointer ">Beach</li>
+          <li class="ml-8 hover:underline underline-offset-4 cursor-pointer ">Unique stays</li>
+          <li class="ml-8 hover:underline underline-offset-4 cursor-pointer ">Categories</li>
+          <li class="ml-8 hover:underline underline-offset-4 cursor-pointer ">Things to do</li>
+        </ul>
+        <p class="border border-amber-100 mt-8 1px ml-[6.2rem] mr-24 mb-20"></p>
+        <ul class="flex justify-evenly text-xl font-bold">
+          <li>Canmore</li>
+          <li>Benalmadena</li> 
+          <li>Marbella</li> 
+          <li>Mijas</li> 
+          <li>Prescott</li> 
+          <li>Scottsdale</li> 
+        </ul>
+      <ul class="flex justify-evenly">
+          <li>Apartment rentals</li>
+          <li>Flat rentals</li>
+          <li>    Villa rentals</li>
+          <li>Flat rentals</li>
+          <li>House rentals</li>
+          <li>House rentals</li>
+
+      </ul>
+      <ul class="flex justify-evenly text-xl mt-4 font-bold">
+        <li>Tucson</li>
+        <li>Jasper</li>
+        <li>Mountain View</li>
+        <li>Devonport</li>
+        <li>MAllacoota</li>
+        <li>lbiza</li>
+      </ul>
+      <ul class="flex justify-evenly">
+        <li>Mansion rentals</li>
+        <li>Cabin rentals</li>
+        <li>Family-friendly rentals</li>
+        <li>Cottage rentals</li>
+        <li>pre-friendly rentals</li>
+        <li>Holida rentals</li>
+      </ul>
+      <ul class="mt-8 justify-evenly text-xl flex font-bold">
+        <li>Anahiem</li>
+        <li>Monterey</li>
+        <li>Paso Robles</li>
+        <li>Santa Barbara</li>
+        <li>Sanoma</li>
+    <button class="bg-gray-200 text-white border border-white rounded-lg flex p-2 hover:bg-rose-500 hover:text-amber-100"> show more     <img src="image copy 3.png" alt="" width="15px" class="border bg-white  hover:transition delay-200 ease-in-out hover:translate-y-2 rounded-full ml-2 mt-2"></button>
+      </ul>
+      <ul class="flex justify-evenly">
+        <li>House rentals</li>
+        <li>House rentals</li>
+        <li>Cottage rentals</li>
+        <li>Cottage rentals</li>
+        <li>Bench house rentals</li>
+        <li></li>
+        <li></li>
+      </ul>
+      <p class="border 1px mt-8 border-amber-100  ml-[6.2rem] mr-24 mb-20"></p>
+      <ul class="flex justify-evenly">
+      <ul>
+        <h2 class="font-bold">Support</h2>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Help Centre</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">AirCover</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Anti-descrimination</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Disability support</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Cancellation options</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Report neighbour concern</li>
+      </ul>
+      <ul>
+        <h2 class="font-bold">Hosting</h2>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Airbnb your home</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">AirCover for Hosts</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Hosting resources</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Community forum</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Hosting responsibly</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Join a free Hosting class</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Find a co‑host</li>
+      </ul>
+      <ul>
+        <h2 class="font-bold">Airbnb</h2>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Newsroom</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">New features</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Careers</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Investors</li>
+        <li class="mt-2 hover:cursor-pointer hover:underline underline-offset-4">Airbnb.org emergency stays</li>
+      </ul></ul>
+      <p class="border 1px mt-8 border-amber-100  ml-[6.2rem] mr-24 mb-20"></p>
+        <ul class="flex ml-[6.2rem] mr-24">
+          <li class="ml-3">© 2024 Airbnb, Inc.</li>
+          <li class="ml-3 hover:cursor-pointer hover:underline underline-offset-4">Privacy</li>
+          <li class="ml-3 hover:cursor-pointer hover:underline underline-offset-4">Terms</li>
+          <li class="ml-3 hover:cursor-pointer hover:underline underline-offset-4">Sitemap</li>
+          <li class="ml-3 hover:cursor-pointer hover:underline underline-offset-4">Company details</li>
+          <li  class="flex ml-[30rem] hover:cursor-pointer hover:underline underline-offset-4"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20enable-background%3D%22new%200%200%2034%2034%22%20viewBox%3D%220%200%2034%2034%22%3E%3Cpath%20d%3D%22M17%2C1C8.2%2C1%2C1%2C8.1%2C1%2C17c0%2C0%2C0%2C0%2C0%2C0s0%2C0%2C0%2C0c0%2C0%2C0%2C0%2C0%2C0c0%2C8.9%2C7.3%2C16%2C16%2C16c8.6%2C0%2C16-7%2C16-16C33%2C8.1%2C25.7%2C1%2C17%2C1z%0D%0A%09%09%20M28.8%2C24.5c-1-0.7-2.1-1.4-3.4-1.9c0.3-1.4%2C0.5-3%2C0.5-4.6h5C30.8%2C20.3%2C30.1%2C22.5%2C28.8%2C24.5z%20M22.4%2C29.9c1.1-1.4%2C2-3.2%2C2.6-5.3%0D%0A%09%09c1%2C0.4%2C1.9%2C0.9%2C2.7%2C1.5C26.1%2C27.9%2C24.4%2C29.1%2C22.4%2C29.9z%20M6.4%2C26.1C7.2%2C25.5%2C8.1%2C25%2C9%2C24.6c0.6%2C2.1%2C1.5%2C3.9%2C2.6%2C5.3%0D%0A%09%09C9.6%2C29.1%2C7.9%2C27.8%2C6.4%2C26.1z%20M5.2%2C9.5c1%2C0.7%2C2.1%2C1.4%2C3.4%2C1.9c-0.3%2C1.4-0.5%2C3-0.5%2C4.6H3C3.2%2C13.7%2C3.9%2C11.5%2C5.2%2C9.5z%20M11.6%2C4.1%0D%0A%09%09c-1.1%2C1.4-2%2C3.2-2.6%2C5.3C8.1%2C9%2C7.2%2C8.5%2C6.4%2C7.9C7.9%2C6.1%2C9.7%2C4.9%2C11.6%2C4.1z%20M27.6%2C7.9C26.8%2C8.5%2C25.9%2C9%2C25%2C9.4%0D%0A%09%09c-0.6-2.1-1.5-3.9-2.6-5.3C24.4%2C4.9%2C26.1%2C6.2%2C27.6%2C7.9z%20M16%2C11c-1.8-0.1-3.5-0.4-5.1-0.8c1.1-3.7%2C2.9-6.3%2C5.1-7V11z%20M16%2C13v3h-6%0D%0A%09%09c0.1-1.4%2C0.2-2.7%2C0.4-3.9C12.2%2C12.6%2C14.1%2C12.9%2C16%2C13z%20M16%2C18v3c-1.9%2C0.1-3.8%2C0.4-5.5%2C0.9c-0.2-1.2-0.4-2.6-0.4-3.9H16z%20M16%2C23v7.8%0D%0A%09%09c-2.1-0.6-4-3.3-5.1-6.9C12.5%2C23.4%2C14.2%2C23.1%2C16%2C23z%20M18%2C30.8V23c1.8%2C0.1%2C3.5%2C0.4%2C5.1%2C0.8C22%2C27.5%2C20.1%2C30.2%2C18%2C30.8z%20M18%2C21v-3h6%0D%0A%09%09c-0.1%2C1.4-0.2%2C2.7-0.4%2C3.9C21.8%2C21.4%2C19.9%2C21.1%2C18%2C21z%20M18%2C16v-3c1.9-0.1%2C3.8-0.4%2C5.5-0.9c0.2%2C1.2%2C0.4%2C2.6%2C0.4%2C3.9H18z%20M18%2C11V3.2%0D%0A%09%09c2.1%2C0.6%2C4%2C3.3%2C5.1%2C7C21.5%2C10.6%2C19.8%2C10.9%2C18%2C11z%20M8%2C18c0.1%2C1.6%2C0.2%2C3.2%2C0.5%2C4.6c-1.2%2C0.5-2.4%2C1.2-3.4%2C1.9c-1.2-2-2-4.2-2.1-6.5H8z%0D%0A%09%09%20M26%2C16c-0.1-1.6-0.2-3.2-0.5-4.6c1.2-0.5%2C2.4-1.2%2C3.4-1.9c1.2%2C2%2C2%2C4.2%2C2.1%2C6.5H26z%22%2F%3E%3C%2Fsvg%3E" alt="" width="20px" class="mr-2 "> English (IN)</li>
+          <li class="ml-8 hover:cursor-pointer hover:underline underline-offset-4">₹ INR</li>
+          <img class="ml-8 hover:cursor-pointer hover:bg-orange-500 rounded-2xl" src="Social-Media-Svg/fi-brands-instagram.svg" alt="" width="20px">
+          <img class="ml-4 hover:cursor-pointer hover:bg-green-500 rounded-2xl" src="Social-Media-Svg/fi-brands-twitter-alt-circle.svg" alt="" width="20px">
+          <img class="ml-4 hover:cursor-pointer hover:bg-indigo-400 rounded-2xl" src="Social-Media-Svg/facebook.png" alt="" width="20px">
+        </ul>
+    </footer>
+    <script src="airbnb.js"></script>
+  </body>
+</html>
