@@ -1,0 +1,377 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slack.com</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="slack.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="navbar">
+        <img
+          class="logo"
+          src="https://cdn.cookielaw.org/logos/ddb906c9-f57b-40fc-85a1-c8bcbc371b0d/1ce30484-b023-4ff1-a118-3a9dc53fce45/f83dd0bf-3d5c-47ca-b065-8f247adfeacd/rsz_slack_rgb.png"
+          alt="" />
+        <li class="option">
+          Feautres
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyBpZD0ib3QtYmFjay1hcnciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDQ0LjUzMSA0NDQuNTMxIiB4bWw6c3BhY2U9InByZXNlcnZlIj48dGl0bGU+QmFjayBCdXR0b248L3RpdGxlPjxnPjxwYXRoIGZpbGw9IiM2NTY1NjUiIGQ9Ik0yMTMuMTMsMjIyLjQwOUwzNTEuODgsODMuNjUzYzcuMDUtNy4wNDMsMTAuNTY3LTE1LjY1NywxMC41NjctMjUuODQxYzAtMTAuMTgzLTMuNTE4LTE4Ljc5My0xMC41NjctMjUuODM1JiMxMDsgICAgICAgICAgICAgICAgICAgIGwtMjEuNDA5LTIxLjQxNkMzMjMuNDMyLDMuNTIxLDMxNC44MTcsMCwzMDQuNjM3LDBzLTE4Ljc5MSwzLjUyMS0yNS44NDEsMTAuNTYxTDkyLjY0OSwxOTYuNDI1JiMxMDsgICAgICAgICAgICAgICAgICAgIGMtNy4wNDQsNy4wNDMtMTAuNTY2LDE1LjY1Ni0xMC41NjYsMjUuODQxczMuNTIxLDE4Ljc5MSwxMC41NjYsMjUuODM3bDE4Ni4xNDYsMTg1Ljg2NGM3LjA1LDcuMDQzLDE1LjY2LDEwLjU2NCwyNS44NDEsMTAuNTY0JiMxMDsgICAgICAgICAgICAgICAgICAgIHMxOC43OTUtMy41MjEsMjUuODM0LTEwLjU2NGwyMS40MDktMjEuNDEyYzcuMDUtNy4wMzksMTAuNTY3LTE1LjYwNCwxMC41NjctMjUuNjk3YzAtMTAuMDg1LTMuNTE4LTE4Ljc0Ni0xMC41NjctMjUuOTc4JiMxMDsgICAgICAgICAgICAgICAgICAgIEwyMTMuMTMsMjIyLjQwOXoiLz48L2c+PC9zdmc+"
+            alt=""
+            class="arrow" />
+        </li>
+        <li class="option">
+          Solution
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyBpZD0ib3QtYmFjay1hcnciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDQ0LjUzMSA0NDQuNTMxIiB4bWw6c3BhY2U9InByZXNlcnZlIj48dGl0bGU+QmFjayBCdXR0b248L3RpdGxlPjxnPjxwYXRoIGZpbGw9IiM2NTY1NjUiIGQ9Ik0yMTMuMTMsMjIyLjQwOUwzNTEuODgsODMuNjUzYzcuMDUtNy4wNDMsMTAuNTY3LTE1LjY1NywxMC41NjctMjUuODQxYzAtMTAuMTgzLTMuNTE4LTE4Ljc5My0xMC41NjctMjUuODM1JiMxMDsgICAgICAgICAgICAgICAgICAgIGwtMjEuNDA5LTIxLjQxNkMzMjMuNDMyLDMuNTIxLDMxNC44MTcsMCwzMDQuNjM3LDBzLTE4Ljc5MSwzLjUyMS0yNS44NDEsMTAuNTYxTDkyLjY0OSwxOTYuNDI1JiMxMDsgICAgICAgICAgICAgICAgICAgIGMtNy4wNDQsNy4wNDMtMTAuNTY2LDE1LjY1Ni0xMC41NjYsMjUuODQxczMuNTIxLDE4Ljc5MSwxMC41NjYsMjUuODM3bDE4Ni4xNDYsMTg1Ljg2NGM3LjA1LDcuMDQzLDE1LjY2LDEwLjU2NCwyNS44NDEsMTAuNTY0JiMxMDsgICAgICAgICAgICAgICAgICAgIHMxOC43OTUtMy41MjEsMjUuODM0LTEwLjU2NGwyMS40MDktMjEuNDEyYzcuMDUtNy4wMzksMTAuNTY3LTE1LjYwNCwxMC41NjctMjUuNjk3YzAtMTAuMDg1LTMuNTE4LTE4Ljc0Ni0xMC41NjctMjUuOTc4JiMxMDsgICAgICAgICAgICAgICAgICAgIEwyMTMuMTMsMjIyLjQwOXoiLz48L2c+PC9zdmc+"
+            alt=""
+            class="arrow" />
+        </li>
+        <li class="link">Enterprice</li>
+        <li class="option">
+          Resources
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyBpZD0ib3QtYmFjay1hcnciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDQ0LjUzMSA0NDQuNTMxIiB4bWw6c3BhY2U9InByZXNlcnZlIj48dGl0bGU+QmFjayBCdXR0b248L3RpdGxlPjxnPjxwYXRoIGZpbGw9IiM2NTY1NjUiIGQ9Ik0yMTMuMTMsMjIyLjQwOUwzNTEuODgsODMuNjUzYzcuMDUtNy4wNDMsMTAuNTY3LTE1LjY1NywxMC41NjctMjUuODQxYzAtMTAuMTgzLTMuNTE4LTE4Ljc5My0xMC41NjctMjUuODM1JiMxMDsgICAgICAgICAgICAgICAgICAgIGwtMjEuNDA5LTIxLjQxNkMzMjMuNDMyLDMuNTIxLDMxNC44MTcsMCwzMDQuNjM3LDBzLTE4Ljc5MSwzLjUyMS0yNS44NDEsMTAuNTYxTDkyLjY0OSwxOTYuNDI1JiMxMDsgICAgICAgICAgICAgICAgICAgIGMtNy4wNDQsNy4wNDMtMTAuNTY2LDE1LjY1Ni0xMC41NjYsMjUuODQxczMuNTIxLDE4Ljc5MSwxMC41NjYsMjUuODM3bDE4Ni4xNDYsMTg1Ljg2NGM3LjA1LDcuMDQzLDE1LjY2LDEwLjU2NCwyNS44NDEsMTAuNTY0JiMxMDsgICAgICAgICAgICAgICAgICAgIHMxOC43OTUtMy41MjEsMjUuODM0LTEwLjU2NGwyMS40MDktMjEuNDEyYzcuMDUtNy4wMzksMTAuNTY3LTE1LjYwNCwxMC41NjctMjUuNjk3YzAtMTAuMDg1LTMuNTE4LTE4Ljc0Ni0xMC41NjctMjUuOTc4JiMxMDsgICAgICAgICAgICAgICAgICAgIEwyMTMuMTMsMjIyLjQwOXoiLz48L2c+PC9zdmc+"
+            alt=""
+            class="arrow" />
+        </li>
+        <li class="link">Pricing</li>
+      </ul>
+      <ul class="navbar">
+        <button class="search">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTE4Ljc4IDE3LjcyYy4xNDY3LjE0NjcuMjIuMzIzMy4yMi41MyAwIC4yMTMzLS4wNzMzLjM5LS4yMi41My0uMTYuMTQ2Ny0uMzM2Ny4yMi0uNTMuMjItLjIwNjcgMC0uMzgzMy0uMDczMy0uNTMtLjIybC00LjQ3LTQuNDdjLS42NjY3LjU0LTEuNDA2Ny45NTY3LTIuMjIgMS4yNS0uODA2Ny4yOTMzLTEuNjUuNDQtMi41My40NC0xLjM2IDAtMi42MTMzMy0uMzM2Ny0zLjc2LTEuMDFzLTIuMDU2NjctMS41ODMzLTIuNzMtMi43My0xLjAxLTIuNC0xLjAxLTMuNzYuMzM2NjctMi42MTMzMyAxLjAxLTMuNzYgMS41ODMzMy0yLjA1NjY3IDIuNzMtMi43MyAyLjQtMS4wMSAzLjc2LTEuMDEgMi42MTMzLjMzNjY3IDMuNzYgMS4wMSAyLjA1NjcgMS41ODMzMyAyLjczIDIuNzMgMS4wMSAyLjQgMS4wMSAzLjc2YzAgLjg4LS4xNDY3IDEuNzI2Ny0uNDQgMi41NC0uMjkzMy44MDY3LS43MSAxLjU0MzMtMS4yNSAyLjIxem0tMTAuMjgtMy4yMmMxLjA4NjY3IDAgMi4wODY3LS4yNyAzLS44MS45Mi0uNTQgMS42NS0xLjI2NjcgMi4xOS0yLjE4LjU0LS45Mi44MS0xLjkyMzMzLjgxLTMuMDFzLS4yNy0yLjA4NjY3LS44MS0zYy0uNTQtLjkyLTEuMjctMS42NS0yLjE5LTIuMTktLjkxMzMtLjU0LTEuOTEzMzMtLjgxLTMtLjgxcy0yLjA5LjI3LTMuMDEuODFjLS45MTMzMy41NC0xLjY0IDEuMjctMi4xOCAyLjE5LS41NC45MTMzMy0uODEgMS45MTMzMy0uODEgM3MuMjcgMi4wOS44MSAzLjAxYy41NC45MTMzIDEuMjY2NjcgMS42NCAyLjE4IDIuMTguOTIuNTQgMS45MjMzMy44MSAzLjAxLjgxeiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9Ii41Ii8+PC9zdmc+"
+            alt="" />
+        </button>
+        <li class="link1">Sign in</li>
+        <button class="nav-but">talk to sales</button>
+        <button class="nav-but1">get started</button>
+      </ul>
+    </nav>
+    <header class="nav-head">
+      <video
+        src="../Components/hp-headline.en-GB@2x.mp4"
+        frameborder="0"
+        width="60%"
+        height="60%"
+        muted
+        loop
+        autoplay></video>
+    </header>
+    <header class="nav-head">
+      <button class="nav-but2">get started</button>
+      <button class="nav-but3">
+        find your subscription
+        <img
+          src="data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2215%22%20height%3D%2213%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M7.05357%209.0068C6.75395%209.2928%206.27921%209.28177%205.9932%208.98214C5.70719%208.68252%205.71823%208.20778%206.01785%207.92177L8.59233%205.46428L1.53571%205.46429C1.1215%205.46429%200.785715%205.1285%200.785715%204.71428C0.785715%204.30007%201.1215%203.96429%201.53571%203.96429L8.5924%203.96428L6.01786%201.5068C5.71824%201.2208%205.70719%200.746056%205.9932%200.446431C6.2792%200.146805%206.75394%200.135762%207.05357%200.421765L10.9821%204.17172C11.1304%204.31324%2011.2143%204.50927%2011.2143%204.71423C11.2143%204.9192%2011.1304%205.11523%2010.9821%205.25675L7.05357%209.0068Z%22%20fill%3D%22%23611f69%22%2F%3E%0A%3C%2Fsvg%3E%0A%0A"
+          alt=""
+          class="arr" />
+      </button>
+    </header>
+    <h2 class="heading">
+      <span class="dark">Slack is free to try</span> for as long as you like
+    </h2>
+    <main class="collab">
+      <nav>
+        <img
+          src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-airbnb-small.png"
+          alt="Airbnb Logo" />
+        <img
+          src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nasa-small.png"
+          alt="NASA Logo" />
+        <img
+          src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-uber-small.png"
+          alt="Uber Logo" />
+        <img
+          src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-target-small.png"
+          alt="Target Logo" />
+        <img
+          src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-nyt-small.png"
+          alt="New York Times Logo" />
+        <img
+          src="https://a.slack-edge.com/a4c4a15/marketing/img/homepage/true-prospects/revamp-exp/logos/logo-etsy-small.png"
+          alt="Etsy Logo" />
+      </nav>
+      <video
+        src="../Components/hero@2x.IN.mp4"
+        width="60%"
+        height="60%"
+        autoplay
+        muted
+        loop
+        style="
+          border-radius: 15px;
+          max-width: 100%;
+          height: auto;
+          margin: 1rem 18rem;
+          position: relative;
+          z-index: 1001;
+        "></video>
+    </main>
+    <main class="mid">
+      <h2 class="head-line">
+        Your people, projects, apps and AI, all on the world’s most beloved work
+        operating system.
+      </h2>
+      <ul>
+        <li>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE0LjUwODcgMS41Mjg4OEMxNC40ODg2IDEuMjQxNDMgMTQuMjM5NCAxLjAyNDY4IDEzLjk1MTkgMS4wNDQ3NUMxMy42NjQ1IDEuMDY0ODIgMTMuNDQ3NyAxLjMxNDExIDEzLjQ2NzggMS42MDE1NkwxMy42Mjk1IDMuOTE4MDhDMTMuNjQ5NiA0LjIwNTUzIDEzLjg5ODkgNC40MjIyOCAxNC4xODYzIDQuNDAyMjFDMTQuNDczOCA0LjM4MjE0IDE0LjY5MDUgNC4xMzI4NSAxNC42NzA1IDMuODQ1NEwxNC41MDg3IDEuNTI4ODhaTTE3Ljc0NyAyLjE4NTU0QzE3Ljg0MTggMS45MTM0NCAxNy42OTgxIDEuNjE1OTkgMTcuNDI2IDEuNTIxMTdDMTcuMTUzOSAxLjQyNjM1IDE2Ljg1NjUgMS41NzAwNiAxNi43NjE3IDEuODQyMTZMMTYuMDQxNyAzLjkwODI1QzE1Ljk0NjggNC4xODAzNSAxNi4wOTA1IDQuNDc3NzkgMTYuMzYyNiA0LjU3MjYyQzE2LjYzNDcgNC42Njc0NCAxNi45MzIyIDQuNTIzNzMgMTcuMDI3IDQuMjUxNjNMMTcuNzQ3IDIuMTg1NTRaTTguMjc1ODEgMi44NjAyQzguMTIzMTcgMi43NTQyMyA3LjkzNzc0IDIuNjkyMTMgNy43Mzc3NSAyLjY5MjEzSDcuNzMyNTNDNy40ODY4NSAyLjY5MjEzIDcuMjYzMTYgMi43ODU4NCA3LjA5NTIxIDIuOTM5NDhDNy4xMjI1NiAzLjAwMjgzIDcuMTM3NzIgMy4wNzI2OCA3LjEzNzcyIDMuMTQ2MDhWOC45NDI2QzcuMTM3NzIgOS4yMzA3NSA2LjkwNDEzIDkuNDY0MzQgNi42MTU5OCA5LjQ2NDM0QzYuMzI3ODMgOS40NjQzNCA2LjA5NDI0IDkuMjMwNzUgNi4wOTQyNCA4Ljk0MjZWMy42ODU4M0M2LjAxNDU4IDMuNjYzODggNS45MzA2NCAzLjY1MjEzIDUuODQzODQgMy42NTIxM0M1Ljc3NjAxIDMuNjUyMTMgNS43MDgxOSAzLjY1NzM1IDUuNjQwMzYgMy42NzNDNS4xOTY4OCAzLjc2NjkyIDQuODk5NDkgNC4xOTQ3NCA0Ljg5OTQ5IDQuNjQ4NjVWMTEuNDk5MUM0Ljg5OTQ5IDExLjQ5OTEgMy4yNjY0NSAxMC4wMTIxIDIuMTY1NTggMTAuMDEyMUMxLjA2NDcxIDEwLjAxMjEgMC42NDIwOTggMTEuNjEzOSAyLjExODYyIDEyLjAyNkMzLjU2Mzg0IDEyLjQyNzggNS41ODgxOCAxNS4wODg3IDUuNTg4MTggMTUuMDg4N0M2LjI3MTY2IDE2LjA1OTEgNy4zOTg2MiAxNi42OTU2IDguNjc2ODggMTYuNjk1NkM4LjcxMzQgMTYuNjk1NiA4Ljc1MTIzIDE2LjY5NDMgOC43ODkwNSAxNi42OTNDOC44MjY4OCAxNi42OTE3IDguODY0NzEgMTYuNjkwNCA4LjkwMTIzIDE2LjY5MDRDOS4zODAxNSAxNi42NjMyIDkuODMxNzYgMTYuNTQzMiAxMC4yNDIxIDE2LjM0OVYxMi4wMDUyQzEwLjI0MjEgMTAuOTUxMyAxMS4wMDM4IDEwLjAyNzggMTIuMDEwOCA5Ljg2NjA0QzEyLjAyNDcgOS44NjQzIDEyLjAzODYgOS44NjE5OCAxMi4wNTI1IDkuODU5NjZDMTIuMDgwNCA5Ljg1NTAyIDEyLjEwODIgOS44NTAzOCAxMi4xMzYgOS44NTAzOEMxMi4xNTk4IDkuNDkwMDcgMTIuMjczMyA5LjE1NDEyIDEyLjQ1NDMgOC44NjQ5VjYuNzgyNTdDMTIuNDU0MyA2LjMxMyAxMi4xMzA4IDUuODc0NzQgMTEuNjY2NCA1LjgwMTdDMTEuNjE0MyA1Ljc5MTI2IDExLjU2MjEgNS43OTEyNiAxMS41MDk5IDUuNzkxMjZDMTEuNDg3MSA1Ljc5MTI2IDExLjQ2NDUgNS43OTIwOCAxMS40NDIgNS43OTM2OVY4LjY1NTYzQzExLjQ0MiA4Ljk0Mzc4IDExLjIwODQgOS4xNzczNyAxMC45MjAzIDkuMTc3MzdDMTAuNjMyMSA5LjE3NzM3IDEwLjM5ODUgOC45NDM3OCAxMC4zOTg1IDguNjU1NjNWNC4yMjQ2QzEwLjIyNzYgMy45ODI0MSA5Ljk0NTU3IDMuODI0MzEgOS42MjY0NSAzLjgyNDMxQzkuNTA4NjUgMy44MjQzMSA5LjM5NjEzIDMuODQ1OTQgOS4yOTI0IDMuODg1MzRWOS4wNTcyNkM5LjI5MjQgOS4zNDU0MSA5LjA1ODgxIDkuNTc5IDguNzcwNjcgOS41NzlDOC40ODI1MiA5LjU3OSA4LjI0ODkzIDkuMzQ1NDEgOC4yNDg5MyA5LjA1NzI2VjMuMDI1OTZDOC4yNDg5MyAyLjk2ODAxIDguMjU4MzcgMi45MTIyOCA4LjI3NTgxIDIuODYwMlpNMjAuNDc4NiA0LjAzNDM0QzIwLjY3MjQgMy44MjExMyAyMC42NTY3IDMuNDkxMTYgMjAuNDQzNSAzLjI5NzMzQzIwLjIzMDMgMy4xMDM1IDE5LjkwMDMgMy4xMTkyMSAxOS43MDY1IDMuMzMyNDJMMTguMTQxMiA1LjA1NDE2QzE3Ljk0NzQgNS4yNjczNyAxNy45NjMxIDUuNTk3MzUgMTguMTc2MyA1Ljc5MTE4QzE4LjM4OTYgNS45ODUwMSAxOC43MTk1IDUuOTY5MjkgMTguOTEzNCA1Ljc1NjA4TDIwLjQ3ODYgNC4wMzQzNFpNMTQuNTgyOSA5LjExMzA5QzE0LjQ3OTIgOS4wNzM3MyAxNC4zNjY4IDkuMDUyMTIgMTQuMjQ5IDkuMDUyMTJDMTMuNzI3MyA5LjA1MjEyIDEzLjMwNDcgOS40NzQ3MyAxMy4zMDQ3IDkuOTk2NDdWMTEuNDk5MUMxMy4zMDQ3IDExLjUxMzEgMTMuMzAwOSAxMS41MjQ4IDEzLjI5NDQgMTEuNTMzOVYxNC45MTY1QzEzLjI5NDQgMTUuMjA0NyAxMy4wNjA4IDE1LjQzODMgMTIuNzcyNiAxNS40MzgzQzEyLjQ4NDUgMTUuNDM4MyAxMi4yNTA5IDE1LjIwNDcgMTIuMjUwOSAxNC45MTY1VjExLjAyMjdDMTIuMjM1MiAxMS4wMjQyIDEyLjIxOTUgMTEuMDI2NCAxMi4yMDM4IDExLjAyOTVDMTEuNzM5NSAxMS4xMDI2IDExLjQxNiAxMS41NDA4IDExLjQxNiAxMi4wMTA0VjE4LjAxNTZDMTEuNDE2IDIwLjAzNDcgMTIuOTQ5OSAyMS44MDM0IDE0Ljk2OSAyMS45MTgyQzE1LjA0NzMgMjEuOTIzNCAxNS4xMjA0IDIxLjkyMzQgMTUuMTkzNCAyMS45MjM0QzE2LjQ3MTcgMjEuOTIzNCAxNy41OTg2IDIxLjI4NjkgMTguMjgyMSAyMC4zMTY1QzE4LjI4MjEgMjAuMzE2NSAyMC4zMDY0IDE3LjY1NTYgMjEuNzUxNyAxNy4yNTM5QzIzLjIyODIgMTYuODQxNyAyMi43Nzk1IDE1LjI0IDIxLjcwNDcgMTUuMjRDMjAuNjI5OSAxNS4yNCAxOC45NzA4IDE2LjcyNjkgMTguOTcwOCAxNi43MjY5VjkuODY2MDRDMTguOTcwOCA5LjQxMjEyIDE4LjY3MzQgOC45ODQzIDE4LjIyOTkgOC44OTAzOUMxOC4xNjIxIDguODc0NzMgMTguMDk0MyA4Ljg2OTUyIDE4LjAyNjQgOC44Njk1MkMxNy45ODQgOC44Njk1MiAxNy45NDIzIDguODcyMzIgMTcuOTAxNCA4Ljg3Nzc1VjE0LjY4MTdDMTcuOTAxNCAxNC45Njk5IDE3LjY2NzggMTUuMjAzNSAxNy4zNzk3IDE1LjIwMzVDMTcuMDkxNSAxNS4yMDM1IDE2Ljg1NzkgMTQuOTY5OSAxNi44NTc5IDE0LjY4MTdWOC4zNjM0NkMxNi44NTc5IDguMzI2NjYgMTYuODYxNyA4LjI5MDc0IDE2Ljg2OSA4LjI1NjA5QzE2LjY5NTggOC4wNDQ1IDE2LjQzMjYgNy45MDk1MiAxNi4xMzc3IDcuOTA5NTJWNy45MTk5NUMxNS45NDkzIDcuOTE5OTUgMTUuNzczNyA3Ljk3NTEgMTUuNjI2NCA4LjA3MDE0VjE0Ljc5NjNDMTUuNjI2NCAxNS4wODQ1IDE1LjM5MjggMTUuMzE4MSAxNS4xMDQ2IDE1LjMxODFDMTQuODE2NSAxNS4zMTgxIDE0LjU4MjkgMTUuMDg0NSAxNC41ODI5IDE0Ljc5NjNWOS4xMTMwOVpNMTAuMjQyMSAxNy42MjY2QzkuODM4ODggMTcuNzYzOCA5LjQxMjE0IDE3Ljg0OTEgOC45NjkwNiAxNy44NzQ3QzguODc1MTQgMTcuODg1MiA4Ljc3NjAxIDE3Ljg4NTIgOC42ODIxIDE3Ljg4NTJDNy4wODU1OCAxNy44ODUyIDUuNTc3NzUgMTcuMTAyNiA0LjY0OTA1IDE1Ljc5ODJDMy43ODgxOCAxNC42NzEzIDIuNDYyOTcgMTMuMzUxMyAxLjgxMDc5IDEzLjE2ODdDMC4zOTY4ODEgMTIuNzcyMSAtMC4xMDkyMDYgMTEuNjUwNCAwLjAyMTIyODUgMTAuNzExM0MwLjE2NzMxNSA5LjYzNjQ4IDEuMDc1MTQgOC44NTM4NyAyLjE3MDc5IDguODUzODdDMi42ODczMiA4Ljg1Mzg3IDMuMjI5OTIgOS4wMzY0OCAzLjczNjAxIDkuMjg2OTJWNC42NTM4N0MzLjczNjAxIDMuNjMxMjYgNC40NDAzNiAyLjczOTA5IDUuNDEwNzkgMi41MzU2MUM1LjU1MTY2IDIuNTA0MzEgNS43MDI5NyAyLjQ4ODY1IDUuODQ5MDUgMi40ODg2NUg1Ljk2Mzg0QzYuMzM5NDkgMS45MDk1MiA2Ljk5Njg4IDEuNTIzNDQgNy43Mzc3NSAxLjUyMzQ0TDcuNzMyNTMgMS41Mjg2NUM4LjU0NjQ1IDEuNTI4NjUgOS4yNTA3OSAxLjk4MjU3IDkuNjA1NTggMi42NTU2MUg5LjYyMTIzQzEwLjc0MyAyLjY1NTYxIDExLjY2NjQgMy41MzIxMyAxMS43MzQzIDQuNjM4MjJMMTEuODU5NSA0LjY1Mzg3QzEyLjg2NjQgNC44MjA4MyAxMy42MjgyIDUuNzM5MDkgMTMuNjI4MiA2Ljc5M1Y3Ljk2MDYxQzEzLjQwMzEgOC4wMjk4NiAxMy4xOTM5IDguMTM1NzcgMTMuMDA3NiA4LjI3MTM2QzEzLjM1NjUgOC4wMTc1MyAxMy43ODU0IDcuODY3NzggMTQuMjQ5IDcuODY3NzhIMTQuMjY0N0MxNC42MTkxIDcuMjAwNjcgMTUuMzI3NSA2Ljc0MTgxIDE2LjEzNTEgNi43NDA4MkMxNi44NzQ5IDYuNzQxNzMgMTcuNTMxMiA3LjEyNzU5IDE3LjkwNjQgNy43MDYwNEgxOC4wMjEyQzE4LjE2NzMgNy43MDYwNCAxOC4zMTM0IDcuNzIxNjkgMTguNDU5NSA3Ljc1Mjk5QzE5LjQyOTkgNy45NTEyNSAyMC4xMzQzIDguODQzNDMgMjAuMTM0MyA5Ljg3MTI1VjE0LjUwNDNDMjAuNjQwNCAxNC4yNTM5IDIxLjE4MyAxNC4wNzEzIDIxLjY5OTUgMTQuMDcxM0MyMi44MDA0IDE0LjA3MTMgMjMuNzAzIDE0Ljg1MzkgMjMuODQ5IDE1LjkyODZDMjMuOTc0MyAxNi44NjI2IDIzLjQ3MzQgMTcuOTg0MyAyMi4wNTk1IDE4LjM4MDhDMjEuNDA3MyAxOC41NjM0IDIwLjA4MjEgMTkuODgzNCAxOS4yMjEyIDIxLjAxMDRDMTguMjkyNSAyMi4zMiAxNi43ODQ3IDIzLjA5NzMgMTUuMTg4MiAyMy4wOTczQzE1LjA5OSAyMy4wOTczIDE1LjAwOTkgMjMuMDkyNiAxNC45MTYyIDIzLjA4NzdMMTQuOTE2MiAyMy4wODc3TDE0LjkwMTIgMjMuMDg2OUMxMi4yODczIDIyLjkzNTYgMTAuMjQyMSAyMC43MDc4IDEwLjI0MjEgMTguMDEwNFYxNy42MjY2Wk0xNi4xMzUxIDYuNzQwODJMMTYuMTMyNSA2Ljc0MDgySDE2LjEzNzdMMTYuMTM1MSA2Ljc0MDgyWiIgZmlsbD0iIzFEMUMxRCIvPjwvc3ZnPg=="
+            alt="" />Collaboration
+        </li>
+        <li>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj48ZyBzdHJva2U9IiMxZDFjMWQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjIiPjxwYXRoIGQ9Im0xOS45MDk3IDUuOTE3MjR2MTQuMzUwMDZjMCAuMzctLjE0NjYuNzI0OC0uNDA3Ny45ODY5LS4yNjExLjI2Mi0uNjE1NC40MS0uOTg1My40MTEzaC0xNC42MTgxNGMtLjM2ODA5LS4wMDQxLS43MTk3LS4xNTMyLS45Nzg1MS0uNDE1LS4yNTg4Mi0uMjYxOC0uNDAzOTYtLjYxNTEtLjQwMzk0LS45ODMydi0xNC41OTcxMWMtLjAwMDAyLS4zNjgxMi4xNDUxMi0uNzIxMzkuNDAzOTQtLjk4MzE2LjI1ODgxLS4yNjE3Ni42MTA0Mi0uNDEwOTEuOTc4NTEtLjQxNTA2aDEzLjEwOTU0Ii8+PHBhdGggZD0ibTUuOTEyMTEgOC44NDQ3M2g1LjY4MjE5Ii8+PHBhdGggZD0ibTUuOTEyMTEgMTIuOTc2Nmg1LjI5ODQ5Ii8+PHBhdGggZD0ibTUuOTEyMTEgMTcuMTA3N2gxMC42NDk1OSIvPjxwYXRoIGQ9Im0yMC4yMzU4IDIuMzQ3NzJjLjc3MjcuNTI1NjUgMS4xMDkxIDEuMzUwOTEuNzU2OSAxLjkwMjg0bC00LjYyMDQgNy4xMzgyNC0zLjAxMTkgMS41NzY5LjE5NDQtMy4zODUxMSA0LjY0MTUtNy4xMzgyNWMuMzUyMi0uNTcyOTUgMS4yNjY4LS41NzI5NSAyLjAzOTUtLjA5NDYyeiIvPjxwYXRoIGQ9Im0xNy4yNDQ2IDMuOTAzODEgMi44OTYzIDEuNjYxMDQiLz48L2c+PC9zdmc+"
+            alt="" />Project management
+        </li>
+        <li>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj48cGF0aCBkPSJNOC43OTIyNCAyMi40MDAxQzguNTg5NTQgMjIuMzk5MSA4LjM5MDIzIDIyLjM0NjcgOC4yMTIxMSAyMi4yNDc1QzguMDM0IDIyLjE0ODMgNy44ODI2MiAyMi4wMDU0IDcuNzcxNTEgMjEuODMxNkM3LjY2MDQgMjEuNjU3OCA3LjU5MzAyIDIxLjQ1ODUgNy41NzUzOCAyMS4yNTE0QzcuNTU3NzUgMjEuMDQ0NCA3LjU5MDQxIDIwLjgzNjEgNy42NzA0NSAyMC42NDUyTDEwLjQ0MDcgMTQuMTY1NEg3LjM5NjU4QzcuMDk1MDggMTQuMTY3MyA2Ljc5ODAyIDE0LjA5MDkgNi41MzMxIDEzLjk0MzRDNi4yNjgxNyAxMy43OTU4IDYuMDQ0MDIgMTMuNTgxOCA1Ljg4MTUzIDEzLjMyMTRDNS43MTkwNSAxMy4wNjEgNS42MjM1NCAxMi43NjI3IDUuNjAzODkgMTIuNDU0MkM1LjU4NDI1IDEyLjE0NTcgNS42NDExMiAxMS44MzcyIDUuNzY5MiAxMS41NTczTDkuNzc3MDkgMi42ODAwNkM5LjkxOTcgMi4zNTk2OSAxMC4xNDg3IDIuMDg3ODEgMTAuNDM3IDEuODk2NDdDMTAuNzI1MyAxLjcwNTEyIDExLjA2MSAxLjYwMjI5IDExLjQwNDUgMS42MDAxSDE1LjYxNzhDMTUuODI0NyAxLjYwMDUxIDE2LjAyODEgMS42NTQ1NCAxNi4yMDkxIDEuNzU3MTdDMTYuMzkwMiAxLjg1OTggMTYuNTQzIDIuMDA3NyAxNi42NTM0IDIuMTg3MTJDMTYuNzYzNyAyLjM2NjU0IDE2LjgyODEgMi41NzE2NiAxNi44NDA0IDIuNzgzNEMxNi44NTI3IDIuOTk1MTQgMTYuODEyNiAzLjIwNjY0IDE2LjcyMzggMy4zOTgyM0wxMy45MjcyIDkuMzkySDE3LjQwMzJDMTcuNzU2MyA5LjM5MDczIDE4LjEwMiA5LjQ5NjU2IDE4LjM5NjYgOS42OTYxOEMxOC42OTEzIDkuODk1ODEgMTguOTIxOCAxMC4xODAzIDE5LjA1OTEgMTAuNTEzOUMxOS4xOTY1IDEwLjg0NzUgMTkuMjM0NiAxMS4yMTUzIDE5LjE2ODYgMTEuNTcxQzE5LjEwMjYgMTEuOTI2NyAxOC45MzU0IDEyLjI1NDUgMTguNjg4MiAxMi41MTMxTDkuNjcxNzYgMjIuMDE2N0M5LjU1NzYyIDIyLjEzNzcgOS40MjA5NyAyMi4yMzM5IDkuMjY5OSAyMi4yOTk4QzkuMTE4ODIgMjIuMzY1NyA4Ljk1NjQgMjIuMzk5OCA4Ljc5MjI0IDIyLjQwMDFaTTExLjQzNjEgMTIuODI2M0MxMS41NDU4IDEyLjgyNjggMTEuNjQzMSAxMi44MzkxIDExLjczOTQgMTIuODkyOUMxMS44MzU4IDEyLjk0NjcgMTEuOTE3NiAxMy4wMjQxIDExLjk3NzYgMTMuMTE4M0MxMi4wMzc2IDEzLjIxMjQgMTIuMDczOSAxMy4zMjA0IDEyLjA4MzMgMTMuNDMyNEMxMi4wOTI2IDEzLjU0NDUgMTIuMDc0NyAxMy42NTcyIDEyLjAzMTIgMTMuNzYwNEw5LjA3NjYzIDIwLjcwNDZMMTcuNzI5NyAxMS41NzM1QzE3Ljc5ODIgMTEuNTA0OCAxNy44NDQ2IDExLjQxNjIgMTcuODYyNCAxMS4zMTk2QzE3Ljg4MDMgMTEuMjIzMSAxNy44Njg5IDExLjEyMzIgMTcuODI5OCAxMS4wMzM1QzE3Ljc5MzcgMTAuOTQ0MSAxNy43MzIyIDEwLjg2OCAxNy42NTMzIDEwLjgxNUMxNy41NzQ0IDEwLjc2MiAxNy40ODE3IDEwLjczNDcgMTcuMzg3NCAxMC43MzY1SDEyLjg4NDRDMTIuNzczMiAxMC43MzY1IDEyLjY2MzggMTAuNzA3OCAxMi41NjYzIDEwLjY1M0MxMi40Njg3IDEwLjU5ODMgMTIuMzg2MSAxMC41MTkzIDEyLjMyNjEgMTAuNDIzNEMxMi4yNjg3IDEwLjMyNTcgMTIuMjM1MyAxMC4yMTUyIDEyLjIyODkgMTAuMTAxM0MxMi4yMjI1IDkuOTg3NSAxMi4yNDMyIDkuODczNzcgMTIuMjg5MyA5Ljc2OTk4TDE1LjQ0OTIgMi45NTU0NUgxMS40MDQ1QzExLjMxMzMgMi45NTU0OSAxMS4yMjQgMi45ODI1MSAxMS4xNDc0IDMuMDMzMjhDMTEuMDcwOCAzLjA4NDA0IDExLjAxMDEgMy4xNTYzOSAxMC45NzI2IDMuMjQxNjNMNi45NzUyNSAxMi4xMzUxQzYuOTQxODkgMTIuMjA4NSA2LjkyNjk1IDEyLjI4OTMgNi45MzE3OCAxMi4zNzAxQzYuOTM2NjIgMTIuNDUwOSA2Ljk2MTA4IDEyLjUyOTMgNy4wMDI5NCAxMi41OTc5QzcuMDQ0ODEgMTIuNjY2NiA3LjEwMjc0IDEyLjcyMzUgNy4xNzE0OSAxMi43NjMzQzcuMjQwMjMgMTIuODAzMiA3LjMxNzYxIDEyLjgyNDggNy4zOTY1OCAxMi44MjYzSDExLjQzNjFaIiBmaWxsPSIjMUQxQzFEIi8+PC9zdmc+"
+            alt="" />integrations
+        </li>
+        <li>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9IiMxRDFDMUQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIwLjgyODkgNC4wMjg3MUwyMi4wNjYxIDQuNjQ5MDhDMjIuMjQ0NiA0LjczODMxIDIyLjI0NDYgNC45OTMyNiAyMi4wNjYxIDUuMDc4MjRMMjAuODI4OSA1LjY5ODYxQzIwLjQ1OSA1Ljg4NTU3IDIwLjE1MjkgNi4xODMwMSAxOS45NyA2LjU1NjkzTDE5LjM0OTMgNy43OTM0M0MxOS4yNiA3Ljk3MTg5IDE5LjAwNDkgNy45NzE4OSAxOC45MTk5IDcuNzkzNDNMMTguMjk5MiA2LjU1NjkzQzE4LjExMjEgNi4xODcyNiAxNy44MTQ1IDUuODgxMzIgMTcuNDQwNCA1LjY5ODYxTDE2LjIwMzIgNS4wNzgyNEMxNi4wMjQ2IDQuOTg5MDEgMTYuMDI0NiA0LjczNDA2IDE2LjIwMzIgNC42NDkwOEwxNy40NDA0IDQuMDI4NzFDMTcuODEwMyAzLjg0MTc1IDE4LjExNjQgMy41NDQzMSAxOC4yOTkyIDMuMTcwMzlMMTguOTE5OSAxLjkzMzlDMTkuMDA5MiAxLjc1NTQzIDE5LjI2NDMgMS43NTU0MyAxOS4zNDkzIDEuOTMzOUwxOS45NyAzLjE3MDM5QzIwLjE1NzEgMy41NDAwNiAyMC40NTQ3IDMuODQ2IDIwLjgyODkgNC4wMjg3MVpNMjIuMDY2MSAxOC45MjE5TDIwLjgyODkgMTguMzAxNkMyMC40NTQ3IDE4LjExODggMjAuMTU3MSAxNy44MTI5IDE5Ljk3IDE3LjQ0MzJMMTkuMzQ5MyAxNi4yMDY3QzE5LjI2NDMgMTYuMDI4MyAxOS4wMDkyIDE2LjAyODMgMTguOTE5OSAxNi4yMDY3TDE4LjI5OTIgMTcuNDQzMkMxOC4xMTY0IDE3LjgxNzIgMTcuODEwMyAxOC4xMTQ2IDE3LjQ0MDQgMTguMzAxNkwxNi4yMDMyIDE4LjkyMTlDMTYuMDI0NiAxOS4wMDY5IDE2LjAyNDYgMTkuMjYxOSAxNi4yMDMyIDE5LjM1MTFMMTcuNDQwNCAxOS45NzE1QzE3LjgxNDUgMjAuMTU0MiAxOC4xMTIxIDIwLjQ2MDEgMTguMjk5MiAyMC44Mjk4TDE4LjkxOTkgMjIuMDY2M0MxOS4wMDQ5IDIyLjI0NDcgMTkuMjYgMjIuMjQ0NyAxOS4zNDkzIDIyLjA2NjNMMTkuOTcgMjAuODI5OEMyMC4xNTI5IDIwLjQ1NTkgMjAuNDU5IDIwLjE1ODQgMjAuODI4OSAxOS45NzE1TDIyLjA2NjEgMTkuMzUxMUMyMi4yNDQ2IDE5LjI2NjEgMjIuMjQ0NiAxOS4wMTEyIDIyLjA2NjEgMTguOTIxOVpNMTIuODgyNyA5Ljk5NTY1TDE1LjA5MDMgMTEuMDk3MkwxNS4wOTA0IDExLjA5NzJMMTUuMTA2MSAxMS4xMDUxTDE1LjExMzkgMTEuMTA5TDE1Ljc2OTUgMTEuNDM2MUMxNi4xODE5IDExLjY0MDEgMTYuMTgxOSAxMi4yMzA3IDE1Ljc2OTUgMTIuNDM0NkwxNS4xMTM5IDEyLjc2MThMMTUuMTA2MSAxMi43NjU3TDE1LjA5MDQgMTIuNzczNUwxNS4wOTAzIDEyLjc3MzZMMTIuODgyNyAxMy44NzUxQzEyLjAxNTQgMTQuMzA4NSAxMS4zMTM5IDE1LjAwOTYgMTAuODgwMiAxNS44NzY0TDkuNzc3NzggMTguMDgzM0w5Ljc3Nzc1IDE4LjA4MzRMOS43NzEyIDE4LjA5NjVMOS43NjcyOSAxOC4xMDQzTDkuNDM4OTYgMTguNzYxNkM5LjIzNDg5IDE5LjE3MzcgOC42NDM5MiAxOS4xNzM3IDguNDM5ODUgMTguNzYxNkw4LjExMTUxIDE4LjEwNDNMOC4xMDc2MSAxOC4wOTY1TDguMTAxMDYgMTguMDgzNEw4LjEwMTAzIDE4LjA4MzNMNi45OTg1NyAxNS44NzY0QzYuNTY0OTEgMTUuMDA5NiA1Ljg2MzQxIDE0LjMwODUgNC45OTYwOSAxMy44NzUxTDIuNzg4NSAxMi43NzM2TDIuNzg4NDEgMTIuNzczNUwyLjc3MjcyIDEyLjc2NTdMMi43NjQ5MiAxMi43NjE4TDIuMTA5MjkgMTIuNDM0NkMxLjY5Njg5IDEyLjIzMDcgMS42OTY4OSAxMS42NDAxIDIuMTA5MjkgMTEuNDM2MUwyLjc2NDkyIDExLjEwOUwyLjc3MjcyIDExLjEwNTFMMi43ODg0MSAxMS4wOTcyTDIuNzg4NSAxMS4wOTcyTDQuOTk2MDkgOS45OTU2NUM1Ljg2MzQxIDkuNTYyMjQgNi41NjQ5MSA4Ljg2MTE0IDYuOTk4NTcgNy45OTQzMkw4LjEwMTAzIDUuNzg3NDJMOC4xMDEwNiA1Ljc4NzM1TDguMTA3NjEgNS43NzQyNUw4LjExMTUxIDUuNzY2NDNMOC40Mzk4NSA1LjEwOTE3QzguNjQzOTIgNC42OTcwMSA5LjIzNDg5IDQuNjk3MDEgOS40Mzg5NiA1LjEwOTE3TDkuNzY3MjkgNS43NjY0M0w5Ljc3MTIgNS43NzQyNUw5Ljc3Nzc1IDUuNzg3MzVMOS43Nzc3OCA1Ljc4NzQyTDEwLjg4MDIgNy45OTQzMkMxMS4zMTM5IDguODYxMTQgMTIuMDE1NCA5LjU2MjI0IDEyLjg4MjcgOS45OTU2NVpNMTIuMjEzIDExLjMzNzhMMTMuNDEwNSAxMS45MzU0TDEyLjIxMyAxMi41MzI5TDEyLjIxMjIgMTIuNTMzM0MxMS4wNTQ3IDEzLjExMTcgMTAuMTE3NyAxNC4wNDgxIDkuNTM4NzUgMTUuMjA1M0w5LjUzODM1IDE1LjIwNjFMOC45Mzk0IDE2LjQwNTFMOC4zNDA0NSAxNS4yMDYxTDguMzQwMDYgMTUuMjA1M0M3Ljc2MTEzIDE0LjA0ODEgNi44MjQxNCAxMy4xMTE3IDUuNjY2NiAxMi41MzMzTDUuNjY1ODEgMTIuNTMyOUw0LjQ2ODMgMTEuOTM1NEw1LjY2NTgxIDExLjMzNzhMNS42NjY2IDExLjMzNzRDNi44MjQxNCAxMC43NTkgNy43NjExMyA5LjgyMjYzIDguMzQwMDYgOC42NjU0NUw4LjM0MDQ1IDguNjY0NjZMOC45Mzk0IDcuNDY1NjhMOS41MzgzNSA4LjY2NDY2TDkuNTM4NzUgOC42NjU0NUMxMC4xMTc3IDkuODIyNjMgMTEuMDU0NyAxMC43NTkgMTIuMjEyMiAxMS4zMzc0TDEyLjIxMyAxMS4zMzc4WiIvPjwvc3ZnPg=="
+            alt="" />slack ai
+        </li>
+      </ul>
+    </main>
+    <main class="sec">
+      <section class="sec-col">
+        <div class="sec-cont">
+          <h2 class="sec-head">Collaboration</h2>
+          <h1 class="sec-head1">
+            Communicate in countless ways from one place.
+          </h1>
+          <p class="sec-desc">
+            Slack is built for bringing people and information together. Type
+            things out. Talk things through. Invite external organisations into
+            the conversation.
+          </p>
+          <span class="sec-span">
+            <h2>80%</h2>
+            <h3>
+              of the Fortune 100 use Slack Connect to work with partners and
+              customers <sup>1</sup>
+            </h3>
+          </span>
+        </div>
+        <div class="sec-cont">
+          <h2 class="sec-head">PROJECT MANAGEMENT</h2>
+          <h1 class="sec-head1">
+            Manage projects and move work forwards faster.
+          </h1>
+          <p class="sec-desc">
+            Prioritise tasks, share ideas and stay aligned. Slack brings every
+            piece of your project together from start to finish.
+          </p>
+          <span class="sec-span">
+            <h2>47%</h2>
+            <h3>increase in productivity for teams using Slack <sup>2</sup></h3>
+          </span>
+        </div>
+        <div class="sec-cont">
+          <h2 class="sec-head">Integrations</h2>
+          <h1 class="sec-head1">Tap into the tools that you already use.</h1>
+          <p class="sec-desc">
+            Over 2,600 apps are ready to connect in Slack, so you can automate
+            everyday tasks in the flow of work and save your team precious time.
+          </p>
+          <span class="sec-span">
+            <h2>35%</h2>
+            <h3>
+              increase in time saved due to automation for Slack users
+              <sup>3</sup>
+            </h3>
+          </span>
+        </div>
+
+        <div class="sec-cont">
+          <h2 class="sec-head">Slack AI</h2>
+          <h1 class="sec-head1">Do more with AI that works where you do.</h1>
+          <p class="sec-desc">
+            Search your entire company history for answers, instantly catch up
+            on conversations and get daily recaps of messages missed.
+          </p>
+          <span class="sec-span">
+            <h2>97 mins</h2>
+            <h3>
+              average time that users can save weekly with Slack AI <sup>4</sup>
+            </h3>
+          </span>
+        </div>
+      </section>
+      <section class="sec-media">
+        <div class="media-container">
+          <img
+            class="sec-img"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJjb21wLXZhbHVlLXByb3BzX19jYXJkLWFzc2V0LWRlY29yYXRpb24iIHdpZHRoPSI1NDAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgNTQwIDU0MCIgZmlsbD0ibm9uZSI+PHBhdGggZD0ibTAgMjcwYy0uMDAwMDEzMDQtMTQ5LjExNyAxMjAuODgzLTI2OS45OTk5ODY5NiAyNzAtMjcwczI3MCAxMjAuODgzIDI3MCAyNzB2MjcwaC0yNzBjLTE0OS4xMTcgMC0yNjkuOTk5OTg2OTYtMTIwLjg4My0yNzAtMjcweiIgZmlsbD0iIzQxYjY1OCIvPjwvc3ZnPg=="
+            alt="Decorative Shape" />
+          <video
+            class="sec-vid"
+            src="../Components/01-channels.IN@2x.webm"></video>
+        </div>
+        <div class="media-container">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJjb21wLXZhbHVlLXByb3BzX19jYXJkLWFzc2V0LWRlY29yYXRpb24iIHdpZHRoPSI1NDAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgNTQwIDU0MCIgZmlsbD0ibm9uZSI+PHBhdGggZD0ibTAgMjcwYy0uMDAwMDEzMDQtMTQ5LjExNyAxMjAuODgzLTI2OS45OTk5ODY5NiAyNzAtMjcwczI3MCAxMjAuODgzIDI3MCAyNzB2MjcwaC0yNzBjLTE0OS4xMTcgMC0yNjkuOTk5OTg2OTYtMTIwLjg4My0yNzAtMjcweiIgZmlsbD0iI2ZjYzAwMyIvPjwvc3ZnPg=="
+            alt="" />
+          <video class="sec-vid" src="../Components/02-lists.IN.webm"></video>
+        </div>
+        <div class="media-container">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJjb21wLXZhbHVlLXByb3BzX19jYXJkLWFzc2V0LWRlY29yYXRpb24iIHdpZHRoPSI1NDAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgNTQwIDU0MCIgZmlsbD0ibm9uZSI+PHBhdGggZD0ibTAgMjcwYy0uMDAwMDEzMDQtMTQ5LjExNyAxMjAuODgzLTI2OS45OTk5ODY5NiAyNzAtMjcwczI3MCAxMjAuODgzIDI3MCAyNzB2MjcwaC0yNzBjLTE0OS4xMTcgMC0yNjkuOTk5OTg2OTYtMTIwLjg4My0yNzAtMjcweiIgZmlsbD0iIzFhYjlmZiIvPjwvc3ZnPg=="
+            alt="" />
+          <video class="sec-vid" src="../Components/hp-vp-3.IN.webm"></video>
+        </div>
+
+        <div class="media-container">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJjb21wLXZhbHVlLXByb3BzX19jYXJkLWFzc2V0LWRlY29yYXRpb24iIHdpZHRoPSI1NDAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgNTQwIDU0MCIgZmlsbD0ibm9uZSI+PHBhdGggZD0ibTAgMjcwYy0uMDAwMDEzMDQtMTQ5LjExNyAxMjAuODgzLTI2OS45OTk5ODY5NiAyNzAtMjcwczI3MCAxMjAuODgzIDI3MCAyNzB2MjcwaC0yNzBjLTE0OS4xMTcgMC0yNjkuOTk5OTg2OTYtMTIwLjg4My0yNzAtMjcweiIgZmlsbD0iIzk2MDJjNyIvPjwvc3ZnPg=="
+            alt="" />
+          <video class="sec-vid" src="../Components/hp-vp-4.IN.webm"></video>
+        </div>
+      </section>
+    </main>
+    <h2 class="head-line" style="margin-top: -8rem">
+      The most innovative companies run their business in Slack.
+    </h2>
+    <main class="colab">
+      <div>
+        <video
+          class="colab-vid"
+          src="../Components/openai.mp4"
+          muted
+          loop></video>
+        <img
+          class="colab-img"
+          src="https://a.slack-edge.com/54df558/marketing/img/homepage/revamped-24/customer-videos/logos/logo-openai.png"
+          alt="" />
+      </div>
+      <div>
+        <video class="colab-vid" src="../Components/ari.mp4" muted></video>
+        <img
+          class="colab-img"
+          src="https://a.slack-edge.com/54df558/marketing/img/homepage/revamped-24/customer-videos/logos/logo-ari.png"
+          alt="" />
+      </div>
+      <div>
+        <video
+          class="colab-vid"
+          src="../Components/spotify@2x.mp4"
+          muted></video>
+        <img
+          class="colab-img"
+          src="https://a.slack-edge.com/54df558/marketing/img/homepage/revamped-24/customer-videos/logos/logo-spotify.png"
+          alt="" />
+      </div>
+      <div>
+        <video class="colab-vid" src="../Components/ibm.mp4" muted></video>
+        <img
+          class="colab-img"
+          src="https://a.slack-edge.com/54df558/marketing/img/homepage/revamped-24/customer-videos/logos/logo-ibm.png"
+          alt="" />
+      </div>
+    </main>
+    <h2 class="head-line">There’s a subscription for every kind of team.</h2>
+    <h3 class="line">
+      Start with a premium subscription, or try the free version.
+    </h3>
+    <main class="pricing-container">
+      <div class="card">
+        <h2>Free</h2>
+        <p>A smarter, simpler way to chat and collaborate.</p>
+        <ul>
+          <li>✔ 90 days of message history</li>
+          <li>✔ Ten app integrations</li>
+          <li>✔ 1:1 audio and video meetings</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Pro</h2>
+        <p>More power for small teams who want to accelerate work.</p>
+        <ul>
+          <li>✔ Everything in Free, and:</li>
+          <li>✔ Unlimited message history, app integrations and automations</li>
+          <li>✔ Group audio and video meetings</li>
+          <li>✔ Collaborate with people outside your organisation</li>
+          <li>✔ Create and manage projects in documents and lists</li>
+        </ul>
+        <p class="addon">
+          ✨ Slack AI add-on available <span class="new-badge">NEW</span>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Business+</h2>
+        <p>Scale your business, productivity and team connection.</p>
+        <ul>
+          <li>✔ Everything in Pro, and:</li>
+          <li>✔ User provisioning and deprovisioning</li>
+          <li>✔ SAML-based single sign-on</li>
+          <li>✔ Data exports for all messages</li>
+          <li>✔ Message activity analytics</li>
+        </ul>
+        <p class="addon">
+          ✨ Slack AI add-on available <span class="new-badge">NEW</span>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Enterprise Grid</h2>
+        <p>
+          Maximise performance and productivity at every level of your
+          enterprise.
+        </p>
+        <ul>
+          <li>✔ Everything in Business+, and:</li>
+          <li>✔ Unlimited workspaces</li>
+          <li>✔ Built-in employee directory</li>
+          <li>✔ HIPAA-compliant</li>
+          <li>✔ Advanced management tools</li>
+        </ul>
+        <p class="addon">✨ Slack AI add-on available</p>
+      </div>
+    </main>
+    <header class="nav-head">
+      <button class="nav-but2">get started</button>
+      <button class="nav-but3">
+        find your subscription
+        <img
+          src="data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2215%22%20height%3D%2213%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M7.05357%209.0068C6.75395%209.2928%206.27921%209.28177%205.9932%208.98214C5.70719%208.68252%205.71823%208.20778%206.01785%207.92177L8.59233%205.46428L1.53571%205.46429C1.1215%205.46429%200.785715%205.1285%200.785715%204.71428C0.785715%204.30007%201.1215%203.96429%201.53571%203.96429L8.5924%203.96428L6.01786%201.5068C5.71824%201.2208%205.70719%200.746056%205.9932%200.446431C6.2792%200.146805%206.75394%200.135762%207.05357%200.421765L10.9821%204.17172C11.1304%204.31324%2011.2143%204.50927%2011.2143%204.71423C11.2143%204.9192%2011.1304%205.11523%2010.9821%205.25675L7.05357%209.0068Z%22%20fill%3D%22%23611f69%22%2F%3E%0A%3C%2Fsvg%3E%0A%0A"
+          alt=""
+          class="arr" />
+      </button>
+    </header>
+    <main class="score">
+      <h2 class="head-line">We’re in the business of growing businesses.</h2>
+    </main>
+    <section class="score-desc">
+      <div class="scor-desc">
+        <h2 class="scor-num" data-value="90">0%</h2>
+        <h3>
+          of users say that Slack helps them to stay more connected
+          <sup>5</sup>
+        </h3>
+      </div>
+      <div class="scor-desc">
+        <h2 class="scor-num" data-value="43">0</h2>
+        <h3>
+          The average number of apps used by teams in Slack
+          <sup>3</sup>
+        </h3>
+      </div>
+      <div class="scor-desc">
+        <h2 class="scor-num" data-value="87">0%</h2>
+        <h3>
+          of users say that Slack helps them to collaborate more efficiently
+          <sup>5</sup>
+        </h3>
+      </div>
+    </section>
+    <script src="slack.js"></script>
+  </body>
+</html>
