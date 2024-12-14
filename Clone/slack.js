@@ -56,3 +56,35 @@ scorNums.forEach((scorNum) => {
     }
   }, 30); // Adjust the speed by changing the interval time
 });
+
+const nav = document.querySelector("#navbar");
+nav.style.display = "none";
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    nav.style.display = "flex";
+    nav.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+    nav.style.position = "fixed";
+    nav.style.top = "0";
+    nav.style.left = "0";
+    nav.style.borderRadius = "15px";
+    nav.style.boxShadow = "0px 0px 5px rgba(0, 0, 0, 0.2)";
+    nav.style.transition = "background-color 0.3s ease";
+    nav.style.padding = "5px";
+    nav.style.width = "100%";
+    nav.style.zIndex = "2000";
+  } else {
+    nav.style.display = "none";
+  }
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+});
